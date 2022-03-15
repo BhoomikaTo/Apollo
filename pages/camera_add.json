@@ -42,13 +42,13 @@
               "animateLoading": true,
               "parentColumnSpace": 13.765625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 12,
+              "leftColumn": 13,
               "dynamicBindingPathList": [],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
               "text": " View Area                                                 ",
               "key": "bpwt2bomsd",
-              "rightColumn": 54,
+              "rightColumn": 55,
               "textAlign": "LEFT",
               "widgetId": "89fbdr45ru",
               "isVisible": true,
@@ -228,7 +228,7 @@
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "Area",
+                      "labelText": "Manufacturer",
                       "topRow": 0,
                       "bottomRow": 7,
                       "parentRowSpace": 10,
@@ -241,24 +241,11 @@
                       "dynamicTriggerPathList": [],
                       "leftColumn": 34,
                       "dynamicBindingPathList": [],
-                      "options": [
-                        {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
-                        }
-                      ],
+                      "options": "[\n  {\n    \"label\": \"Hikvision\",\n    \"value\": \"Hikvision\"\n  },\n  {\n    \"label\": \"Axis\",\n    \"value\": \"Axis\"\n  },\n  {\n    \"label\": \"Dahua\",\n    \"value\": \"Dahua\"\n  },\n\t{\n    \"label\": \"Hanwha Techwin\",\n    \"value\": \"Hanwha Techwin\"\n  },\n\t{\n    \"label\": \"Bosch\",\n    \"value\": \"Bosch\"\n  },\n\t{\n    \"label\": \"Mobotix\",\n    \"value\": \"Mobotix\"\n  },\n\t{\n    \"label\": \"Sony\",\n    \"value\": \"Sony\"\n  },\n\t{\n    \"label\": \"Vivotek\",\n    \"value\": \"Vivotek\"\n  },\n\t{\n    \"label\": \"Schneider Electric\",\n    \"value\": \"Schneider Electric\"\n  },\n\t{\n    \"label\": \"Panasonic\",\n    \"value\": \"Panasonic\"\n  },\n\t{\n    \"label\": \"Avigilon\",\n    \"value\": \"Avigilon\"\n  }\n]",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "zy50x53cg7",
-                      "isRequired": false,
+                      "isRequired": true,
                       "rightColumn": 60,
                       "widgetId": "3k2pzmej59",
                       "isVisible": true,
@@ -336,6 +323,72 @@
                       "parentColumnSpace": 9.84619140625,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 4,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "options": "{{Query1.data.map(c => ({label: c.area_name, value: c.area_id}))}}",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "zy50x53cg7",
+                      "isRequired": true,
+                      "rightColumn": 30,
+                      "widgetId": "wl57avi2it",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "oyzpxo1ukv",
+                      "renderMode": "CANVAS",
+                      "isLoading": false
+                    },
+                    {
+                      "widgetName": "Select3",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Camera Type",
+                      "topRow": 9,
+                      "bottomRow": 16,
+                      "parentRowSpace": 10,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.84619140625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 4,
+                      "dynamicBindingPathList": [],
+                      "options": "[\n  {\n    \"label\": \"PTZ\",\n    \"value\": \"PTZ\"\n  },\n  {\n    \"label\": \"Fixed\",\n    \"value\": \"Fixed\"\n  },\n  {\n    \"label\": \"Dome\",\n    \"value\": \"Dome\"\n  }\n]",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "zy50x53cg7",
+                      "isRequired": true,
+                      "rightColumn": 30,
+                      "widgetId": "jph0ktt504",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "oyzpxo1ukv",
+                      "renderMode": "CANVAS",
+                      "isLoading": false
+                    },
+                    {
+                      "widgetName": "Select4",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "FPS",
+                      "topRow": 18,
+                      "bottomRow": 25,
+                      "parentRowSpace": 10,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.84619140625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 34,
                       "dynamicBindingPathList": [],
                       "options": [
                         {
@@ -354,91 +407,7 @@
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "zy50x53cg7",
-                      "isRequired": false,
-                      "rightColumn": 30,
-                      "widgetId": "wl57avi2it",
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "oyzpxo1ukv",
-                      "renderMode": "CANVAS",
-                      "isLoading": false
-                    },
-                    {
-                      "widgetName": "Select3",
-                      "isFilterable": true,
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "Label",
-                      "topRow": 9,
-                      "bottomRow": 16,
-                      "parentRowSpace": 10,
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
-                      "hideCard": false,
-                      "defaultOptionValue": "GREEN",
-                      "animateLoading": true,
-                      "parentColumnSpace": 9.84619140625,
-                      "leftColumn": 4,
-                      "options": [
-                        {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
-                        }
-                      ],
-                      "placeholderText": "Select option",
-                      "isDisabled": false,
-                      "key": "zy50x53cg7",
-                      "isRequired": false,
-                      "rightColumn": 30,
-                      "widgetId": "jph0ktt504",
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "oyzpxo1ukv",
-                      "renderMode": "CANVAS",
-                      "isLoading": false
-                    },
-                    {
-                      "widgetName": "Select4",
-                      "isFilterable": true,
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "Label",
-                      "topRow": 18,
-                      "bottomRow": 25,
-                      "parentRowSpace": 10,
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
-                      "hideCard": false,
-                      "defaultOptionValue": "GREEN",
-                      "animateLoading": true,
-                      "parentColumnSpace": 9.84619140625,
-                      "leftColumn": 34,
-                      "options": [
-                        {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
-                        }
-                      ],
-                      "placeholderText": "Select option",
-                      "isDisabled": false,
-                      "key": "zy50x53cg7",
-                      "isRequired": false,
+                      "isRequired": true,
                       "rightColumn": 60,
                       "widgetId": "nv7lwz3f0m",
                       "isVisible": true,
@@ -452,31 +421,20 @@
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "Label",
+                      "labelText": "Resolution",
                       "topRow": 18,
                       "bottomRow": 25,
                       "parentRowSpace": 10,
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 9.84619140625,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 4,
-                      "options": [
-                        {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
+                      "options": "[\n  {\n    \"label\": \"960x480\",\n    \"value\": \"960x480\"\n  },\n  {\n    \"label\": \"1080x720\",\n    \"value\": \"1080x720\"\n  },\n  {\n    \"label\": \"1280X720\",\n    \"value\": \"1280X720\"\n  },\n\t{\n    \"label\": \"1920×1080\",\n    \"value\": \"1920×1080\"\n  },\n\t{\n    \"label\": \"2560×1440\",\n    \"value\": \"2560×1440\"\n  },\n\t{\n    \"label\": \"2560×1920\",\n    \"value\": \"2560×1920\"\n  },\n\t{\n    \"label\": \"3840x2160\",\n    \"value\": \"3840x2160\"\n  }\n]",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "zy50x53cg7",
@@ -494,35 +452,24 @@
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "Label",
+                      "labelText": "IP Enabled",
                       "topRow": 27,
                       "bottomRow": 34,
                       "parentRowSpace": 10,
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 9.84619140625,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 4,
-                      "options": [
-                        {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
+                      "options": "[\n  {\n    \"label\": \"Yes\",\n    \"value\": \"Yes\"\n  },\n  {\n    \"label\": \"No\",\n    \"value\": \"No\"\n  }\n]",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "zy50x53cg7",
-                      "isRequired": false,
+                      "isRequired": true,
                       "rightColumn": 30,
                       "widgetId": "fo1zgw2vbs",
                       "isVisible": true,
@@ -536,31 +483,20 @@
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "Label",
+                      "labelText": "Process Type",
                       "topRow": 27,
                       "bottomRow": 34,
                       "parentRowSpace": 10,
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 9.84619140625,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 34,
-                      "options": [
-                        {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
+                      "options": "[\n  {\n    \"label\": \"RTSP\",\n    \"value\": \"RTSP\"\n  },\n  {\n    \"label\": \"FILE OR EDGE\",\n    \"value\": \"FILE OR EDGE\"\n  }\n]",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "zy50x53cg7",
@@ -615,13 +551,15 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.84619140625,
+                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 34,
+                      "dynamicBindingPathList": [],
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "fdgvc5k0x8",
-                      "isRequired": false,
+                      "isRequired": true,
                       "rightColumn": 60,
                       "widgetId": "i6ljjwztj5",
                       "isVisible": true,
@@ -644,16 +582,18 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.84619140625,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 34,
+                      "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "Model",
                       "key": "90x8umgf2s",
                       "rightColumn": 50,
                       "textAlign": "LEFT",
                       "widgetId": "9ebvxq28fj",
                       "isVisible": true,
-                      "fontStyle": "BOLD",
+                      "fontStyle": "",
                       "textColor": "#231F20",
                       "shouldScroll": false,
                       "version": 1,
@@ -673,16 +613,18 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 7.35107421875,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 4,
+                      "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "RTSP URL",
                       "key": "90x8umgf2s",
                       "rightColumn": 20,
                       "textAlign": "LEFT",
                       "widgetId": "vaelwla90z",
                       "isVisible": true,
-                      "fontStyle": "BOLD",
+                      "fontStyle": "",
                       "textColor": "#231F20",
                       "shouldScroll": false,
                       "version": 1,
@@ -699,7 +641,8 @@
             },
             {
               "widgetName": "Button1",
-              "buttonColor": "#03B365",
+              "onClick": "{{navigateTo('Homepage', {})}}",
+              "buttonColor": "#F6F7F8",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca02633.svg",
               "topRow": 14,
@@ -709,8 +652,14 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 11.40625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "leftColumn": 4,
-              "text": "Submit",
+              "dynamicBindingPathList": [],
+              "text": "Back",
               "isDisabled": false,
               "key": "6aure39nbj",
               "rightColumn": 9,
@@ -727,7 +676,18 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "camera_add_Query1",
+              "name": "Query1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "widgetNames": [
           "Button1",
           "Canvas2",
