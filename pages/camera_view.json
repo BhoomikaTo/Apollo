@@ -672,14 +672,14 @@
                   "key": "onOptionChange"
                 }
               ],
-              "leftColumn": 13,
+              "leftColumn": 12,
               "dynamicBindingPathList": [],
               "options": "[\n  {\n    \"label\": \"camera_id\",\n    \"value\": \"camera_id\"\n  },\n  {\n    \"label\": \"area_id\",\n    \"value\": \"area_id\"\n  },\n  {\n    \"label\": \"camera_type\",\n    \"value\": \"camera_type\"\n  },\n\t{\n\t  \"label\": \"manufacturer\",\n    \"value\": \"manufacturer\"\n\t},\n\t{\n\t  \"label\": \"model\",\n    \"value\": \"model\"\n\t},\n\t{\n\t  \"label\": \"resolution\",\n    \"value\": \"resolution\"\n\t},\n\t{\n\t  \"label\": \"fps\",\n    \"value\": \"fps\"\n\t},\n\t{\n\t  \"label\": \"process_type\",\n    \"value\": \"process_type\"\n\t},\n\t{\n\t  \"label\": \"created_date\",\n    \"value\": \"created_date\"\n\t}\n]",
               "placeholderText": "",
               "isDisabled": false,
               "key": "9vayb4m07d",
               "isRequired": false,
-              "rightColumn": 26,
+              "rightColumn": 25,
               "widgetId": "3ekxt8v37l",
               "isVisible": true,
               "version": 1,
@@ -710,14 +710,14 @@
                   "key": "onOptionChange"
                 }
               ],
-              "leftColumn": 27,
+              "leftColumn": 26,
               "dynamicBindingPathList": [],
               "options": "[\n  {\n    \"label\": \"Ascending\",\n    \"value\": \"ASC\"\n  },\n  {\n    \"label\": \"Descending\",\n    \"value\": \"DESC\"\n  }\n]",
               "placeholderText": "Ascending",
               "isDisabled": false,
               "key": "9vayb4m07d",
               "isRequired": false,
-              "rightColumn": 40,
+              "rightColumn": 39,
               "widgetId": "gkx6lqqanr",
               "isVisible": true,
               "version": 1,
