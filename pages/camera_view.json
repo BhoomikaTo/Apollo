@@ -271,7 +271,7 @@
                   "key": "primaryColumns.rtsp_url.computedValue"
                 }
               ],
-              "leftColumn": 6,
+              "leftColumn": 5,
               "primaryColumns": {
                 "area_id": {
                   "index": 0,
@@ -552,7 +552,7 @@
               "onRowSelected": "{{showModal('Modal1')}}",
               "key": "ujy2cn5qkr",
               "derivedColumns": {},
-              "rightColumn": 64,
+              "rightColumn": 63,
               "textSize": "PARAGRAPH",
               "widgetId": "ss04bfvfxw",
               "isVisibleFilters": true,
@@ -600,13 +600,13 @@
               "animateLoading": true,
               "parentColumnSpace": 13.765625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 6,
+              "leftColumn": 5,
               "dynamicBindingPathList": [],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
               "text": " View Camera                                                 ",
               "key": "bpwt2bomsd",
-              "rightColumn": 48,
+              "rightColumn": 47,
               "textAlign": "LEFT",
               "widgetId": "op2sb7mevo",
               "isVisible": true,
@@ -631,13 +631,13 @@
               "animateLoading": true,
               "parentColumnSpace": 13.765625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 6,
+              "leftColumn": 5,
               "dynamicBindingPathList": [],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
               "text": "Order By:",
               "key": "bpwt2bomsd",
-              "rightColumn": 13,
+              "rightColumn": 12,
               "textAlign": "LEFT",
               "widgetId": "77ksowz5ed",
               "isVisible": true,
@@ -672,7 +672,7 @@
                   "key": "onOptionChange"
                 }
               ],
-              "leftColumn": 14,
+              "leftColumn": 13,
               "dynamicBindingPathList": [],
               "options": "[\n  {\n    \"label\": \"camera_id\",\n    \"value\": \"camera_id\"\n  },\n  {\n    \"label\": \"area_id\",\n    \"value\": \"area_id\"\n  },\n  {\n    \"label\": \"camera_type\",\n    \"value\": \"camera_type\"\n  },\n\t{\n\t  \"label\": \"manufacturer\",\n    \"value\": \"manufacturer\"\n\t},\n\t{\n\t  \"label\": \"model\",\n    \"value\": \"model\"\n\t},\n\t{\n\t  \"label\": \"resolution\",\n    \"value\": \"resolution\"\n\t},\n\t{\n\t  \"label\": \"fps\",\n    \"value\": \"fps\"\n\t},\n\t{\n\t  \"label\": \"process_type\",\n    \"value\": \"process_type\"\n\t},\n\t{\n\t  \"label\": \"created_date\",\n    \"value\": \"created_date\"\n\t}\n]",
               "placeholderText": "",
