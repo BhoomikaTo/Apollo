@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO camera_master SET \narea_id = '{{Select1.selectedOptionValue}}',\ncamera_type = '{{Select3.selectedOptionValue}}', \nmanufacturer = '{{Select1Copy.selectedOptionValue}}',\nmodel = '{{Input2.text}}',\nresolution = '{{Select5.selectedOptionValue}}',\nfps = '{{Select4.selectedOptionValue}}',\nir_enabled = '{{Select6.selectedOptionValue}}',\n\nprocess_type = '{{Select7.selectedOptionValue}}',\nrtsp_url = '{{Input1.text}}',\ncreated_by = {{Text4.text}};"
+      "body": "INSERT INTO camera_master SET \narea_id = '{{Select1.selectedOptionValue}}',\ncamera_type = '{{Select3.selectedOptionValue}}', \nmanufacturer = '{{Select1Copy.selectedOptionValue}}',\nmodel = '{{Input2.text}}',\nresolution = '{{Select5.selectedOptionValue}}',\nfps = '{{Select4.selectedOptionValue}}',\nir_enabled = '{{Select6.selectedOptionValue}}',\nprocess_type = '{{Select7.selectedOptionValue}}',\nrtsp_url = '{{Input1.text}}',\ncreated_by = {{Text4.text}};"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

@@ -342,7 +342,7 @@
                           "key": "options"
                         }
                       ],
-                      "options": "{{Query1.data.map(c => ({label: c.area_name, value: c.area_id}))}}",
+                      "options": "{{Query1.data.map(c => ({label: c.area_name, value: c.area_name}))}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "zy50x53cg7",
@@ -403,21 +403,12 @@
                       "parentColumnSpace": 9.84619140625,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 34,
-                      "dynamicBindingPathList": [],
-                      "options": [
+                      "dynamicBindingPathList": [
                         {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
+                          "key": "options"
                         }
                       ],
+                      "options": "{{Array(9).fill(0).map((x,y) => y)}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "zy50x53cg7",
@@ -448,7 +439,7 @@
                       "dynamicTriggerPathList": [],
                       "leftColumn": 4,
                       "dynamicBindingPathList": [],
-                      "options": "[\n  {\n    \"label\": \"960x480\",\n    \"value\": \"960x480\"\n  },\n  {\n    \"label\": \"1080x720\",\n    \"value\": \"1080x720\"\n  },\n  {\n    \"label\": \"1280X720\",\n    \"value\": \"1280X720\"\n  },\n\t{\n    \"label\": \"1920×1080\",\n    \"value\": \"1920×1080\"\n  },\n\t{\n    \"label\": \"2560×1440\",\n    \"value\": \"2560×1440\"\n  },\n\t{\n    \"label\": \"2560×1920\",\n    \"value\": \"2560×1920\"\n  },\n\t{\n    \"label\": \"3840x2160\",\n    \"value\": \"3840x2160\"\n  }\n]",
+                      "options": "[\n  {\n    1\n  },\n  {\n    \"label\": \"1080x720\",\n    \"value\": \"1080x720\"\n  },\n  {\n    \"label\": \"1280X720\",\n    \"value\": \"1280X720\"\n  },\n\t{\n    \"label\": \"1920×1080\",\n    \"value\": \"1920×1080\"\n  },\n\t{\n    \"label\": \"2560×1440\",\n    \"value\": \"2560×1440\"\n  },\n\t{\n    \"label\": \"2560×1920\",\n    \"value\": \"2560×1920\"\n  },\n\t{\n    \"label\": \"3840x2160\",\n    \"value\": \"3840x2160\"\n  }\n]",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "zy50x53cg7",

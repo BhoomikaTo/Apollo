@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT area_id,area_name FROM area_ref \n"
+      "body": "SELECT area_id, area_name FROM area_ref \n"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [],
@@ -32,5 +32,5 @@
   },
   "id": "camera_add_Query1",
   "deleted": false,
-  "gitSyncId": "6225932e52df83079ac94bc5_623042039c18654bb5892deb"
+  "gitSyncId": "6225932e52df83079ac94bc5_623184159c18654bb5892e06"
 }

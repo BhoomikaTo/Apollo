@@ -1584,7 +1584,7 @@
                     },
                     {
                       "widgetName": "Button2Copy2",
-                      "onClick": "{{navigateTo('area_view_all', {})}}",
+                      "onClick": "{{navigateTo('camera_view', {})}}",
                       "buttonColor": "#FFFFFF",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",

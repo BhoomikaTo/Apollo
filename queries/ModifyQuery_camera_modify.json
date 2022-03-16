@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Update area_ref\nset area_name = {{Input1.text}},\n    area_description = {{Input2.text}},\n\t\tedited_by = {{Input3.text}},\n\t\tedited_date = current_timestamp()\nwhere area_id = {{Table1.selectedRow.area_id}};"
+      "body": "Update area_ref\nset area_id = '{{Select1.selectedOptionValue}}',\ncamera_type = '{{Select3.selectedOptionValue}}', \nmanufacturer = '{{Select1Copy.selectedOptionValue}}',\nmodel = '{{Input2.text}}',\nresolution = '{{resolution.selectedOptionValue}}',\nfps = '{{Select4.selectedOptionValue}}',\nir_enabled = '{{Select6.selectedOptionValue}}',\nprocess_type = '{{Select7.selectedOptionValue}}',\nrtsp_url = '{{Input1.text}}',\ncreated_by = {{Text4.text}};\nwhere area_id = {{Table1.selectedRow.camera_id}};"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -31,8 +31,15 @@
     "jsonPathKeys": [
       "Input1.text",
       "Input2.text",
-      "Input3.text",
-      "Table1.selectedRow.area_id"
+      "Select1.selectedOptionValue",
+      "Select1Copy.selectedOptionValue",
+      "Select3.selectedOptionValue",
+      "Select4.selectedOptionValue",
+      "Select6.selectedOptionValue",
+      "Select7.selectedOptionValue",
+      "Table1.selectedRow.camera_id",
+      "Text4.text",
+      "resolution.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
