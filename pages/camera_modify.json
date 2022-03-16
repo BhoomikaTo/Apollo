@@ -1486,7 +1486,7 @@
                                   "key": "options"
                                 }
                               ],
-                              "options": "{{AreaName.data.map(c => ({label: c.area_name, value: c.area_name}))}}",
+                              "options": "{{AreaName.data.map(c => ({label: c.area_name, value: c.area_id}))}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
@@ -1678,7 +1678,7 @@
                               "inputType": "TEXT",
                               "isDisabled": false,
                               "key": "fdgvc5k0x8",
-                              "validation": "{{!rtsp.data.map(function dictToarr(index){return index.rtsp_url}).includes(Input1.text)}}",
+                              "validation": "{{!rtsp.data.map(function dictToarr(index){return index.rtsp_url}).includes(rtsp_url.text)}}",
                               "isRequired": true,
                               "rightColumn": 64,
                               "widgetId": "kzpe2bt4je",
@@ -1826,6 +1826,41 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "HEADING1"
+                            },
+                            {
+                              "widgetName": "edited_by",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.50390625,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 38,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "{{appsmith.user.email}}",
+                              "key": "7a0x5egk6g",
+                              "rightColumn": 54,
+                              "textAlign": "LEFT",
+                              "widgetId": "duzy3a0mtn",
+                              "isVisible": false,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "5sv2rjvb7m",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
                             }
                           ],
                           "key": "e27zqwtz2u"
@@ -1875,6 +1910,14 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "camera_modify_rtsp",
+              "name": "rtsp",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
             }
           ]
         ],
@@ -1916,6 +1959,7 @@
           "area",
           "area_modify_one",
           "camera_type",
+          "edited_by",
           "fps",
           "ir_enabled",
           "manufacturer",
@@ -1933,7 +1977,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "policies": [],

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "AreaName",
+    "name": "rtsp",
     "datasource": {
       "pluginId": "mysql-plugin",
       "messages": [],
@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select area_name, area_id  from area_ref;"
+      "body": "SELECT rtsp_url FROM camera_master \n"
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [],
@@ -30,7 +30,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "camera_modify_AreaName",
+  "id": "camera_modify_rtsp",
   "deleted": false,
-  "gitSyncId": "6225932e52df83079ac94bc5_6230be6b9c18654bb5892e02"
+  "gitSyncId": "6225932e52df83079ac94bc5_62319e339c18654bb5892e08"
 }
