@@ -1593,11 +1593,11 @@
                               "isLoading": false
                             },
                             {
-                              "widgetName": "Select6",
+                              "widgetName": "ir_enabled",
                               "isFilterable": true,
                               "displayName": "Select",
                               "iconSVG": "/static/media/icon.bd99caba.svg",
-                              "labelText": "IP Enabled",
+                              "labelText": "IR Enabled",
                               "topRow": 29,
                               "bottomRow": 36,
                               "parentRowSpace": 10,
@@ -1624,7 +1624,7 @@
                               "isLoading": false
                             },
                             {
-                              "widgetName": "Select7",
+                              "widgetName": "process_type",
                               "isFilterable": true,
                               "displayName": "Select",
                               "iconSVG": "/static/media/icon.bd99caba.svg",
@@ -1655,7 +1655,7 @@
                               "isLoading": false
                             },
                             {
-                              "widgetName": "Input1Copy",
+                              "widgetName": "rtsp_url",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
                               "topRow": 40,
@@ -1693,7 +1693,7 @@
                               "defaultText": ""
                             },
                             {
-                              "widgetName": "Input2Copy",
+                              "widgetName": "model",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
                               "topRow": 18,
@@ -1896,9 +1896,7 @@
           "IconButton1",
           "Image1",
           "Input1",
-          "Input1Copy",
           "Input2",
-          "Input2Copy",
           "Input3",
           "MainContainer",
           "Modify_camera",
@@ -1907,8 +1905,6 @@
           "Select2",
           "Select3",
           "Select4",
-          "Select6",
-          "Select7",
           "Table1",
           "Text1",
           "Text2",
@@ -1922,7 +1918,11 @@
           "area",
           "area_modify_one",
           "camera_type",
-          "resolution"
+          "ir_enabled",
+          "model",
+          "process_type",
+          "resolution",
+          "rtsp_url"
         ],
         "validOnPageLoadActions": true,
         "id": "camera_modify",
