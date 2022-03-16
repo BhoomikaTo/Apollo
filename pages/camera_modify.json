@@ -517,7 +517,7 @@
                   "key": "isVisible"
                 }
               ],
-              "options": "[\n  {\n    \"label\": \"camera_id\",\n    \"value\": \"camera_id\"\n  },\n  {\n    \"label\": \"area_id\",\n    \"value\": \"area_id\"\n  },\n  {\n    \"label\": \"camera_type\",\n    \"value\": \"camera_type\"\n  },\n\t{\n\t  \"label\": \"manufacturer\",\n    \"value\": \"manufacturer\"\n\t},\n\t{\n\t  \"label\": \"model\",\n    \"value\": \"model\"\n\t},\n\t{\n\t  \"label\": \"resolution\",\n    \"value\": \"resolution\"\n\t},\n\t{\n\t  \"label\": \"fps\",\n    \"value\": \"fps\"\n\t},\n\t{\n\t  \"label\": \"process_type\",\n    \"value\": \"process_type\"\n\t},\n\t{\n\t  \"label\": \"created_date\",\n    \"value\": \"created_date\"\n\t}\n]",
+              "options": "[\n  {\n    \"label\": \"Camera ID\",\n    \"value\": \"camera_id\"\n  },\n  {\n    \"label\": \"Area_name\",\n    \"value\": \"a.area_name\"\n  },\n\t{\n\t  \"label\": \"Manufacturer\",\n    \"value\": \"manufacturer\"\n\t},\n\t{\n\t  \"label\": \"Model\",\n    \"value\": \"model\"\n\t},\n\t{\n\t  \"label\": \"Status\",\n    \"value\": \"status\"\n\t}\n]",
               "placeholderText": "",
               "isDisabled": false,
               "key": "9vayb4m07d",
