@@ -1321,12 +1321,16 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "",
+                              "defaultOptionValue": "{{Table1.selectedRow.}}",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 0,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
                               "options": "[\n  {\n    \"label\": \"PTZ\",\n    \"value\": \"PTZ\"\n  },\n  {\n    \"label\": \"Fixed\",\n    \"value\": \"Fixed\"\n  },\n  {\n    \"label\": \"Dome\",\n    \"value\": \"Dome\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
