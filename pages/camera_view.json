@@ -831,7 +831,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 7.9515625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 32,
+                      "leftColumn": 39,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
@@ -842,7 +842,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{Table1.selectedRow.process_type}}",
                       "key": "59du1641ry",
-                      "rightColumn": 52,
+                      "rightColumn": 59,
                       "textAlign": "LEFT",
                       "widgetId": "cxp2kk68y9",
                       "isVisible": true,
@@ -872,7 +872,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 13.765625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 4,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
@@ -882,7 +882,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": " Camera - {{Table1.selectedRow.area_name}}                                                  ",
                       "key": "bpwt2bomsd",
-                      "rightColumn": 55,
+                      "rightColumn": 39,
                       "textAlign": "LEFT",
                       "widgetId": "2j7npp4vqy",
                       "isVisible": true,
@@ -1146,13 +1146,13 @@
                       "animateLoading": true,
                       "parentColumnSpace": 7.9515625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 32,
+                      "leftColumn": 39,
                       "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "Process Type",
                       "key": "htk8sl6hw4",
-                      "rightColumn": 48,
+                      "rightColumn": 55,
                       "textAlign": "LEFT",
                       "widgetId": "51s5wjjw7j",
                       "isVisible": true,
@@ -1549,7 +1549,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{Table1.selectedRow.rtsp_url}}",
                       "key": "59du1641ry",
-                      "rightColumn": 53,
+                      "rightColumn": 59,
                       "textAlign": "LEFT",
                       "widgetId": "icf5meumf6",
                       "isVisible": true,

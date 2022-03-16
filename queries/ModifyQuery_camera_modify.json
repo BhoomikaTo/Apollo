@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Update area_ref\nset area_id = '{{Select1.selectedOptionValue}}',\ncamera_type = '{{Select3.selectedOptionValue}}', \nmanufacturer = '{{Select1Copy.selectedOptionValue}}',\nmodel = '{{Input2.text}}',\nresolution = '{{resolution.selectedOptionValue}}',\nfps = '{{Select4.selectedOptionValue}}',\nir_enabled = '{{ir_enabled.selectedOptionValue}}',\nprocess_type = '{{process_type.selectedOptionValue}}',\nrtsp_url = '{{Input1.text}}',\ncreated_by = {{Text4.text}};\nwhere area_id = {{Table1.selectedRow.camera_id}};"
+      "body": "Update area_ref\nset area_id = '{{Select1.selectedOptionValue}}',\ncamera_type = '{{Select3.selectedOptionValue}}', \nmanufacturer = '{{manufacturer.selectedOptionValue}}',\nmodel = '{{Input2.text}}',\nresolution = '{{resolution.selectedOptionValue}}',\nfps = '{{fps.selectedOptionValue}}',\nir_enabled = '{{ir_enabled.selectedOptionValue}}',\nprocess_type = '{{process_type.selectedOptionValue}}',\nrtsp_url = '{{Input1.text}}',\ncreated_by = {{Text4.text}};\nwhere area_id = {{Table1.selectedRow.camera_id}};"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -32,12 +32,12 @@
       "Input1.text",
       "Input2.text",
       "Select1.selectedOptionValue",
-      "Select1Copy.selectedOptionValue",
       "Select3.selectedOptionValue",
-      "Select4.selectedOptionValue",
       "Table1.selectedRow.camera_id",
       "Text4.text",
+      "fps.selectedOptionValue",
       "ir_enabled.selectedOptionValue",
+      "manufacturer.selectedOptionValue",
       "process_type.selectedOptionValue",
       "resolution.selectedOptionValue"
     ],

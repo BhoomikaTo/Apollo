@@ -1363,7 +1363,7 @@
                           "leftColumn": 0,
                           "children": [
                             {
-                              "widgetName": "Select1Copy",
+                              "widgetName": "manufacturer",
                               "isFilterable": true,
                               "displayName": "Select",
                               "iconSVG": "/static/media/icon.bd99caba.svg",
@@ -1531,7 +1531,7 @@
                               "isLoading": false
                             },
                             {
-                              "widgetName": "Select4",
+                              "widgetName": "fps",
                               "isFilterable": true,
                               "displayName": "Select",
                               "iconSVG": "/static/media/icon.bd99caba.svg",
@@ -1901,10 +1901,8 @@
           "MainContainer",
           "Modify_camera",
           "Select1",
-          "Select1Copy",
           "Select2",
           "Select3",
-          "Select4",
           "Table1",
           "Text1",
           "Text2",
@@ -1918,7 +1916,9 @@
           "area",
           "area_modify_one",
           "camera_type",
+          "fps",
           "ir_enabled",
+          "manufacturer",
           "model",
           "process_type",
           "resolution",
