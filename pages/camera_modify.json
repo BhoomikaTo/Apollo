@@ -1244,7 +1244,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton2Copy",
-                              "onClick": "{{resetWidget(\"Form1\",true)}}",
+                              "onClick": "{{closeModal('Modify_camera')}}",
                               "buttonColor": "#92BC4C",
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
