@@ -439,7 +439,7 @@
                       "dynamicTriggerPathList": [],
                       "leftColumn": 4,
                       "dynamicBindingPathList": [],
-                      "options": "[\n  {\n    1\n  },\n  {\n    \"label\": \"1080x720\",\n    \"value\": \"1080x720\"\n  },\n  {\n    \"label\": \"1280X720\",\n    \"value\": \"1280X720\"\n  },\n\t{\n    \"label\": \"1920×1080\",\n    \"value\": \"1920×1080\"\n  },\n\t{\n    \"label\": \"2560×1440\",\n    \"value\": \"2560×1440\"\n  },\n\t{\n    \"label\": \"2560×1920\",\n    \"value\": \"2560×1920\"\n  },\n\t{\n    \"label\": \"3840x2160\",\n    \"value\": \"3840x2160\"\n  }\n]",
+                      "options": "[\n  {\n    \"label\": \"960x480\",\n    \"value\": \"960x480\"\n  },\n  {\n    \"label\": \"1080x720\",\n    \"value\": \"1080x720\"\n  },\n  {\n    \"label\": \"1280X720\",\n    \"value\": \"1280X720\"\n  },\n\t{\n    \"label\": \"1920×1080\",\n    \"value\": \"1920×1080\"\n  },\n\t{\n    \"label\": \"2560×1440\",\n    \"value\": \"2560×1440\"\n  },\n\t{\n    \"label\": \"2560×1920\",\n    \"value\": \"2560×1920\"\n  },\n\t{\n    \"label\": \"3840x2160\",\n    \"value\": \"3840x2160\"\n  }\n]",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "zy50x53cg7",

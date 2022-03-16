@@ -605,7 +605,8 @@
                 "created_date": 159,
                 "edited_by": 86,
                 "edited_date": 157,
-                "customColumn1": 101.40625
+                "customColumn1": 101.40625,
+                "rtsp_url": 1019
               }
             },
             {
@@ -1548,7 +1549,7 @@
                               "dynamicTriggerPathList": [],
                               "leftColumn": 34,
                               "dynamicBindingPathList": [],
-                              "options": "",
+                              "options": "[\n  {\n    \"label\": \"0\",\n    \"value\": \"0\"\n  },\n  {\n    \"label\": \"1\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"2\",\n    \"value\": \"2\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
@@ -1579,7 +1580,7 @@
                               "dynamicTriggerPathList": [],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [],
-                              "options": "[\n  {\n    1\n  },\n  {\n    \"label\": \"1080x720\",\n    \"value\": \"1080x720\"\n  },\n  {\n    \"label\": \"1280X720\",\n    \"value\": \"1280X720\"\n  },\n\t{\n    \"label\": \"1920×1080\",\n    \"value\": \"1920×1080\"\n  },\n\t{\n    \"label\": \"2560×1440\",\n    \"value\": \"2560×1440\"\n  },\n\t{\n    \"label\": \"2560×1920\",\n    \"value\": \"2560×1920\"\n  },\n\t{\n    \"label\": \"3840x2160\",\n    \"value\": \"3840x2160\"\n  }\n]",
+                              "options": "[\n  {\n    \"label\": \"960x480\",\n    \"value\": \"960x480\"\n  },\n  {\n    \"label\": \"1080x720\",\n    \"value\": \"1080x720\"\n  },\n  {\n    \"label\": \"1280X720\",\n    \"value\": \"1280X720\"\n  },\n\t{\n    \"label\": \"1920×1080\",\n    \"value\": \"1920×1080\"\n  },\n\t{\n    \"label\": \"2560×1440\",\n    \"value\": \"2560×1440\"\n  },\n\t{\n    \"label\": \"2560×1920\",\n    \"value\": \"2560×1920\"\n  },\n\t{\n    \"label\": \"3840x2160\",\n    \"value\": \"3840x2160\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
@@ -1717,7 +1718,7 @@
                               "inputType": "TEXT",
                               "isDisabled": false,
                               "key": "fdgvc5k0x8",
-                              "validation": "{{Input2.text.length > 2}}",
+                              "validation": "{{model.text.length > 2}}",
                               "isRequired": true,
                               "rightColumn": 64,
                               "widgetId": "f2dj0jb5di",
