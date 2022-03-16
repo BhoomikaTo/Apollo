@@ -342,7 +342,7 @@
                           "key": "options"
                         }
                       ],
-                      "options": "{{areaquery.data.map(c => ({label: c.area_name, value: c.area_name}))}}",
+                      "options": "{{areaquery.data.map(c => ({label: c.area_name, value: c.area_id}))}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "zy50x53cg7",
