@@ -163,6 +163,7 @@
                 "ir_enabled",
                 "fps",
                 "process_type",
+                "rtsp_url",
                 "customColumn1"
               ],
               "isVisibleDownload": true,
@@ -231,6 +232,9 @@
                 },
                 {
                   "key": "primaryColumns.process_type.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rtsp_url.computedValue"
                 }
               ],
               "leftColumn": 5,
@@ -461,6 +465,23 @@
                   "isDerived": false,
                   "label": "process_type",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.process_type))}}"
+                },
+                "rtsp_url": {
+                  "index": 12,
+                  "width": 150,
+                  "id": "rtsp_url",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "rtsp_url",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.rtsp_url))}}"
                 }
               },
               "delimiter": ",",
@@ -1621,6 +1642,8 @@
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
+                              "maxChars": "200",
+                              "placeholderText": "",
                               "isDisabled": false,
                               "key": "fdgvc5k0x8",
                               "validation": "{{!rtsp.data.map(function dictToarr(index){return index.rtsp_url}).includes(rtsp_url.text)}}",
@@ -1742,6 +1765,11 @@
                             },
                             {
                               "widgetName": "Text8",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontStyle"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 0,
@@ -1760,13 +1788,13 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "#FFC13D",
-                              "text": "Camera - {{Table1.selectedRow.camera_id}}",
+                              "text": "Camera - {{Table1.selectedRow.camera_id}}                      ",
                               "key": "7a0x5egk6g",
                               "rightColumn": 35,
                               "textAlign": "LEFT",
                               "widgetId": "zf4unapyry",
                               "isVisible": true,
-                              "fontStyle": "BOLD",
+                              "fontStyle": "BOLD UNDERLINE",
                               "textColor": "#231F20",
                               "shouldScroll": false,
                               "version": 1,
