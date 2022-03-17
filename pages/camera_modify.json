@@ -156,8 +156,13 @@
                 "manufacturer",
                 "model",
                 "status",
-                "created_by",
                 "created_date",
+                "created_by",
+                "camera_type",
+                "resolution",
+                "ir_enabled",
+                "fps",
+                "process_type",
                 "customColumn1"
               ],
               "isVisibleDownload": true,
@@ -211,6 +216,21 @@
                 },
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.camera_type.computedValue"
+                },
+                {
+                  "key": "primaryColumns.resolution.computedValue"
+                },
+                {
+                  "key": "primaryColumns.ir_enabled.computedValue"
+                },
+                {
+                  "key": "primaryColumns.fps.computedValue"
+                },
+                {
+                  "key": "primaryColumns.process_type.computedValue"
                 }
               ],
               "leftColumn": 5,
@@ -356,6 +376,91 @@
                   "isDerived": false,
                   "label": "Area_name",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.area_name))}}"
+                },
+                "camera_type": {
+                  "index": 7,
+                  "width": 150,
+                  "id": "camera_type",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "camera_type",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.camera_type))}}"
+                },
+                "resolution": {
+                  "index": 8,
+                  "width": 150,
+                  "id": "resolution",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "resolution",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.resolution))}}"
+                },
+                "ir_enabled": {
+                  "index": 9,
+                  "width": 150,
+                  "id": "ir_enabled",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "ir_enabled",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.ir_enabled))}}"
+                },
+                "fps": {
+                  "index": 10,
+                  "width": 150,
+                  "id": "fps",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "fps",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.fps))}}"
+                },
+                "process_type": {
+                  "index": 11,
+                  "width": 150,
+                  "id": "process_type",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "process_type",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.process_type))}}"
                 }
               },
               "delimiter": ",",
@@ -1184,12 +1289,16 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "",
+                              "defaultOptionValue": "{{Table1.selectedRow.manufacturer}}",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 34,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
                               "options": "[\n  {\n    \"label\": \"Hikvision\",\n    \"value\": \"Hikvision\"\n  },\n  {\n    \"label\": \"Axis\",\n    \"value\": \"Axis\"\n  },\n  {\n    \"label\": \"Dahua\",\n    \"value\": \"Dahua\"\n  },\n\t{\n    \"label\": \"Hanwha Techwin\",\n    \"value\": \"Hanwha Techwin\"\n  },\n\t{\n    \"label\": \"Bosch\",\n    \"value\": \"Bosch\"\n  },\n\t{\n    \"label\": \"Mobotix\",\n    \"value\": \"Mobotix\"\n  },\n\t{\n    \"label\": \"Sony\",\n    \"value\": \"Sony\"\n  },\n\t{\n    \"label\": \"Vivotek\",\n    \"value\": \"Vivotek\"\n  },\n\t{\n    \"label\": \"Schneider Electric\",\n    \"value\": \"Schneider Electric\"\n  },\n\t{\n    \"label\": \"Panasonic\",\n    \"value\": \"Panasonic\"\n  },\n\t{\n    \"label\": \"Avigilon\",\n    \"value\": \"Avigilon\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -1286,7 +1395,7 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "",
+                              "defaultOptionValue": "{{Table1.selectedRow.area_name}}",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
                               "dynamicTriggerPathList": [],
@@ -1294,6 +1403,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "options"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
                                 }
                               ],
                               "options": "{{AreaName.data.map(c => ({label: c.area_name, value: c.area_id}))}}",
@@ -1321,7 +1433,7 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "{{Table1.selectedRow.}}",
+                              "defaultOptionValue": "{{Table1.selectedRow.camera_type}}",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
                               "dynamicTriggerPathList": [],
@@ -1356,12 +1468,16 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "",
+                              "defaultOptionValue": "{{Table1.selectedRow.fps}}",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 34,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
                               "options": "[\n  {\n    \"label\": \"0\",\n    \"value\": \"0\"\n  },\n  {\n    \"label\": \"1\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"2\",\n    \"value\": \"2\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -1387,12 +1503,16 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "",
+                              "defaultOptionValue": "{{Table1.selectedRow.resolution}}",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 0,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
                               "options": "[\n  {\n    \"label\": \"960x480\",\n    \"value\": \"960x480\"\n  },\n  {\n    \"label\": \"1080x720\",\n    \"value\": \"1080x720\"\n  },\n  {\n    \"label\": \"1280X720\",\n    \"value\": \"1280X720\"\n  },\n\t{\n    \"label\": \"1920×1080\",\n    \"value\": \"1920×1080\"\n  },\n\t{\n    \"label\": \"2560×1440\",\n    \"value\": \"2560×1440\"\n  },\n\t{\n    \"label\": \"2560×1920\",\n    \"value\": \"2560×1920\"\n  },\n\t{\n    \"label\": \"3840x2160\",\n    \"value\": \"3840x2160\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -1418,12 +1538,16 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "",
+                              "defaultOptionValue": "{{Table1.selectedRow.ir_enabled}}",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 0,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
                               "options": "[\n  {\n    \"label\": \"Yes\",\n    \"value\": \"Yes\"\n  },\n  {\n    \"label\": \"No\",\n    \"value\": \"No\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -1449,12 +1573,16 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "",
+                              "defaultOptionValue": "{{Table1.selectedRow.process_type}}",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 34,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
                               "options": "[\n  {\n    \"label\": \"RTSP\",\n    \"value\": \"RTSP\"\n  },\n  {\n    \"label\": \"FILE OR EDGE\",\n    \"value\": \"FILE OR EDGE\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -1486,6 +1614,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "validation"
+                                },
+                                {
+                                  "key": "defaultText"
                                 }
                               ],
                               "labelStyle": "",
@@ -1504,7 +1635,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "iconAlign": "left",
-                              "defaultText": ""
+                              "defaultText": "{{Table1.selectedRow.rtsp_url}}"
                             },
                             {
                               "widgetName": "model",
@@ -1525,6 +1656,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "validation"
+                                },
+                                {
+                                  "key": "defaultText"
                                 }
                               ],
                               "labelStyle": "",
@@ -1542,7 +1676,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "iconAlign": "left",
-                              "defaultText": ""
+                              "defaultText": "{{Table1.selectedRow.model}}"
                             },
                             {
                               "widgetName": "Text2Copy",
