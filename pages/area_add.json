@@ -188,7 +188,7 @@
                     {
                       "resetFormOnClick": true,
                       "widgetName": "FormButton1",
-                      "onClick": "{{Create.run(() => showAlert('Area created Successfully','success'), () => showAlert('Failed to create Area','error'))}}",
+                      "onClick": "{{Create.run(() => navigateTo('area_view_all', {}), () => showAlert('Failed to create Area','error'))}}",
                       "buttonColor": "#93BC4D",
                       "displayName": "FormButton",
                       "iconSVG": "/static/media/icon.c8f649ed.svg",
