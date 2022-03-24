@@ -805,7 +805,7 @@
                   "children": [
                     {
                       "widgetName": "Text12Copy",
-                      "borderColor": "#888888",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 35,
@@ -1253,7 +1253,7 @@
                     },
                     {
                       "widgetName": "Text12",
-                      "borderColor": "#888888",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 9,
@@ -1290,7 +1290,7 @@
                     },
                     {
                       "widgetName": "Text13",
-                      "borderColor": "#888888",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 9,
@@ -1327,7 +1327,7 @@
                     },
                     {
                       "widgetName": "Text14",
-                      "borderColor": "#888888",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 17,
@@ -1364,7 +1364,7 @@
                     },
                     {
                       "widgetName": "Text15",
-                      "borderColor": "#888888",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 26,
@@ -1401,7 +1401,7 @@
                     },
                     {
                       "widgetName": "Text16",
-                      "borderColor": "#888888",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 17,
@@ -1438,7 +1438,7 @@
                     },
                     {
                       "widgetName": "Text17",
-                      "borderColor": "#888888",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 26,
@@ -1475,7 +1475,7 @@
                     },
                     {
                       "widgetName": "Text18",
-                      "borderColor": "#888888",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 35,
@@ -1512,7 +1512,7 @@
                     },
                     {
                       "widgetName": "Text19",
-                      "borderColor": "#888888",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 44,
@@ -1580,7 +1580,7 @@
                     },
                     {
                       "widgetName": "Text21",
-                      "borderColor": "#888888",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 49,
