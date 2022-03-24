@@ -413,9 +413,9 @@
               "searchKey": "",
               "enableClientSideSearch": false,
               "version": 3,
-              "totalRecordsCount": "6",
+              "totalRecordsCount": "",
               "parentId": "0",
-              "serverSidePaginationEnabled": true,
+              "serverSidePaginationEnabled": false,
               "renderMode": "CANVAS",
               "isLoading": false,
               "horizontalAlignment": "LEFT",
@@ -1121,8 +1121,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Select1.selectedOptionValue",
-                "(Table1.pageNo - 1) * Table1.pageSize",
-                "Table1.pageSize",
                 "Select2.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
