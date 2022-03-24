@@ -1444,6 +1444,7 @@
                     },
                     {
                       "widgetName": "Button3Copy8CopyCopy1",
+                      "onClick": "{{navigateTo('camera_modify', {})}}",
                       "buttonColor": "#FFFFFF",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
@@ -1455,7 +1456,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 4.49951171875,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 45,
                       "dynamicBindingPathList": [],
                       "text": "Modify",
@@ -1475,6 +1480,7 @@
                     },
                     {
                       "widgetName": "Button1Copy8CopyCopy1",
+                      "onClick": "{{navigateTo('camera_add', {})}}",
                       "buttonColor": "#FFFFFF",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
@@ -1486,7 +1492,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 4.49951171875,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 15,
                       "dynamicBindingPathList": [],
                       "text": "Add",
@@ -1507,7 +1517,7 @@
                     },
                     {
                       "widgetName": "Button2Copy8CopyCopy2",
-                      "onClick": "{{navigateTo('area_view_all', {})}}",
+                      "onClick": "{{navigateTo('camera_view', {})}}",
                       "buttonColor": "#FFFFFF",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
@@ -1663,6 +1673,7 @@
                     },
                     {
                       "widgetName": "Button3Copy8CopyCopy",
+                      "onClick": "{{navigateTo('area_modify_view_all', {})}}",
                       "buttonColor": "#FFFFFF",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
@@ -1674,7 +1685,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 4.49951171875,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 45,
                       "dynamicBindingPathList": [],
                       "text": "Modify",
@@ -1694,7 +1709,9 @@
                     },
                     {
                       "widgetName": "Button1Copy8CopyCopy",
+                      "onClick": "{{navigateTo('area_add', {})}}",
                       "buttonColor": "#FFFFFF",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
                       "topRow": 4,
@@ -1705,7 +1722,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 4.49951171875,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 15,
                       "dynamicBindingPathList": [],
                       "text": "Add",
@@ -1775,7 +1796,7 @@
                       "imageShape": "RECTANGLE",
                       "leftColumn": 0,
                       "dynamicBindingPathList": [],
-                      "defaultImage": "https://apollo-echol.s3.ap-southeast-1.amazonaws.com/Icons_appsmith/area+2-01.jpg",
+                      "defaultImage": "https://apollo-echol.s3.ap-southeast-1.amazonaws.com/Icons_appsmith/area+(1).jpg",
                       "key": "54a564kip6",
                       "image": "",
                       "rightColumn": 14,
@@ -2081,7 +2102,7 @@
                       "imageShape": "RECTANGLE",
                       "leftColumn": 0,
                       "dynamicBindingPathList": [],
-                      "defaultImage": "https://apollo-echol.s3.ap-southeast-1.amazonaws.com/logo/increased+logo-01.png",
+                      "defaultImage": "https://apollo-echol.s3.ap-southeast-1.amazonaws.com/logo/logo+green+background-01.jpg",
                       "key": "54a564kip6",
                       "image": "",
                       "rightColumn": 7,
