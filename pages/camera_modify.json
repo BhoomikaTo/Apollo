@@ -164,6 +164,9 @@
                 "fps",
                 "process_type",
                 "rtsp_url",
+                "area_id",
+                "description",
+                "area_description",
                 "customColumn1"
               ],
               "isVisibleDownload": true,
@@ -235,6 +238,15 @@
                 },
                 {
                   "key": "primaryColumns.rtsp_url.computedValue"
+                },
+                {
+                  "key": "primaryColumns.area_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.description.computedValue"
+                },
+                {
+                  "key": "primaryColumns.area_description.computedValue"
                 }
               ],
               "leftColumn": 5,
@@ -482,6 +494,57 @@
                   "isDerived": false,
                   "label": "rtsp_url",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.rtsp_url))}}"
+                },
+                "area_id": {
+                  "index": 13,
+                  "width": 150,
+                  "id": "area_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "area_id",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.area_id))}}"
+                },
+                "description": {
+                  "index": 14,
+                  "width": 150,
+                  "id": "description",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "description",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.description))}}"
+                },
+                "area_description": {
+                  "index": 15,
+                  "width": 150,
+                  "id": "area_description",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "area_description",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.area_description))}}"
                 }
               },
               "delimiter": ",",
