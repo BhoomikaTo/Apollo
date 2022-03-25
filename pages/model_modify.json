@@ -199,7 +199,8 @@
                 "created_by",
                 "created_date",
                 "edited_by",
-                "edited_date"
+                "edited_date",
+                "customColumn1"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [],
@@ -217,6 +218,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "onRowSelected"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.onClick"
                 }
               ],
               "dynamicBindingPathList": [
@@ -273,6 +277,12 @@
                 },
                 {
                   "key": "primaryColumns.edited_date.computedValue"
+                },
+                {
+                  "key": "derivedColumns.customColumn1.buttonLabel"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.buttonLabel"
                 }
               ],
               "leftColumn": 5,
@@ -567,12 +577,55 @@
                   "isDerived": false,
                   "label": "edited_date",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.edited_date))}}"
+                },
+                "customColumn1": {
+                  "index": 17,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "columnType": "button",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "buttonLabelColor": "#FFFFFF",
+                  "buttonColor": "#92BC4C",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF",
+                  "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Modify'))}}",
+                  "onClick": "{{showModal('Modal1')}}"
                 }
               },
               "delimiter": ",",
               "onRowSelected": "{{showModal('Modal1')}}",
               "key": "ujy2cn5qkr",
-              "derivedColumns": {},
+              "derivedColumns": {
+                "customColumn1": {
+                  "index": 17,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "columnType": "button",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "buttonLabelColor": "#FFFFFF",
+                  "buttonColor": "#92BC4C",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF",
+                  "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Modify'))}}",
+                  "onClick": "{{showModal('Modal1')}}"
+                }
+              },
               "rightColumn": 63,
               "textSize": "PARAGRAPH",
               "widgetId": "ss04bfvfxw",
