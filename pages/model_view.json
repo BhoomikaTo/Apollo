@@ -818,7 +818,7 @@
                   "hideCard": true,
                   "parentId": "vnxnhza2ce",
                   "shouldScrollContents": false,
-                  "minHeight": 686,
+                  "minHeight": 396,
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "parentColumnSpace": 1,
@@ -1747,7 +1747,7 @@
                 }
               ],
               "key": "yzjl0jwxlu",
-              "height": 686,
+              "height": 396,
               "rightColumn": 0,
               "detachFromLayout": true,
               "widgetId": "vnxnhza2ce",
