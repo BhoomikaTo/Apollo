@@ -256,7 +256,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
               "topRow": 17,
-              "bottomRow": 75,
+              "bottomRow": 79,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -265,7 +265,11 @@
               "parentColumnSpace": 11.40625,
               "dynamicTriggerPathList": [],
               "leftColumn": 10,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultTab"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
@@ -328,13 +332,9 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy",
-                              "onClick": "{{update.run(() => navigateTo('camera_view', {}), () => showAlert('Failed to submit data','error'))}}",
+                              "onClick": "{{storeValue('tab','Tab 2')}}",
                               "buttonColor": "#92BC4C",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
                               "topRow": 48,
@@ -567,7 +567,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 34,
                               "dynamicBindingPathList": [],
@@ -578,6 +582,7 @@
                               "key": "fdgvc5k0x8",
                               "validation": "",
                               "isRequired": true,
+                              "onTextChanged": "{{storeValue('B',Input2Copy.text)}}",
                               "rightColumn": 60,
                               "widgetId": "rrd9589xmu",
                               "errorMessage": "Only Integer Values allowed",
@@ -697,7 +702,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 7.35107421875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 4,
                               "dynamicBindingPathList": [
@@ -709,8 +718,9 @@
                               "inputType": "TEXT",
                               "isDisabled": false,
                               "key": "8kh6seqtr9",
-                              "validation": "{{!modelnames.data.map(function dictToarr(index){return index.model_name}).includes(Input3.text)}}",
+                              "validation": "{{!modelnames.data.map(function dictToarr(index){return index.model_name}).includes(Input3Copy.text)}}",
                               "isRequired": true,
+                              "onTextChanged": "{{storeValue('A',Input3Copy.text)}}",
                               "rightColumn": 30,
                               "widgetId": "zwepwtvy49",
                               "errorMessage": "Model name cannot be duplicate",
@@ -720,7 +730,7 @@
                               "parentId": "xrt19terai",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "regex": "^[A-Za-z0-9-_.]{3,50}$",
+                              "regex": "^[A-Za-z0-9-/s]{3,50}$",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
@@ -749,7 +759,7 @@
                               "maxChars": "20",
                               "isDisabled": false,
                               "key": "8kh6seqtr9",
-                              "validation": "{{Input4.text.length < 21}}",
+                              "validation": "{{Input4Copy.text.length < 21}}",
                               "isRequired": false,
                               "rightColumn": 60,
                               "widgetId": "ne0ikzxw1v",
@@ -937,13 +947,9 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{update.run(() => navigateTo('camera_view', {}), () => showAlert('Failed to submit data','error'))}}",
+                              "onClick": "{{updatemodel.run(() => storeValue('tab','Tab 1'), () => {})}}",
                               "buttonColor": "#92BC4C",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
                               "topRow": 48,
@@ -1116,20 +1122,16 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 4,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "validation"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": false,
                               "key": "8kh6seqtr9",
-                              "validation": "{{!modelnames.data.map(function dictToarr(index){return index.model_name}).includes(Input3.text)}}",
+                              "validation": "",
                               "isRequired": true,
                               "rightColumn": 30,
                               "widgetId": "m4s6ckvz5p",
-                              "errorMessage": "Model name cannot be duplicate",
+                              "errorMessage": "",
                               "isVisible": true,
                               "label": "",
                               "version": 2,
@@ -1155,21 +1157,17 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 34,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "validation"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "maxChars": "20",
                               "isDisabled": false,
                               "key": "8kh6seqtr9",
-                              "validation": "{{Input4.text.length < 21}}",
+                              "validation": "",
                               "isRequired": true,
                               "rightColumn": 60,
                               "widgetId": "h2r1j1gw2i",
-                              "errorMessage": "Maximum 20 characters allowed",
+                              "errorMessage": "",
                               "isVisible": true,
                               "label": "",
                               "version": 2,
@@ -1427,7 +1425,13 @@
                             },
                             {
                               "widgetName": "Button2",
+                              "onClick": "{{g-recaptcha-response}}",
                               "buttonColor": "#03B365",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca02633.svg",
                               "topRow": 40,
@@ -1437,7 +1441,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 6.923713684082031,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 34,
                               "dynamicBindingPathList": [],
                               "googleRecaptchaKey": "6LetUhMfAAAAAM-cte8NCLLoaKCuldXv6MI40Dgc",
@@ -1479,7 +1487,7 @@
               "key": "7g0wvfm2mu",
               "rightColumn": 53,
               "widgetId": "tv984ych99",
-              "defaultTab": "Tab 1",
+              "defaultTab": "{{appsmith.store.tab}}",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
