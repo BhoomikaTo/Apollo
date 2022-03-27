@@ -411,21 +411,26 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "options": "[\n  {\n    \"label\": \"Compliance\",\n    \"value\": \"Compliance\"\n  },\n \n  {\n    \"label\": \"Non Compliance\",\n    \"value\": \"Non Compliance\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
-                              "isRequired": true,
+                              "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "5ekni8sv4g",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "xrt19terai",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "onOptionChange": "{{storeValue('C',Select3Copy.selectedOptionValue)}}"
                             },
                             {
                               "widgetName": "Select4Copy",
@@ -442,21 +447,26 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
                               "leftColumn": 34,
                               "dynamicBindingPathList": [],
                               "options": "[\n  {\n    \"label\": \"YOLOv3\",\n    \"value\": \"YOLOv3\"\n  },\n  {\n    \"label\": \"ImageNet\",\n    \"value\": \"ImageNet\"\n  },\n\t{\n    \"label\": \"Inceptionv3\",\n    \"value\": \"Inceptionv3\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
-                              "isRequired": true,
+                              "isRequired": false,
                               "rightColumn": 60,
                               "widgetId": "mqxp3seovm",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "xrt19terai",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "onOptionChange": "{{storeValue('D',Select4Copy.selectedOptionValue)}}"
                             },
                             {
                               "widgetName": "Select5Copy",
@@ -473,21 +483,26 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "options": "[\n  {\n    \"label\": \"Pytorch\",\n    \"value\": \"Pytorch\"\n  },\n\t{\n    \"label\": \"Tensor flow\",\n    \"value\": \"Tensor flow\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
-                              "isRequired": true,
+                              "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "xxznq51wp9",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "xrt19terai",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "onOptionChange": "{{storeValue('E',Select5Copy.selectedOptionValue)}}"
                             },
                             {
                               "widgetName": "Select6Copy",
@@ -504,21 +519,26 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "options": "[\n  {\n    \"label\": \"Local\",\n    \"value\": \"Local\"\n  },\n  {\n    \"label\": \"Cloud_S3\",\n    \"value\": \"Cloud_S3\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
-                              "isRequired": true,
+                              "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "5dkqt8vjju",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "xrt19terai",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "onOptionChange": "{{storeValue('G',Select6Copy.selectedOptionValue)}}"
                             },
                             {
                               "widgetName": "Input1Copy",
@@ -532,7 +552,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
@@ -542,6 +566,7 @@
                               "key": "fdgvc5k0x8",
                               "validation": "",
                               "isRequired": true,
+                              "onTextChanged": "{{storeValue('H',Input1Copy)}}",
                               "rightColumn": 30,
                               "widgetId": "17jg51bsin",
                               "errorMessage": "",
@@ -730,7 +755,7 @@
                               "parentId": "xrt19terai",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "regex": "^[A-Za-z0-9-/s]{3,50}$",
+                              "regex": "^[A-Za-z0-9-\\s]{3,50}$",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
@@ -746,7 +771,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 7.35107421875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 34,
                               "dynamicBindingPathList": [
@@ -761,6 +790,7 @@
                               "key": "8kh6seqtr9",
                               "validation": "{{Input4Copy.text.length < 21}}",
                               "isRequired": false,
+                              "onTextChanged": "{{storeValue('F',Input4Copy.text)}}",
                               "rightColumn": 60,
                               "widgetId": "ne0ikzxw1v",
                               "errorMessage": "Maximum 20 characters allowed",
@@ -770,6 +800,7 @@
                               "parentId": "xrt19terai",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "regex": "^[A-Za-z0-9-\\s]{1,20}$",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
@@ -785,7 +816,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 7.35107421875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 35,
                               "dynamicBindingPathList": [],
@@ -794,6 +829,7 @@
                               "isDisabled": false,
                               "key": "8kh6seqtr9",
                               "isRequired": true,
+                              "onTextChanged": "{{storeValue('I',Input5Copy.text)}}",
                               "rightColumn": 60,
                               "widgetId": "wq33x7zlvr",
                               "isVisible": true,
@@ -1119,16 +1155,25 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 7.35107421875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 4,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": false,
                               "key": "8kh6seqtr9",
                               "validation": "",
                               "isRequired": true,
+                              "onTextChanged": "",
                               "rightColumn": 30,
                               "widgetId": "m4s6ckvz5p",
                               "errorMessage": "",
@@ -1140,7 +1185,7 @@
                               "isLoading": false,
                               "regex": "^[A-Za-z0-9-_.]{3,50}$",
                               "iconAlign": "left",
-                              "defaultText": ""
+                              "defaultText": "{{appsmith.store.G}}"
                             },
                             {
                               "widgetName": "Input4Copy1",
