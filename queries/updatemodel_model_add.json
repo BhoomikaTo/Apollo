@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO model_master\n\t(model_name, version, model_type, framework, framework_version, base_algorithm, file_location, primary_file_loc, primary_file_name, secondary_file_loc, secondary_file_name, status, created_by)\n\tVALUES\n  (\n\t\t{{appsmith.store.A}},\n\t\t{{appsmith.store.B}},\n\t\t{{appsmith.store.}},\n\t\t{{appsmith.store.}},\n\t\t{{appsmith.store.}},\n\t\t{{appsmith.store.}},\n\t\t{{appsmith.store.}},\n\t\t{{appsmith.store.}},\n\t\t\n"
+      "body": "INSERT INTO model_master\n\t(model_name, version, model_type, framework, framework_version, base_algorithm, file_location, primary_file_loc, primary_file_name, secondary_file_loc, secondary_file_name, status, created_by)\nVALUES\n  (\n\t\t{{appsmith.store.A}},\n\t\t{{appsmith.store.B}},\n\t\t{{appsmith.store.C}},\n\t\t{{appsmith.store.E}},\n\t\t{{appsmith.store.F}},\n\t\t{{appsmith.store.D}},\n\t\t{{appsmith.store.G}},\n\t\t{{appsmith.store.I}},\n\t\t{{appsmith.store.H}},\n\t\t{{appsmith.store.K}},\n\t\t{{appsmith.store.J}},\n\t\t{{appsmith.store.L}},\n\t\t{{appsmith.user.username}}\n\t);\n"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -29,9 +29,19 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.",
       "appsmith.store.A",
-      "appsmith.store.B"
+      "appsmith.store.B",
+      "appsmith.store.C",
+      "appsmith.store.D",
+      "appsmith.store.E",
+      "appsmith.store.F",
+      "appsmith.store.G",
+      "appsmith.store.H",
+      "appsmith.store.I",
+      "appsmith.store.J",
+      "appsmith.store.K",
+      "appsmith.store.L",
+      "appsmith.user.username"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
