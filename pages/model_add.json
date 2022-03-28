@@ -276,7 +276,7 @@
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 580,
+                  "bottomRow": 560,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -294,8 +294,8 @@
                       "displayName": "Form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
                       "widgetId": "xjykhegpl5",
-                      "topRow": 1,
-                      "bottomRow": 56,
+                      "topRow": 0,
+                      "bottomRow": 54,
                       "parentRowSpace": 10,
                       "isVisible": true,
                       "type": "FORM_WIDGET",
@@ -422,7 +422,7 @@
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
-                              "isRequired": false,
+                              "isRequired": true,
                               "rightColumn": 30,
                               "widgetId": "5ekni8sv4g",
                               "isVisible": true,
@@ -458,7 +458,7 @@
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
-                              "isRequired": false,
+                              "isRequired": true,
                               "rightColumn": 60,
                               "widgetId": "mqxp3seovm",
                               "isVisible": true,
@@ -494,7 +494,7 @@
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
-                              "isRequired": false,
+                              "isRequired": true,
                               "rightColumn": 30,
                               "widgetId": "xxznq51wp9",
                               "isVisible": true,
@@ -530,7 +530,7 @@
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "zy50x53cg7",
-                              "isRequired": false,
+                              "isRequired": true,
                               "rightColumn": 30,
                               "widgetId": "5dkqt8vjju",
                               "isVisible": true,
@@ -721,6 +721,7 @@
                               "iconSVG": "/static/media/icon.9f505595.svg",
                               "topRow": 7,
                               "bottomRow": 11,
+                              "tooltip": "",
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "type": "INPUT_WIDGET_V2",
@@ -748,7 +749,7 @@
                               "onTextChanged": "{{storeValue('A',Input3Copy.text)}}",
                               "rightColumn": 30,
                               "widgetId": "zwepwtvy49",
-                              "errorMessage": "Model name cannot be duplicate",
+                              "errorMessage": "Model name cannot be duplicate and contain more than 3 character",
                               "isVisible": true,
                               "label": "",
                               "version": 2,
@@ -1059,7 +1060,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 9.84619140625,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
@@ -1069,6 +1074,7 @@
                               "key": "fdgvc5k0x8",
                               "validation": "",
                               "isRequired": true,
+                              "onTextChanged": "{{storeValue('J',Input1Copy1.text)}}",
                               "rightColumn": 30,
                               "widgetId": "28ppscb6gv",
                               "errorMessage": "",
@@ -1155,7 +1161,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 7.35107421875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 35,
                               "dynamicBindingPathList": [],
@@ -1166,6 +1176,7 @@
                               "key": "8kh6seqtr9",
                               "validation": "",
                               "isRequired": true,
+                              "onTextChanged": "{{storeValue('K',Input4Copy1.text)}}",
                               "rightColumn": 61,
                               "widgetId": "h2r1j1gw2i",
                               "errorMessage": "",
@@ -1283,12 +1294,17 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 6.923713684082031,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onChange"
+                                }
+                              ],
                               "leftColumn": 35,
                               "dynamicBindingPathList": [],
                               "isDisabled": false,
                               "key": "ryomy43e8g",
                               "rightColumn": 49,
+                              "onChange": "{{storeValue('L',Switch1.isSwitchedOn)}}",
                               "widgetId": "7isg4dgso1",
                               "isVisible": true,
                               "label": "Inactive",
@@ -1363,7 +1379,7 @@
                             {
                               "widgetName": "Button2",
                               "onClick": "",
-                              "buttonColor": "#03B365",
+                              "buttonColor": "#92BC4C",
                               "dynamicPropertyPathList": [],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca02633.svg",
@@ -1399,6 +1415,7 @@
                             },
                             {
                               "widgetName": "Text12",
+                              "borderColor": "#F6F7F8",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 4,
@@ -1408,16 +1425,23 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 6.923713684082031,
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 4,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "text"
+                                }
+                              ],
                               "shouldTruncate": false,
+                              "borderWidth": "1",
                               "truncateButtonColor": "#FFC13D",
-                              "text": "Label",
+                              "text": "{{appsmith.store.G}}",
                               "key": "hzqhk00gwt",
-                              "rightColumn": 27,
+                              "rightColumn": 30,
                               "textAlign": "LEFT",
                               "widgetId": "jf3fzs6yo5",
                               "isVisible": true,
-                              "fontStyle": "BOLD",
+                              "fontStyle": "",
                               "textColor": "#231F20",
                               "shouldScroll": false,
                               "version": 1,
@@ -1428,6 +1452,7 @@
                             },
                             {
                               "widgetName": "Text13",
+                              "borderColor": "#F6F7F8",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 13,
@@ -1437,16 +1462,23 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 6.923713684082031,
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 4,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "text"
+                                }
+                              ],
                               "shouldTruncate": false,
+                              "borderWidth": "1",
                               "truncateButtonColor": "#FFC13D",
-                              "text": "Label",
+                              "text": "{{appsmith.store.H}}",
                               "key": "hzqhk00gwt",
-                              "rightColumn": 27,
+                              "rightColumn": 30,
                               "textAlign": "LEFT",
                               "widgetId": "p25e3pxkal",
                               "isVisible": true,
-                              "fontStyle": "BOLD",
+                              "fontStyle": "",
                               "textColor": "#231F20",
                               "shouldScroll": false,
                               "version": 1,
@@ -1457,6 +1489,7 @@
                             },
                             {
                               "widgetName": "Text14",
+                              "borderColor": "#F6F7F8",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 13,
@@ -1466,12 +1499,20 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 6.923713684082031,
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 35,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "text"
+                                }
+                              ],
                               "shouldTruncate": false,
+                              "borderWidth": "1",
                               "truncateButtonColor": "#FFC13D",
-                              "text": "Label",
+                              "text": "{{appsmith.store.I}}",
                               "key": "hzqhk00gwt",
-                              "rightColumn": 51,
+                              "rightColumn": 61,
+                              "backgroundColor": "",
                               "textAlign": "LEFT",
                               "widgetId": "d5xt2rs5ox",
                               "isVisible": true,
@@ -1603,7 +1644,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "policies": [],

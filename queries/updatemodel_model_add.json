@@ -17,14 +17,22 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO model_master\n\t(model_id, model_name, version, model_type, framework, framework_version, base_algorithm, file_location, primary_file_loc, primary_file_name, secondary_file_loc, secondary_file_name, status, created_by)\n\tVALUES\n  (\n\t\t\n"
+      "body": "INSERT INTO model_master\n\t(model_name, version, model_type, framework, framework_version, base_algorithm, file_location, primary_file_loc, primary_file_name, secondary_file_loc, secondary_file_name, status, created_by)\n\tVALUES\n  (\n\t\t{{appsmith.store.A}},\n\t\t{{appsmith.store.B}},\n\t\t{{appsmith.store.}},\n\t\t{{appsmith.store.}},\n\t\t{{appsmith.store.}},\n\t\t{{appsmith.store.}},\n\t\t{{appsmith.store.}},\n\t\t{{appsmith.store.}},\n\t\t\n"
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "appsmith.store.",
+      "appsmith.store.A",
+      "appsmith.store.B"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

@@ -1225,7 +1225,7 @@
                     },
                     {
                       "widgetName": "Button3Copy8CopyCopy2",
-                      "onClick": "{{navigateTo('mode_modify', {})}}",
+                      "onClick": "{{navigateTo('model_modify', {})}}",
                       "buttonColor": "#FFFFFF",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
