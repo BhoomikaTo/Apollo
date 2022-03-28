@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://www.google.com"
+        "url": "https://appsmith-tutorial-apis.herokuapp.com"
       },
       "invalids": [],
       "messages": [],
@@ -20,16 +20,8 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/recaptcha/api/siteverify",
+      "path": "/auth/local",
       "headers": [
-        {
-          "key": "response",
-          "value": "{{Button2.recaptchaToken}}"
-        },
-        {
-          "key": "secret",
-          "value": "6LetUhMfAAAAAKwzWLuHXGk5IABlAh4WoWgqlWB5"
-        },
         {
           "key": "content-type",
           "value": "application/json"
@@ -37,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "g-recaptcha-response",
+      "body": "{\n  \"second_file_name\":{{appsmith.store.J}},\n\t\"second_file_location\":{{appsmith.store.K}}\n  \n}",
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
         {
@@ -45,20 +37,21 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "headers[0].value"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Button2.recaptchaToken"
+      "appsmith.store.J",
+      "appsmith.store.K"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
