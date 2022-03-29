@@ -919,7 +919,11 @@
                               "defaultOptionValue": "1",
                               "animateLoading": true,
                               "parentColumnSpace": 7.03857421875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
                               "leftColumn": 34,
                               "dynamicBindingPathList": [],
                               "options": "[\n  {\n    \"label\": \"1\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"2\",\n    \"value\": \"2\"\n  },\n\t  {\n    \"label\": \"3\",\n    \"value\": \"3\"\n  },\n\t  {\n    \"label\": \"4\",\n    \"value\": \"4\"\n  },\n\t  {\n    \"label\": \"5\",\n    \"value\": \"5\"\n  },\n\t  {\n    \"label\": \"6\",\n    \"value\": \"6\"\n  },\n\t  {\n    \"label\": \"7\",\n    \"value\": \"7\"\n  },\n\t  {\n    \"label\": \"8\",\n    \"value\": \"8\"\n  },\n  {\n    \"label\": \"9\",\n    \"value\": \"9\"\n  },\n\t {\n    \"label\": \"10\",\n    \"value\": \"10\"\n  }\n]",
@@ -933,7 +937,8 @@
                               "version": 1,
                               "parentId": "xrt19terai",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "onOptionChange": "{{storeValue('N',Select1.selectedOptionValue)}}"
                             },
                             {
                               "widgetName": "Text15",
@@ -979,7 +984,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 7.03857421875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 0,
                               "dynamicBindingPathList": [],
@@ -990,6 +999,7 @@
                               "isDisabled": false,
                               "key": "fl8mvr337j",
                               "isRequired": true,
+                              "onTextChanged": "{{storeValue('M',Input1.text)}}",
                               "rightColumn": 30,
                               "widgetId": "4bypnrn4s1",
                               "isVisible": true,
@@ -1014,13 +1024,20 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 7.03857421875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 34,
+                              "dynamicBindingPathList": [],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": false,
                               "key": "fl8mvr337j",
                               "isRequired": false,
+                              "onTextChanged": "{{storeValue('O',Input2.text)}}",
                               "rightColumn": 64,
                               "widgetId": "76kkps01zi",
                               "isVisible": true,
