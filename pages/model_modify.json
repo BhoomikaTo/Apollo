@@ -664,7 +664,7 @@
                 }
               },
               "delimiter": ",",
-              "onRowSelected": "{{showModal('Modal1')}}",
+              "onRowSelected": "",
               "key": "ujy2cn5qkr",
               "derivedColumns": {
                 "customColumn1": {
