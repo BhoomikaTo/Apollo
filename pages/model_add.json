@@ -1348,7 +1348,7 @@
                               "dynamicBindingPathList": [],
                               "labelStyle": "",
                               "inputType": "TEXT",
-                              "maxChars": "20",
+                              "maxChars": "",
                               "isDisabled": false,
                               "key": "8kh6seqtr9",
                               "validation": "",
