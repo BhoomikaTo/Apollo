@@ -31,7 +31,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"file_locatio\":\"{{appsmith.store.G}}\",\n\t\"primary_file_loc\":\"{{appsmith.store.H}}\",\n\t\"primary_file_name\":\"{{appsmith.store.I}}\",\n  \"secondary_file_name\":\"{{appsmith.store.J}}\",\n\t\"secondary_file_loc\":\"{{appsmith.store.K}}\"\n}",
+      "body": "{\n\t\"file_location\":\"{{appsmith.store.G}}\",\n\t\"primary_file_loc\":\"{{appsmith.store.I}}\",\n\t\"primary_file_name\":\"{{appsmith.store.H}}\",\n  \"secondary_file_name\":\"{{appsmith.store.J}}\",\n\t\"secondary_file_loc\":\"{{appsmith.store.K}}\"\n}",
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
         {
