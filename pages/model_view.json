@@ -1864,6 +1864,7 @@
                     },
                     {
                       "widgetName": "Text25",
+                      "borderColor": "F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 32,
@@ -1881,6 +1882,7 @@
                         }
                       ],
                       "shouldTruncate": false,
+                      "borderWidth": "1",
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{Table1.selectedRow.number_of_cuda}}",
                       "key": "dx3nv02wo3",
@@ -1899,6 +1901,7 @@
                     },
                     {
                       "widgetName": "Text26",
+                      "borderColor": "#F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 32,
@@ -1916,6 +1919,7 @@
                         }
                       ],
                       "shouldTruncate": false,
+                      "borderWidth": "1",
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{Table1.selectedRow.min_gpu}}",
                       "key": "dx3nv02wo3",
@@ -1924,7 +1928,7 @@
                       "widgetId": "otvkcac4em",
                       "isVisible": true,
                       "fontStyle": "BOLD",
-                      "textColor": "#231F20",
+                      "textColor": "#2E3D49",
                       "shouldScroll": false,
                       "version": 1,
                       "parentId": "npz7nwxrdr",
@@ -1934,6 +1938,7 @@
                     },
                     {
                       "widgetName": "Text27",
+                      "borderColor": "F5F5F5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 40,
@@ -1951,6 +1956,7 @@
                         }
                       ],
                       "shouldTruncate": false,
+                      "borderWidth": "1",
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{Table1.selectedRow.description}}",
                       "key": "dx3nv02wo3",
