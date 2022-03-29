@@ -200,6 +200,9 @@
                 "created_date",
                 "edited_by",
                 "edited_date",
+                "description",
+                "min_gpu",
+                "number_of_cuda",
                 "customColumn1"
               ],
               "isVisibleDownload": true,
@@ -283,6 +286,15 @@
                 },
                 {
                   "key": "primaryColumns.customColumn1.buttonLabel"
+                },
+                {
+                  "key": "primaryColumns.description.computedValue"
+                },
+                {
+                  "key": "primaryColumns.min_gpu.computedValue"
+                },
+                {
+                  "key": "primaryColumns.number_of_cuda.computedValue"
                 }
               ],
               "leftColumn": 5,
@@ -598,6 +610,57 @@
                   "labelColor": "#FFFFFF",
                   "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Modify'))}}",
                   "onClick": "{{showModal('Modal1')}}"
+                },
+                "description": {
+                  "index": 17,
+                  "width": 150,
+                  "id": "description",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "description",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.description))}}"
+                },
+                "min_gpu": {
+                  "index": 18,
+                  "width": 150,
+                  "id": "min_gpu",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "min_gpu",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.min_gpu))}}"
+                },
+                "number_of_cuda": {
+                  "index": 19,
+                  "width": 150,
+                  "id": "number_of_cuda",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "number_of_cuda",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.number_of_cuda))}}"
                 }
               },
               "delimiter": ",",
