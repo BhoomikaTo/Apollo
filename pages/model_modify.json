@@ -1809,7 +1809,7 @@
                       "placeholderText": "{{Table1.selectedRow.model_name}}",
                       "isDisabled": false,
                       "key": "60n8aq29tm",
-                      "validation": "{{!modelnames.data.map(function dictToarr(index){return index.model_name}).includes(model_name.text)}}",
+                      "validation": "{{!ModelNames.data.map(function dictToarr(index){return index.model_name}).includes(model_name.text)}}",
                       "isRequired": false,
                       "rightColumn": 26,
                       "widgetId": "392rrpkoah",
@@ -2194,8 +2194,8 @@
           ],
           [
             {
-              "id": "model_modify_modelnames",
-              "name": "modelnames",
+              "id": "model_modify_ModelNames",
+              "name": "ModelNames",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
