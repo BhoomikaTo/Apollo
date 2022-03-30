@@ -1161,7 +1161,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{updatemodel.run(() => storeValue(('tab','Tab 1') => resetWidget(\"Tabs1\",true), () => {}))}}",
+                              "onClick": "{{updatemodel.run(()  => storeValue('tab','Tab 1'), ()  => resetWidget(\"Tabs1\",true), () => {})}}",
                               "buttonColor": "#92BC4C",
                               "dynamicPropertyPathList": [
                                 {
