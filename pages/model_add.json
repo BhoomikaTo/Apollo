@@ -916,7 +916,7 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "1",
+                              "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 7.03857421875,
                               "dynamicTriggerPathList": [
@@ -1011,7 +1011,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "iconAlign": "left",
-                              "defaultText": "1000"
+                              "defaultText": ""
                             },
                             {
                               "widgetName": "Input2",
