@@ -1161,9 +1161,13 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{updatemodel.run(() => storeValue('tab','Tab 1'), () => {})}}",
+                              "onClick": "{{updatemodel.run(() => storeValue(('tab','Tab 1') => resetWidget(\"Tabs1\",true), () => {}))}}",
                               "buttonColor": "#92BC4C",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
                               "topRow": 50,
@@ -1197,6 +1201,7 @@
                               "widgetName": "FormButton2Copy1",
                               "onClick": "{{resetWidget(\"Tabs1\",true)}}",
                               "buttonColor": "#92BC4C",
+                              "dynamicPropertyPathList": [],
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
                               "topRow": 50,
