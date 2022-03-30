@@ -909,7 +909,7 @@
                               "isFilterable": true,
                               "displayName": "Select",
                               "iconSVG": "/static/media/icon.bd99caba.svg",
-                              "labelText": "Minimum GPU",
+                              "labelText": "Minimum GPU RAM",
                               "topRow": 26,
                               "bottomRow": 33,
                               "parentRowSpace": 10,
@@ -930,7 +930,7 @@
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "4ubrdaev0a",
-                              "isRequired": true,
+                              "isRequired": false,
                               "rightColumn": 64,
                               "widgetId": "kngay7tvgx",
                               "isVisible": true,
@@ -998,7 +998,7 @@
                               "placeholderText": "",
                               "isDisabled": false,
                               "key": "fl8mvr337j",
-                              "isRequired": true,
+                              "isRequired": false,
                               "onTextChanged": "{{storeValue('M',Input1.text)}}",
                               "rightColumn": 30,
                               "widgetId": "4bypnrn4s1",
@@ -1011,7 +1011,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "iconAlign": "left",
-                              "defaultText": ""
+                              "defaultText": "1000"
                             },
                             {
                               "widgetName": "Input2",
@@ -1726,7 +1726,7 @@
               "rightColumn": 53,
               "widgetId": "tv984ych99",
               "defaultTab": "{{appsmith.store.tab}}",
-              "shouldShowTabs": false,
+              "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
                   "label": "Tab 1",

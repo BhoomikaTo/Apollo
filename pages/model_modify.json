@@ -609,7 +609,7 @@
                   "menuColor": "#03B365",
                   "labelColor": "#FFFFFF",
                   "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Modify'))}}",
-                  "onClick": "{{showModal('Modal1')}}"
+                  "onClick": "{{showModal('Modify_model')}}"
                 },
                 "description": {
                   "index": 17,
@@ -686,7 +686,7 @@
                   "menuColor": "#03B365",
                   "labelColor": "#FFFFFF",
                   "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Modify'))}}",
-                  "onClick": "{{showModal('Modal1')}}"
+                  "onClick": "{{showModal('Modify_model')}}"
                 }
               },
               "rightColumn": 63,
@@ -715,7 +715,7 @@
                 "area_id": 60,
                 "area_name": 112,
                 "area_description": 128,
-                "created_by": 102,
+                "created_by": 202,
                 "created_date": 159,
                 "edited_by": 86
               }
@@ -741,7 +741,7 @@
               "dynamicBindingPathList": [],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
-              "text": " Modify Model                                                 ",
+              "text": " Select Model                                                 ",
               "key": "bpwt2bomsd",
               "rightColumn": 47,
               "textAlign": "LEFT",
@@ -898,7 +898,7 @@
               "buttonVariant": "TERTIARY"
             },
             {
-              "widgetName": "Modal1",
+              "widgetName": "Modify_model",
               "isCanvas": true,
               "displayName": "Modal",
               "iconSVG": "/static/media/icon.4975978e.svg",
@@ -941,6 +941,41 @@
                   "leftColumn": 0,
                   "children": [
                     {
+                      "widgetName": "edited_by",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 78,
+                      "bottomRow": 82,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.50390625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{appsmith.user.email}}",
+                      "key": "7a0x5egk6g",
+                      "rightColumn": 19,
+                      "textAlign": "LEFT",
+                      "widgetId": "tqyugt1gkx",
+                      "isVisible": false,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "npz7nwxrdr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
                       "widgetName": "Text22Copy",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -972,7 +1007,7 @@
                       "fontSize": "PARAGRAPH"
                     },
                     {
-                      "widgetName": "Input7Copy",
+                      "widgetName": "cuda",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 33,
@@ -996,7 +1031,7 @@
                       "inputType": "NUMBER",
                       "isDisabled": false,
                       "key": "qcoahb6b19",
-                      "isRequired": true,
+                      "isRequired": false,
                       "rightColumn": 26,
                       "widgetId": "2jnhurrn06",
                       "isVisible": true,
@@ -1010,7 +1045,7 @@
                       "defaultText": "{{Table1.selectedRow.min_gpu}}"
                     },
                     {
-                      "widgetName": "Select4Copy",
+                      "widgetName": "base_algorithm",
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
@@ -1021,7 +1056,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{{Table1.selectedRow.base_algorithm}}",
                       "animateLoading": true,
                       "parentColumnSpace": 9.84619140625,
                       "dynamicTriggerPathList": [
@@ -1033,6 +1068,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "placeholderText"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "options": "[\n  {\n    \"label\": \"YOLOv3\",\n    \"value\": \"YOLOv3\"\n  },\n  {\n    \"label\": \"ImageNet\",\n    \"value\": \"ImageNet\"\n  },\n\t{\n    \"label\": \"Inceptionv3\",\n    \"value\": \"Inceptionv3\"\n  }\n]",
@@ -1047,10 +1085,10 @@
                       "parentId": "npz7nwxrdr",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{storeValue('D',Select4Copy.selectedOptionValue)}}"
+                      "onOptionChange": "{{storeValue('D',base_algorithm.selectedOptionValue)}}"
                     },
                     {
-                      "widgetName": "Input2Copy",
+                      "widgetName": "version",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 9,
@@ -1081,7 +1119,7 @@
                       "key": "fdgvc5k0x8",
                       "validation": "",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('B',Input2Copy.text)}}",
+                      "onTextChanged": "{{storeValue('B',version.text)}}",
                       "rightColumn": 64,
                       "widgetId": "8wq9pgc8ob",
                       "errorMessage": "Only Integer Values allowed",
@@ -1097,7 +1135,7 @@
                       "defaultText": "{{Table1.selectedRow.version}}"
                     },
                     {
-                      "widgetName": "Select6Copy",
+                      "widgetName": "file_location",
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
@@ -1108,7 +1146,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{{Table1.selectedRow.file_location}}",
                       "animateLoading": true,
                       "parentColumnSpace": 9.84619140625,
                       "dynamicTriggerPathList": [
@@ -1120,6 +1158,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "placeholderText"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "options": "[\n  {\n    \"label\": \"Local\",\n    \"value\": \"Local\"\n  },\n  {\n    \"label\": \"Cloud_S3\",\n    \"value\": \"Cloud_S3\"\n  }\n]",
@@ -1134,10 +1175,10 @@
                       "parentId": "npz7nwxrdr",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{storeValue('G',Select6Copy.selectedOptionValue)}}"
+                      "onOptionChange": "{{storeValue('G',file_location.selectedOptionValue)}}"
                     },
                     {
-                      "widgetName": "Select5Copy",
+                      "widgetName": "framework",
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
@@ -1148,7 +1189,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{{Table1.selectedRow.framework}}",
                       "animateLoading": true,
                       "parentColumnSpace": 9.84619140625,
                       "dynamicTriggerPathList": [
@@ -1160,6 +1201,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "placeholderText"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "options": "[\n  {\n    \"label\": \"Pytorch\",\n    \"value\": \"Pytorch\"\n  },\n\t{\n    \"label\": \"Tensor flow\",\n    \"value\": \"Tensor flow\"\n  }\n]",
@@ -1174,10 +1218,10 @@
                       "parentId": "npz7nwxrdr",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{storeValue('E',Select5Copy.selectedOptionValue)}}"
+                      "onOptionChange": "{{storeValue('E',framework.selectedOptionValue)}}"
                     },
                     {
-                      "widgetName": "Select3Copy",
+                      "widgetName": "model_type",
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
@@ -1188,7 +1232,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{{Table1.selectedRow.model_type}}",
                       "animateLoading": true,
                       "parentColumnSpace": 9.84619140625,
                       "dynamicTriggerPathList": [
@@ -1200,6 +1244,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "placeholderText"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "options": "[\n  {\n    \"label\": \"Compliance\",\n    \"value\": \"Compliance\"\n  },\n \n  {\n    \"label\": \"Non Compliance\",\n    \"value\": \"Non Compliance\"\n  }\n]",
@@ -1214,11 +1261,11 @@
                       "parentId": "npz7nwxrdr",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{storeValue('C',Select3Copy.selectedOptionValue)}}"
+                      "onOptionChange": "{{storeValue('C',model_type.selectedOptionValue)}}"
                     },
                     {
                       "widgetName": "Button2Copy",
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{closeModal('Modify_model')}}",
                       "buttonColor": "#93BC4D",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
@@ -1358,7 +1405,7 @@
                     {
                       "widgetName": "Icon1",
                       "rightColumn": 64,
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{closeModal('Modify_model')}}",
                       "color": "#040627",
                       "iconName": "cross",
                       "displayName": "Icon",
@@ -1627,8 +1674,13 @@
                     },
                     {
                       "widgetName": "Button2",
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{Modify.run(() => Select.run(() => closeModal('Modify_model')), () => {})}}",
                       "buttonColor": "#93BC4D",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
                       "topRow": 81,
@@ -1645,7 +1697,7 @@
                       ],
                       "leftColumn": 47,
                       "dynamicBindingPathList": [],
-                      "text": "Done",
+                      "text": "Submit",
                       "isDisabled": false,
                       "key": "bf3v9p8tik",
                       "rightColumn": 63,
@@ -1662,7 +1714,7 @@
                     },
                     {
                       "widgetName": "Button3",
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{closeModal('Modify_model')}}",
                       "buttonColor": "#93BC4D",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
@@ -1727,7 +1779,7 @@
                       "fontSize": "PARAGRAPH"
                     },
                     {
-                      "widgetName": "Input1",
+                      "widgetName": "model_name",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 9,
@@ -1744,6 +1796,12 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "placeholderText"
+                        },
+                        {
+                          "key": "validation"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -1751,6 +1809,7 @@
                       "placeholderText": "{{Table1.selectedRow.model_name}}",
                       "isDisabled": false,
                       "key": "60n8aq29tm",
+                      "validation": "{{!modelnames.data.map(function dictToarr(index){return index.model_name}).includes(model_name.text)}}",
                       "isRequired": false,
                       "rightColumn": 26,
                       "widgetId": "392rrpkoah",
@@ -1760,11 +1819,12 @@
                       "parentId": "npz7nwxrdr",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "regex": "^[A-Za-z0-9-\\s]{3,50}$",
                       "iconAlign": "left",
-                      "defaultText": ""
+                      "defaultText": "{{Table1.selectedRow.model_name}}"
                     },
                     {
-                      "widgetName": "Input2",
+                      "widgetName": "framework_version",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 25,
@@ -1781,6 +1841,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "placeholderText"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -1798,10 +1861,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "iconAlign": "left",
-                      "defaultText": ""
+                      "defaultText": "{{Table1.selectedRow.framework_version}}"
                     },
                     {
-                      "widgetName": "Input3",
+                      "widgetName": "primary_file_name",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 49,
@@ -1818,6 +1881,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "placeholderText"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -1835,10 +1901,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "iconAlign": "left",
-                      "defaultText": ""
+                      "defaultText": "{{Table1.selectedRow.primary_file_name}}"
                     },
                     {
-                      "widgetName": "Input4",
+                      "widgetName": "secondary_file_name",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 57,
@@ -1855,6 +1921,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "placeholderText"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -1872,10 +1941,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "iconAlign": "left",
-                      "defaultText": ""
+                      "defaultText": "{{Table1.selectedRow.secondary_file_name}}"
                     },
                     {
-                      "widgetName": "Input5",
+                      "widgetName": "primary_file_location",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 65,
@@ -1892,6 +1961,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "placeholderText"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -1909,10 +1981,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "iconAlign": "left",
-                      "defaultText": ""
+                      "defaultText": "{{Table1.selectedRow.primary_file_loc}}"
                     },
                     {
-                      "widgetName": "Input6",
+                      "widgetName": "secondary_file_location",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 65,
@@ -1929,6 +2001,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "placeholderText"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -1946,7 +2021,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "iconAlign": "left",
-                      "defaultText": ""
+                      "defaultText": "{{Table1.selectedRow.secondary_file_loc}}"
                     },
                     {
                       "widgetName": "Text21",
@@ -1995,7 +2070,7 @@
                       "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Minimum GPU",
+                      "text": "Minimum GPU RAM",
                       "key": "9nzdurydca",
                       "rightColumn": 47,
                       "textAlign": "LEFT",
@@ -2011,7 +2086,7 @@
                       "fontSize": "PARAGRAPH"
                     },
                     {
-                      "widgetName": "Input7",
+                      "widgetName": "minimum_gpu_ram",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 33,
@@ -2035,7 +2110,7 @@
                       "inputType": "NUMBER",
                       "isDisabled": false,
                       "key": "qcoahb6b19",
-                      "isRequired": true,
+                      "isRequired": false,
                       "rightColumn": 64,
                       "widgetId": "te4g3jef2q",
                       "isVisible": true,
@@ -2049,7 +2124,7 @@
                       "defaultText": "{{Table1.selectedRow.min_gpu}}"
                     },
                     {
-                      "widgetName": "Input8",
+                      "widgetName": "description",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 41,
@@ -2100,7 +2175,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onClose": "{{closeModal('Modal1')}}",
+              "onClose": "{{closeModal('Modify_model')}}",
               "width": 704.9
             }
           ]
@@ -2110,6 +2185,16 @@
             {
               "id": "model_modify_Select",
               "name": "Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "model_modify_modelnames",
+              "name": "modelnames",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -2128,24 +2213,10 @@
           "Icon1",
           "IconButton1",
           "Image2",
-          "Input1",
-          "Input2",
-          "Input2Copy",
-          "Input3",
-          "Input4",
-          "Input5",
-          "Input6",
-          "Input7",
-          "Input7Copy",
-          "Input8",
           "MainContainer",
-          "Modal1",
+          "Modify_model",
           "Select1",
           "Select2",
-          "Select3Copy",
-          "Select4Copy",
-          "Select5Copy",
-          "Select6Copy",
           "Table1",
           "Text1",
           "Text11",
@@ -2164,7 +2235,22 @@
           "Text6",
           "Text7",
           "Text8",
-          "Text9"
+          "Text9",
+          "base_algorithm",
+          "cuda",
+          "description",
+          "edited_by",
+          "file_location",
+          "framework",
+          "framework_version",
+          "minimum_gpu_ram",
+          "model_name",
+          "model_type",
+          "primary_file_location",
+          "primary_file_name",
+          "secondary_file_location",
+          "secondary_file_name",
+          "version"
         ],
         "validOnPageLoadActions": true,
         "id": "model_modify",
