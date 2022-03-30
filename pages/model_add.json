@@ -1177,9 +1177,13 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{updatemodel.run(() => storeValue('tab','Tab 1'), () => {})}}",
+                              "onClick": "{{updatemodel.run();\nresetWidget(\"Tabs1\",true);\nstoreValue('tab','Tab 1')\n}}",
                               "buttonColor": "#92BC4C",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
                               "topRow": 50,
@@ -1745,7 +1749,7 @@
               "rightColumn": 53,
               "widgetId": "tv984ych99",
               "defaultTab": "{{appsmith.store.tab}}",
-              "shouldShowTabs": false,
+              "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
                   "label": "Tab 1",
