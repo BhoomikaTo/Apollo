@@ -334,7 +334,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy",
-                              "onClick": "{{storeValue('tab','Tab 2')}}",
+                              "onClick": "{{storeValue('tab','Tab 1')}}",
                               "buttonColor": "#92BC4C",
                               "dynamicPropertyPathList": [],
                               "displayName": "FormButton",
@@ -1104,7 +1104,7 @@
                   ],
                   "isDisabled": false,
                   "key": "xytes6jn2m",
-                  "tabName": "Tab 1",
+                  "tabName": "Tab 2",
                   "rightColumn": 273.75,
                   "detachFromLayout": true,
                   "widgetId": "ktn6na0r6o",
@@ -1177,7 +1177,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{updatemodel.run();\nresetWidget(\"Tabs1\",true);\nstoreValue('tab','Tab 1')\n}}",
+                              "onClick": "{{updatemodel.run();\nresetWidget(\"Tabs1\",true);\nstoreValue('tab','Tab 2')\n}}",
                               "buttonColor": "#92BC4C",
                               "dynamicPropertyPathList": [
                                 {
@@ -1734,7 +1734,7 @@
                   ],
                   "isDisabled": false,
                   "key": "xytes6jn2m",
-                  "tabName": "Tab 2",
+                  "tabName": "Tab 1",
                   "rightColumn": 273.75,
                   "detachFromLayout": true,
                   "widgetId": "fb1ehv3k5e",
@@ -1752,14 +1752,14 @@
               "shouldShowTabs": false,
               "tabsObj": {
                 "tab1": {
-                  "label": "Tab 1",
+                  "label": "Tab 2",
                   "id": "tab1",
                   "widgetId": "ktn6na0r6o",
                   "isVisible": true,
                   "index": 0
                 },
                 "tab2": {
-                  "label": "Tab 2",
+                  "label": "Tab 1",
                   "id": "tab2",
                   "widgetId": "fb1ehv3k5e",
                   "isVisible": true,
