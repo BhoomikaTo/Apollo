@@ -766,7 +766,7 @@
                               "widgetName": "Input4Copy",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
-                              "onSubmit": "{{resetWidget(\"Input4Copy\",true)}}",
+                              "onSubmit": "",
                               "topRow": 21,
                               "bottomRow": 25,
                               "parentRowSpace": 10,
@@ -981,7 +981,7 @@
                               "widgetName": "Input1",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
-                              "onSubmit": "{{resetWidget(\"Input1\",true)}}",
+                              "onSubmit": "",
                               "topRow": 29,
                               "bottomRow": 33,
                               "parentRowSpace": 10,
@@ -1027,7 +1027,7 @@
                               "widgetName": "Input2",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
-                              "onSubmit": "{{resetWidget(\"Input2\",true)}}",
+                              "onSubmit": "",
                               "topRow": 38,
                               "bottomRow": 53,
                               "parentRowSpace": 10,
@@ -1177,7 +1177,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{updatemodel.run();\nresetWidget(\"Tabs1\",true);\nstoreValue('tab','Tab 2')\n}}",
+                              "onClick": "{{updatemodel.run();\nstoreValue('tab','Tab 2');\nresetWidget(\"Tabs1\",true)\n}}",
                               "buttonColor": "#92BC4C",
                               "dynamicPropertyPathList": [
                                 {
