@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO model_master\n\t(model_name, version, model_type, framework, framework_version, base_algorithm, file_location, primary_file_loc, primary_file_name, secondary_file_loc, secondary_file_name, status, created_by,description,min_gpu,number_of_cuda)\nVALUES\n  (\n\t\t{{appsmith.store.A}},\n\t\t{{appsmith.store.B}},\n\t\t{{appsmith.store.C}},\n\t\t{{appsmith.store.E}},\n\t\t{{appsmith.store.F}},\n\t\t{{appsmith.store.D}},\n\t\t{{appsmith.store.G}},\n\t\t{{appsmith.store.I}},\n\t\t{{appsmith.store.H}},\n\t\t{{appsmith.store.K}},\n\t\t{{appsmith.store.J}},\n\t\t{{appsmith.store.L}},\n\t\t{{appsmith.user.username}},\n\t\t{{appsmith.store.O}},\n\t\t{{appsmith.store.N}},\n\t\t{{appsmith.store.M}}\n\t);\n"
+      "body": "INSERT INTO model_master\n\t(model_name, version, model_type, framework, framework_version, base_algorithm, file_location, primary_file_loc, primary_file_name, secondary_file_loc, secondary_file_name, status, created_by,description,min_gpu_ram,number_of_cuda)\nVALUES\n  (\n\t\t{{appsmith.store.A}},\n\t\t{{appsmith.store.B}},\n\t\t{{appsmith.store.C}},\n\t\t{{appsmith.store.E}},\n\t\t{{appsmith.store.F}},\n\t\t{{appsmith.store.D}},\n\t\t{{appsmith.store.G}},\n\t\t{{appsmith.store.I}},\n\t\t{{appsmith.store.H}},\n\t\t{{appsmith.store.K}},\n\t\t{{appsmith.store.J}},\n\t\t{{appsmith.store.L}},\n\t\t{{appsmith.user.username}},\n\t\t{{appsmith.store.O}},\n\t\t{{appsmith.store.N}},\n\t\t{{appsmith.store.M}}\n\t);\n"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
