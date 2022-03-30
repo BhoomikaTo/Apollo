@@ -764,6 +764,7 @@
                               "widgetName": "Input4Copy",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
+                              "onSubmit": "{{resetWidget(\"Input4Copy\",true)}}",
                               "topRow": 21,
                               "bottomRow": 25,
                               "parentRowSpace": 10,
@@ -775,6 +776,9 @@
                               "dynamicTriggerPathList": [
                                 {
                                   "key": "onTextChanged"
+                                },
+                                {
+                                  "key": "onSubmit"
                                 }
                               ],
                               "resetOnSubmit": true,
@@ -916,7 +920,7 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "",
+                              "defaultOptionValue": "1",
                               "animateLoading": true,
                               "parentColumnSpace": 7.03857421875,
                               "dynamicTriggerPathList": [
@@ -975,6 +979,7 @@
                               "widgetName": "Input1",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
+                              "onSubmit": "{{resetWidget(\"Input1\",true)}}",
                               "topRow": 29,
                               "bottomRow": 33,
                               "parentRowSpace": 10,
@@ -987,6 +992,9 @@
                               "dynamicTriggerPathList": [
                                 {
                                   "key": "onTextChanged"
+                                },
+                                {
+                                  "key": "onSubmit"
                                 }
                               ],
                               "resetOnSubmit": true,
@@ -1011,12 +1019,13 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "iconAlign": "left",
-                              "defaultText": ""
+                              "defaultText": "1000"
                             },
                             {
                               "widgetName": "Input2",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
+                              "onSubmit": "{{resetWidget(\"Input2\",true)}}",
                               "topRow": 38,
                               "bottomRow": 53,
                               "parentRowSpace": 10,
@@ -1028,6 +1037,9 @@
                               "dynamicTriggerPathList": [
                                 {
                                   "key": "onTextChanged"
+                                },
+                                {
+                                  "key": "onSubmit"
                                 }
                               ],
                               "resetOnSubmit": true,
@@ -1161,7 +1173,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{updatemodel.run(() => storeValue('tab','Tab 1'), () => {})}}",
+                              "onClick": "{{updatemodel.run(() => storeValue('tab','Tab 1'), () => ())}}",
                               "buttonColor": "#92BC4C",
                               "dynamicPropertyPathList": [],
                               "displayName": "FormButton",
@@ -1228,8 +1240,10 @@
                             },
                             {
                               "widgetName": "Input1Copy1",
+                              "dynamicPropertyPathList": [],
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
+                              "onSubmit": "",
                               "topRow": 26,
                               "bottomRow": 34,
                               "parentRowSpace": 10,
