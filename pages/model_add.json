@@ -334,7 +334,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy",
-                              "onClick": "{{storeValue('tab','page1')}}",
+                              "onClick": "{{storeValue('tab','Tab 2')}}",
                               "buttonColor": "#92BC4C",
                               "dynamicPropertyPathList": [],
                               "displayName": "FormButton",
@@ -1104,7 +1104,7 @@
                   ],
                   "isDisabled": false,
                   "key": "xytes6jn2m",
-                  "tabName": "page1",
+                  "tabName": "Tab 1",
                   "rightColumn": 273.75,
                   "detachFromLayout": true,
                   "widgetId": "ktn6na0r6o",
@@ -1177,7 +1177,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{updatemodel.run(() => storeValue('tab','page2'), () => ())}}",
+                              "onClick": "{{updatemodel.run(() => storeValue('tab','Tab 1'), () => {})}}",
                               "buttonColor": "#92BC4C",
                               "dynamicPropertyPathList": [],
                               "displayName": "FormButton",
@@ -1730,7 +1730,7 @@
                   ],
                   "isDisabled": false,
                   "key": "xytes6jn2m",
-                  "tabName": "page2",
+                  "tabName": "Tab 2",
                   "rightColumn": 273.75,
                   "detachFromLayout": true,
                   "widgetId": "fb1ehv3k5e",
@@ -1745,17 +1745,17 @@
               "rightColumn": 53,
               "widgetId": "tv984ych99",
               "defaultTab": "{{appsmith.store.tab}}",
-              "shouldShowTabs": false,
+              "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
-                  "label": "page1",
+                  "label": "Tab 1",
                   "id": "tab1",
                   "widgetId": "ktn6na0r6o",
                   "isVisible": true,
                   "index": 0
                 },
                 "tab2": {
-                  "label": "page2",
+                  "label": "Tab 2",
                   "id": "tab2",
                   "widgetId": "fb1ehv3k5e",
                   "isVisible": true,
