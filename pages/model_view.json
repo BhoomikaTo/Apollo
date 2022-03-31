@@ -1816,7 +1816,7 @@
                       "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Minimum GPU",
+                      "text": "Minimum GPU RAM",
                       "key": "dx3nv02wo3",
                       "rightColumn": 47,
                       "textAlign": "LEFT",
