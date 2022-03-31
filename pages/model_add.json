@@ -1032,7 +1032,7 @@
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
-                              "onSubmit": "{{storeValue(Input2.text,'undefined')}}",
+                              "onSubmit": "",
                               "topRow": 38,
                               "bottomRow": 53,
                               "parentRowSpace": 10,
@@ -1182,7 +1182,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{updatemodel.run();\nstoreValue('tab','Tab 1');\nresetWidget(\"Tabs1\",true)\n}}",
+                              "onClick": "{{updatemodel.run();\nstoreValue('tab','Tab 1');\nresetWidget(\"Tabs1\",true);\nstoreValue('O',undefined)\n}}",
                               "buttonColor": "#92BC4C",
                               "dynamicPropertyPathList": [
                                 {
