@@ -201,7 +201,7 @@
                 "edited_by",
                 "edited_date",
                 "description",
-                "min_gpu",
+                "min_gpu_ram",
                 "number_of_cuda"
               ],
               "isVisibleDownload": true,
@@ -281,10 +281,10 @@
                   "key": "primaryColumns.description.computedValue"
                 },
                 {
-                  "key": "primaryColumns.min_gpu.computedValue"
+                  "key": "primaryColumns.number_of_cuda.computedValue"
                 },
                 {
-                  "key": "primaryColumns.number_of_cuda.computedValue"
+                  "key": "primaryColumns.min_gpu_ram.computedValue"
                 }
               ],
               "leftColumn": 5,
@@ -597,23 +597,6 @@
                   "label": "description",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.description))}}"
                 },
-                "min_gpu": {
-                  "index": 18,
-                  "width": 150,
-                  "id": "min_gpu",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "PARAGRAPH",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": false,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "min_gpu",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.min_gpu))}}"
-                },
                 "number_of_cuda": {
                   "index": 19,
                   "width": 150,
@@ -630,6 +613,23 @@
                   "isDerived": false,
                   "label": "number_of_cuda",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.number_of_cuda))}}"
+                },
+                "min_gpu_ram": {
+                  "index": 18,
+                  "width": 150,
+                  "id": "min_gpu_ram",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "min_gpu_ram",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.min_gpu_ram))}}"
                 }
               },
               "delimiter": ",",
@@ -1890,7 +1890,7 @@
                       "textAlign": "LEFT",
                       "widgetId": "lkyuy16j1a",
                       "isVisible": true,
-                      "fontStyle": "BOLD",
+                      "fontStyle": "",
                       "textColor": "#231F20",
                       "shouldScroll": false,
                       "version": 1,
@@ -1921,13 +1921,13 @@
                       "shouldTruncate": false,
                       "borderWidth": "1",
                       "truncateButtonColor": "#FFC13D",
-                      "text": "{{Table1.selectedRow.min_gpu}}",
+                      "text": "{{Table1.selectedRow.min_gpu_ram}}",
                       "key": "dx3nv02wo3",
                       "rightColumn": 63,
                       "textAlign": "LEFT",
                       "widgetId": "otvkcac4em",
                       "isVisible": true,
-                      "fontStyle": "BOLD",
+                      "fontStyle": "",
                       "textColor": "#2E3D49",
                       "shouldScroll": false,
                       "version": 1,
@@ -1964,7 +1964,7 @@
                       "textAlign": "LEFT",
                       "widgetId": "05r55rrf6y",
                       "isVisible": true,
-                      "fontStyle": "BOLD",
+                      "fontStyle": "",
                       "textColor": "#231F20",
                       "shouldScroll": false,
                       "version": 1,

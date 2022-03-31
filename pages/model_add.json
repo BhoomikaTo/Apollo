@@ -1749,7 +1749,7 @@
               "rightColumn": 53,
               "widgetId": "tv984ych99",
               "defaultTab": "{{appsmith.store.tab}}",
-              "shouldShowTabs": false,
+              "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
                   "label": "Tab 2",
