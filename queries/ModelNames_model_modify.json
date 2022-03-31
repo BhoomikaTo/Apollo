@@ -19,7 +19,7 @@
       "encodeParamsToggle": true,
       "body": "SELECT model_name FROM model_master \n"
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
