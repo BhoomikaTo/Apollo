@@ -265,7 +265,11 @@
               "parentColumnSpace": 11.40625,
               "dynamicTriggerPathList": [],
               "leftColumn": 10,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultTab"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
@@ -1744,7 +1748,7 @@
               "key": "7g0wvfm2mu",
               "rightColumn": 53,
               "widgetId": "tv984ych99",
-              "defaultTab": "Tab 2",
+              "defaultTab": "{{appsmith.store.tab}}",
               "shouldShowTabs": false,
               "tabsObj": {
                 "tab1": {
