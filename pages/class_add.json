@@ -374,11 +374,11 @@
                           "key": "onChange"
                         }
                       ],
-                      "leftColumn": 10,
+                      "leftColumn": 9,
                       "dynamicBindingPathList": [],
                       "isDisabled": false,
                       "key": "xrglogpcr8",
-                      "rightColumn": 22,
+                      "rightColumn": 21,
                       "onChange": "",
                       "widgetId": "aewpnzj4oe",
                       "isVisible": true,
@@ -438,7 +438,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": "Inactive",
                       "key": "8tr5z7pqyd",
-                      "rightColumn": 10,
+                      "rightColumn": 9,
                       "textAlign": "LEFT",
                       "widgetId": "eoq6wluz4j",
                       "isVisible": true,
