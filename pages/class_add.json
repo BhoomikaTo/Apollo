@@ -358,6 +358,7 @@
                     },
                     {
                       "widgetName": "Switch1",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Switch",
                       "iconSVG": "/static/media/icon.a3115bc1.svg",
                       "topRow": 27,
@@ -368,12 +369,17 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 8.5986328125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
                       "leftColumn": 10,
                       "dynamicBindingPathList": [],
                       "isDisabled": false,
                       "key": "xrglogpcr8",
                       "rightColumn": 22,
+                      "onChange": "",
                       "widgetId": "aewpnzj4oe",
                       "isVisible": true,
                       "label": "Active",
