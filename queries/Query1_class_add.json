@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "Create",
+    "name": "Query1",
     "datasource": {
       "pluginId": "mysql-plugin",
       "messages": [],
@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO class_master SET model_id = '{{Select1.selectedOptionValue}}',\n  class_name = '{{Input1.text}}', status = select status,if({{Switch1.isSwitchedOn}} == true, 'Active','Inactive')\n\t, created_by = '{{Text5.text}}';"
+      "body": "status = IF({{Switch1.isSwitchedOn}} == '1', 'Active','Inactive')"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -29,17 +29,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Input1.text",
-      "Select1.selectedOptionValue",
-      "Switch1.isSwitchedOn",
-      "Text5.text"
+      "Switch1.isSwitchedOn"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "class_add_Create",
+  "id": "class_add_Query1",
   "deleted": false,
-  "gitSyncId": "6225932e52df83079ac94bc5_624a997b9c18654bb5892eb9"
+  "gitSyncId": "6225932e52df83079ac94bc5_624aac4b9c18654bb5892ec2"
 }
