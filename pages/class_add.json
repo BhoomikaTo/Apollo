@@ -322,7 +322,7 @@
                       "parentId": "t73gczga4g",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{gettable.run(() => (), () => {})}}"
+                      "onOptionChange": "{{gettable.run()}}"
                     },
                     {
                       "widgetName": "Input1",
