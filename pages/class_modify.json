@@ -1009,12 +1009,16 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "defaultText"
+                        },
+                        {
+                          "key": "validation"
                         }
                       ],
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "lodziy2pfu",
+                      "validation": "{{!Model_name.data.map(function dictToarr(index){return index.combination}).includes(Text8.text+Text9.text+Input.text.toLowerCase())}}",
                       "isRequired": false,
                       "rightColumn": 28,
                       "widgetId": "ozmukj2u4k",
@@ -1161,7 +1165,7 @@
                       "rightColumn": 62,
                       "textAlign": "LEFT",
                       "widgetId": "3ltci8zuk5",
-                      "isVisible": true,
+                      "isVisible": false,
                       "fontStyle": "",
                       "textColor": "#231F20",
                       "shouldScroll": false,
@@ -1203,6 +1207,16 @@
                 "Select1.selectedOptionValue",
                 "Select2.selectedOptionValue"
               ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "class_modify_Model_name",
+              "name": "Model_name",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

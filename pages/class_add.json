@@ -348,6 +348,7 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "gjbaoyp16w",
+                      "validation": "",
                       "isRequired": true,
                       "rightColumn": 30,
                       "widgetId": "zrzvccz50l",
