@@ -6,15 +6,11 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": " switch ({{Switch1.isSwitchedOn}}) {\n               case '1': status = (\"Good job<br />\");\n               break;\n            \n               case 'B': document.write(\"Pretty good<br />\");\n               break;\n            \n               case 'C': document.write(\"Passed<br />\");\n               break;\n            \n               case 'D': document.write(\"Not so good<br />\");\n               break;\n            \n               case 'F': document.write(\"Failed<br />\");\n               break;\n            \n               default:  document.write(\"Unknown grade<br />\")\n            }",
+    "body": "export default {\n\t status: [\n\t\t if ({{Switch1.isSwitchedOn}} = 1) \n \t\t\t status = \"Active\"\n\t\telse \n  \t\tstatus = \"Inactive\"\n\t ]   \n}",
     "variables": [
       {
-        "name": "myVar1",
+        "name": "status",
         "value": []
-      },
-      {
-        "name": "myVar2",
-        "value": {}
       }
     ]
   },

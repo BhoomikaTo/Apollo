@@ -339,7 +339,11 @@
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 3,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
@@ -354,7 +358,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "iconAlign": "left",
-                      "defaultText": ""
+                      "defaultText": "{{Table1.selectedRow.class_name}}"
                     },
                     {
                       "widgetName": "Switch1",
