@@ -405,7 +405,7 @@
                   "id": "created_date",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "date",
                   "textSize": "PARAGRAPH",
                   "enableFilter": true,
                   "enableSort": true,
@@ -414,7 +414,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "created_date",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.created_date))}}"
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.created_date))}}",
+                  "inputFormat": "YYYY-MM-DD hh:mm:ss",
+                  "outputFormat": "YYYY-MM-DD hh:mm:ss"
                 },
                 "edited_by": {
                   "index": 8,
@@ -503,7 +505,7 @@
                 "area_id": 60,
                 "area_name": 112,
                 "area_description": 128,
-                "created_by": 102,
+                "created_by": 196,
                 "created_date": 159,
                 "edited_by": 86
               }
@@ -916,8 +918,13 @@
                     },
                     {
                       "widgetName": "Button2",
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{Modify.run(() => Select.run(() => closeModal('Modal1')), () => {})}}",
                       "buttonColor": "#93BC4D",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
                       "topRow": 36,
@@ -985,7 +992,7 @@
                       "placement": "CENTER"
                     },
                     {
-                      "widgetName": "Input2",
+                      "widgetName": "Input",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 19,
@@ -1022,7 +1029,7 @@
                     },
                     {
                       "widgetName": "Select3",
-                      "isFilterable": true,
+                      "isFilterable": false,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
                       "labelText": "",
@@ -1056,75 +1063,113 @@
                       "isLoading": false
                     },
                     {
-                      "widgetName": "Input3",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "widgetName": "Text8",
+                      "borderColor": "#F6F7F8",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 8,
                       "bottomRow": 12,
                       "parentRowSpace": 10,
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
+                      "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 10.8265625,
-                      "dynamicTriggerPathList": [],
-                      "resetOnSubmit": true,
-                      "leftColumn": 31,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "defaultText"
-                        }
-                      ],
-                      "labelStyle": "",
-                      "inputType": "NUMBER",
-                      "isDisabled": false,
-                      "key": "lodziy2pfu",
-                      "isRequired": false,
-                      "rightColumn": 57,
-                      "widgetId": "kf272s23nb",
-                      "isVisible": true,
-                      "label": "",
-                      "version": 2,
-                      "parentId": "npz7nwxrdr",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "iconAlign": "left",
-                      "defaultText": "{{Table1.selectedRow.version}}"
-                    },
-                    {
-                      "widgetName": "Select4",
-                      "isFilterable": true,
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "",
-                      "topRow": 8,
-                      "bottomRow": 15,
-                      "parentRowSpace": 10,
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
-                      "hideCard": false,
-                      "defaultOptionValue": "{{Table1.selectedRow.model_name}}",
                       "animateLoading": true,
                       "parentColumnSpace": 9.8265625,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
-                          "key": "defaultOptionValue"
+                          "key": "text"
                         }
                       ],
-                      "options": "",
-                      "placeholderText": "Select option",
-                      "isDisabled": false,
-                      "key": "q2lboi2eul",
-                      "isRequired": false,
+                      "shouldTruncate": false,
+                      "borderWidth": "1",
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{Table1.selectedRow.model_name}}",
+                      "key": "2e8zltfbxs",
                       "rightColumn": 28,
-                      "widgetId": "j1zojzutd2",
+                      "textAlign": "LEFT",
+                      "widgetId": "z1100cb7tv",
                       "isVisible": true,
+                      "fontStyle": "",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
                       "version": 1,
                       "parentId": "npz7nwxrdr",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "Text9",
+                      "borderColor": "#F6F7F8",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.8265625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 31,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "borderWidth": "1",
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{Table1.selectedRow.version}}",
+                      "key": "2e8zltfbxs",
+                      "rightColumn": 61,
+                      "textAlign": "LEFT",
+                      "widgetId": "xu8onh6zp6",
+                      "isVisible": true,
+                      "fontStyle": "",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "npz7nwxrdr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "edited_by",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 19,
+                      "bottomRow": 23,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.8265625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 31,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{appsmith.user.email}}",
+                      "key": "2e8zltfbxs",
+                      "rightColumn": 62,
+                      "textAlign": "LEFT",
+                      "widgetId": "3ltci8zuk5",
+                      "isVisible": true,
+                      "fontStyle": "",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "npz7nwxrdr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
                     }
                   ],
                   "isDisabled": false,
@@ -1172,14 +1217,12 @@
           "Icon1",
           "IconButton1",
           "Image2",
-          "Input2",
-          "Input3",
+          "Input",
           "MainContainer",
           "Modal1",
           "Select1",
           "Select2",
           "Select3",
-          "Select4",
           "Table1",
           "Text1",
           "Text1Copy",
@@ -1188,7 +1231,10 @@
           "Text3",
           "Text4",
           "Text5",
-          "Text7"
+          "Text7",
+          "Text8",
+          "Text9",
+          "edited_by"
         ],
         "validOnPageLoadActions": true,
         "id": "class_modify",
