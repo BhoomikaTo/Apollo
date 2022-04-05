@@ -19,7 +19,7 @@
       "encodeParamsToggle": true,
       "body": "SELECT  distinct m.model_name \nFROM class_master as c join model_master as m\non c.model_id=m.model_id;"
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],

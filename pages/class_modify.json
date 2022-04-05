@@ -1111,12 +1111,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "defaultOptionValue"
-                        },
-                        {
-                          "key": "options"
                         }
                       ],
-                      "options": "{{Model_name.data}}",
+                      "options": "",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "q2lboi2eul",
@@ -1151,16 +1148,6 @@
           ]
         },
         "layoutOnLoadActions": [
-          [
-            {
-              "id": "class_modify_Model_name",
-              "name": "Model_name",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
           [
             {
               "id": "class_modify_Select",

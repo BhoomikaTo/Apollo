@@ -459,7 +459,11 @@
                         "class_name"
                       ],
                       "isVisibleDownload": false,
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Table",
                       "iconSVG": "/static/media/icon.db8a9cbd.svg",
                       "topRow": 5,
@@ -481,6 +485,9 @@
                         },
                         {
                           "key": "primaryColumns.class_name.computedValue"
+                        },
+                        {
+                          "key": "isVisible"
                         }
                       ],
                       "leftColumn": 32,
@@ -528,7 +535,7 @@
                       "widgetId": "j72z60phbo",
                       "isVisibleFilters": false,
                       "tableData": "{{gettable.data}}",
-                      "isVisible": true,
+                      "isVisible": "{{Select1.selectedOptionValue !=  Number()}} ",
                       "label": "Data",
                       "searchKey": "",
                       "enableClientSideSearch": true,
