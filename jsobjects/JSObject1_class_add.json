@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\t status: [\n\t\t if (Switch1.isSwitchedOn) {\n \t\t\t status = \"Active\"\n}\telse {\n  \t\tstatus = \"Inactive\" }\n\t ]   \n}",
+    "body": "export default {\n\t status: [\n\t\t if (Switch1.isSwitchedOn) {\n \t\t\t status = \"Active\"\n}\t\telse {\n  \t\tstatus = \"Inactive\" \n    return status;}\n]   \n}",
     "variables": [
       {
         "name": "status",
