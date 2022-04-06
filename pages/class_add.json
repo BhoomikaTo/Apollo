@@ -669,7 +669,7 @@
               "truncateButtonColor": "#FFC13D",
               "text": "{{version_model.data[0].version}}",
               "key": "bhqn4rbqy2",
-              "rightColumn": 30,
+              "rightColumn": 47,
               "textAlign": "LEFT",
               "widgetId": "5b0lu29cvm",
               "isVisible": false,
