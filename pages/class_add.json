@@ -188,7 +188,7 @@
                     {
                       "resetFormOnClick": true,
                       "widgetName": "FormButton1",
-                      "onClick": "{{Create.run(() => showAlert('Data Submitted successfully','success'), () => showAlert('Failed to submit data','error'))}}",
+                      "onClick": "{{Createdata.run(() => showAlert('Data Submitted successfully','success'), () => showAlert('Failed to submit data','error'))}}",
                       "buttonColor": "#93BC4D",
                       "displayName": "FormButton",
                       "iconSVG": "/static/media/icon.c8f649ed.svg",
@@ -342,13 +342,16 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "defaultText"
+                        },
+                        {
+                          "key": "validation"
                         }
                       ],
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "gjbaoyp16w",
-                      "validation": "",
+                      "validation": "{{!model_class_version_select.data.map(function dictToarr(index){return index.combination}).includes(Select1.selectedOptionValue+Text8.text+Input1.text.toLowerCase())}}",
                       "isRequired": true,
                       "rightColumn": 30,
                       "widgetId": "zrzvccz50l",
@@ -643,6 +646,41 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "Text8",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 51,
+              "bottomRow": 55,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 11.40625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 26,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{version_model.data.version}}",
+              "key": "bhqn4rbqy2",
+              "rightColumn": 42,
+              "textAlign": "LEFT",
+              "widgetId": "5b0lu29cvm",
+              "isVisible": false,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "shouldScroll": false,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
             }
           ]
         },
@@ -663,6 +701,26 @@
             {
               "id": "class_add_modelnames",
               "name": "modelnames",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "class_add_version_model",
+              "name": "version_model",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select1.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "class_add_model_class_version_select",
+              "name": "model_class_version_select",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -688,7 +746,8 @@
           "Text4",
           "Text5",
           "Text6",
-          "Text7"
+          "Text7",
+          "Text8"
         ],
         "validOnPageLoadActions": true,
         "id": "class_add",

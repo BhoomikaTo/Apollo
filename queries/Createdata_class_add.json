@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "Create",
+    "name": "Createdata",
     "datasource": {
       "pluginId": "mysql-plugin",
       "messages": [],
@@ -39,7 +39,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "class_add_Create",
+  "id": "class_add_Createdata",
   "deleted": false,
   "gitSyncId": "6225932e52df83079ac94bc5_624a997b9c18654bb5892eb9"
 }

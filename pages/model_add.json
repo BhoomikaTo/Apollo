@@ -1182,7 +1182,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{updatemodel.run();\nstoreValue('tab','Tab 1');\nresetWidget(\"Tabs1\",true);\nstoreValue('O',undefined);\nstoreValue('F',undefined);\nstoreValue('M',undefined);\nstoreValue('N',undefined);\nstoreValue('H',undefined);\nstoreValue('I',undefined);\nshowAlert('Data created successfully','success')\n}}",
+                              "onClick": "{{updatemodel.run();\nstoreValue('tab','Tab 1');\nresetWidget(\"Tabs1\",true);\nstoreValue('O',undefined);\nstoreValue('F',undefined);\nstoreValue('M',undefined);\nstoreValue('N',undefined);\nstoreValue('H',undefined);\nstoreValue('I',undefined);\nshowAlert('Data created successfully','success');\nnavigateTo('model_view', {})\n}}",
                               "buttonColor": "#92BC4C",
                               "dynamicPropertyPathList": [
                                 {
