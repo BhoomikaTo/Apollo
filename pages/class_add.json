@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 570,
+          "bottomRow": 580,
           "containerStyle": "none",
           "snapRows": 53,
           "parentRowSpace": 1,
@@ -652,14 +652,14 @@
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
               "topRow": 51,
-              "bottomRow": 55,
+              "bottomRow": 56,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 11.40625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 26,
+              "leftColumn": 24,
               "dynamicBindingPathList": [
                 {
                   "key": "text"
@@ -667,9 +667,9 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
-              "text": "{{version_model.data.version}}",
+              "text": "{{version_model.data[0].version}}",
               "key": "bhqn4rbqy2",
-              "rightColumn": 42,
+              "rightColumn": 30,
               "textAlign": "LEFT",
               "widgetId": "5b0lu29cvm",
               "isVisible": false,
@@ -705,7 +705,9 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "class_add_version_model",
               "name": "version_model",

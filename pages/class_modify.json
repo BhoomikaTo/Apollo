@@ -993,6 +993,11 @@
                     },
                     {
                       "widgetName": "Input",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 19,
@@ -1003,7 +1008,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 10.8265625,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
@@ -1018,8 +1027,9 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "lodziy2pfu",
-                      "validation": "{{!Model_name.data.map(function dictToarr(index){return index.combination}).includes(Text8.text+Text9.text+Input.text.toLowerCase())}}",
+                      "validation": "{{!Model_name.data.map(function dictToarr(index){return index.combination}).includes(Text8.text+Text9.text+Input.text)}}",
                       "isRequired": false,
+                      "onTextChanged": "",
                       "rightColumn": 28,
                       "widgetId": "ozmukj2u4k",
                       "isVisible": true,
@@ -1057,7 +1067,7 @@
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "q2lboi2eul",
-                      "isRequired": false,
+                      "isRequired": true,
                       "rightColumn": 28,
                       "widgetId": "gtyvm5ci9t",
                       "isVisible": true,
