@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO class_master SET model_id = '{{Select1.selectedOptionValue}}',\nclass_name = '{{Input1.text}}',\nstatus = '{{Switch1.isSwitchedOn}}',\ncreated_by = '{{Text5.text}}';"
+      "body": "INSERT INTO class_master SET model_id = '{{Select1.selectedOptionValue}}',\nclass_name = '{{Input1.text}}',\nstatus = '{{Switch1.isSwitchedOn?\"Active\":\"Inactive\"}}',\ncreated_by = '{{Text5.text}}';"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -31,7 +31,7 @@
     "jsonPathKeys": [
       "Input1.text",
       "Select1.selectedOptionValue",
-      "Switch1.isSwitchedOn",
+      "Switch1.isSwitchedOn?\"Active\":\"Inactive\"",
       "Text5.text"
     ],
     "userSetOnLoad": false,
