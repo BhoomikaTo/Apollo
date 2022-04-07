@@ -323,7 +323,7 @@
                       "parentId": "t73gczga4g",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{gettable.run()}}"
+                      "onOptionChange": "{{gettable.run(() => version_model.run(), () => {})}}"
                     },
                     {
                       "widgetName": "Input1",
@@ -352,10 +352,11 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "gjbaoyp16w",
-                      "validation": "{{!model_class_version_select.data.map(function dictToarr(index){return index.combination}).includes(Select1.selectedOptionValue+Text8.text+Input1.text.toLowerCase())}}",
-                      "isRequired": true,
+                      "validation": "{{!model_class_version_select.data.map(function dictToarr(index){return index.combination}).includes(Select1.selectedOptionLabel+Text8.text+Input1.text)}}",
+                      "isRequired": false,
                       "rightColumn": 30,
                       "widgetId": "zrzvccz50l",
+                      "errorMessage": "Value can't be duplicate",
                       "isVisible": true,
                       "label": "",
                       "version": 2,
