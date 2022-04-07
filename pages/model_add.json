@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 893,
+          "rightColumn": 742,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -1182,13 +1182,9 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1Copy1",
-                              "onClick": "{{updatemodel.run();\nstoreValue('tab','Tab 1');\nresetWidget(\"Tabs1\",true);\nstoreValue('O',undefined);\nstoreValue('F',undefined);\nstoreValue('M',undefined);\nstoreValue('N',undefined);\nstoreValue('H',undefined);\nstoreValue('I',undefined);\nshowAlert('Data created successfully','success');\nnavigateTo('model_view', {})\n}}",
+                              "onClick": "{{Run.runmultipleActions()}}",
                               "buttonColor": "#92BC4C",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
                               "topRow": 50,
