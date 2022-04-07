@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tupdatemodel.run();\n\t\tstoreValue('tab','Tab 1');\n\t\tresetWidget(\"Tabs1\",true);\n\t\tstoreValue('O',undefined);\n\t\tstoreValue('F',undefined);\n\t\tstoreValue('M',undefined);\n\t\tstoreValue('N',undefined);\n\t\tstoreValue('H',undefined);\n\t\tstoreValue('I',undefined);\n\t\tshowAlert('Data created successfully','success');\n\t\tnavigateTo('model_view', {});\t\t\n\t}",
+      "body": "() => {\n\t\tupdatemodel.run();\n\t\tstoreValue('tab','Tab 1');\n\t\tresetWidget(\"Tabs1\",true);\n\t\tstoreValue('O',undefined);\n\t\tstoreValue('F',undefined);\n\t\tstoreValue('M',undefined);\n\t\tstoreValue('N',undefined);\n\t\tstoreValue('H',undefined);\n\t\tstoreValue('I',undefined);\n\t\tstoreValue('L',undefined);\n\t\tshowAlert('Data created successfully','success');\n\t\tnavigateTo('model_view', {});\t\t\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tupdatemodel.run();\n\t\tstoreValue('tab','Tab 1');\n\t\tresetWidget(\"Tabs1\",true);\n\t\tstoreValue('O',undefined);\n\t\tstoreValue('F',undefined);\n\t\tstoreValue('M',undefined);\n\t\tstoreValue('N',undefined);\n\t\tstoreValue('H',undefined);\n\t\tstoreValue('I',undefined);\n\t\tshowAlert('Data created successfully','success');\n\t\tnavigateTo('model_view', {});\t\t\n\t}"
+      "() => {\n\t\tupdatemodel.run();\n\t\tstoreValue('tab','Tab 1');\n\t\tresetWidget(\"Tabs1\",true);\n\t\tstoreValue('O',undefined);\n\t\tstoreValue('F',undefined);\n\t\tstoreValue('M',undefined);\n\t\tstoreValue('N',undefined);\n\t\tstoreValue('H',undefined);\n\t\tstoreValue('I',undefined);\n\t\tstoreValue('L',undefined);\n\t\tshowAlert('Data created successfully','success');\n\t\tnavigateTo('model_view', {});\t\t\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
