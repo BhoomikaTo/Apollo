@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 742,
+          "rightColumn": 893,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -1514,7 +1514,7 @@
                               "isDisabled": false,
                               "key": "ryomy43e8g",
                               "rightColumn": 49,
-                              "onChange": "{{storeValue('L',Switch1.isSwitchedOn)}}",
+                              "onChange": "{{storeValue('L',Switch1.isSwitchedOn?\"Active\":\"Inactive\")}}",
                               "widgetId": "7isg4dgso1",
                               "isVisible": true,
                               "label": "Inactive",
@@ -1759,7 +1759,7 @@
               "rightColumn": 53,
               "widgetId": "tv984ych99",
               "defaultTab": "{{appsmith.store.tab || \"Tab 1\"}}",
-              "shouldShowTabs": true,
+              "shouldShowTabs": false,
               "tabsObj": {
                 "tab1": {
                   "label": "Tab 1",
