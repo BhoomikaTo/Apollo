@@ -64,6 +64,7 @@
                   "isLoading": false,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
+                  "dynamicBindingPathList": [],
                   "children": [
                     {
                       "widgetName": "Image2",
@@ -126,7 +127,7 @@
               "animateLoading": true,
               "parentColumnSpace": 11.40625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 8,
+              "leftColumn": 9,
               "dynamicBindingPathList": [],
               "children": [
                 {
@@ -150,6 +151,7 @@
                   "isLoading": false,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
+                  "dynamicBindingPathList": [],
                   "children": [
                     {
                       "widgetName": "Text2",
@@ -257,31 +259,25 @@
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "Label",
+                      "labelText": "Camera",
                       "topRow": 5,
                       "bottomRow": 12,
                       "parentRowSpace": 10,
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 2,
-                      "options": [
+                      "dynamicBindingPathList": [
                         {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
+                          "key": "options"
                         }
                       ],
+                      "options": "{{camera.data.map(c => ({label: c.camera_name, value: c.camera_id}))}}",
+                      "labelStyle": "BOLD",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "eedm4erdvo",
@@ -299,31 +295,29 @@
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "Label",
+                      "labelText": "Model",
                       "topRow": 5,
                       "bottomRow": 12,
                       "parentRowSpace": 10,
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
-                      "leftColumn": 26,
-                      "options": [
+                      "dynamicTriggerPathList": [
                         {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
+                          "key": "onOptionChange"
                         }
                       ],
+                      "leftColumn": 26,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "options": "{{model.data.map(c => ({label: c.model_name, value: c.model_id}))}}",
+                      "labelStyle": "BOLD",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "eedm4erdvo",
@@ -334,38 +328,29 @@
                       "version": 1,
                       "parentId": "t73gczga4g",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "onOptionChange": "{{gettable.run()}}"
                     },
                     {
                       "widgetName": "Select3",
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "Label",
+                      "labelText": "Processing Type",
                       "topRow": 13,
                       "bottomRow": 20,
                       "parentRowSpace": 10,
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 2,
-                      "options": [
-                        {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
+                      "options": "[\n  {\n    \"label\": \"RTSP\",\n    \"value\": \"RTSP\"\n  },\n  {\n    \"label\": \"FILE OR EDGE\",\n    \"value\": \"FILE OR EDGE\"\n  }\n]",
+                      "labelStyle": "BOLD",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "eedm4erdvo",
@@ -383,31 +368,21 @@
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba.svg",
-                      "labelText": "Label",
+                      "labelText": "Skip Frames",
                       "topRow": 13,
                       "bottomRow": 20,
                       "parentRowSpace": 10,
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 26,
-                      "options": [
-                        {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
+                      "options": "[\n  {\n    \"label\": \"1\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"2\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"3\",\n    \"value\": \"3\"\n  }\n]",
+                      "labelStyle": "BOLD",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "eedm4erdvo",
@@ -431,10 +406,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 2,
+                      "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "DO_Tracking",
                       "key": "i4twq29p48",
                       "rightColumn": 18,
                       "textAlign": "LEFT",
@@ -463,6 +440,7 @@
                       "parentColumnSpace": 9.48974609375,
                       "resetOnSubmit": true,
                       "leftColumn": 2,
+                      "dynamicBindingPathList": [],
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
@@ -490,10 +468,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 26,
+                      "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "ZONE_FLAG",
                       "key": "i4twq29p48",
                       "rightColumn": 42,
                       "textAlign": "LEFT",
@@ -522,6 +502,7 @@
                       "parentColumnSpace": 9.48974609375,
                       "resetOnSubmit": true,
                       "leftColumn": 26,
+                      "dynamicBindingPathList": [],
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
@@ -549,10 +530,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 2,
+                      "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "Zone_Topleft_X",
                       "key": "i4twq29p48",
                       "rightColumn": 18,
                       "textAlign": "LEFT",
@@ -579,10 +562,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
+                      "dynamicBindingPathList": [],
                       "labelStyle": "",
-                      "inputType": "TEXT",
+                      "inputType": "NUMBER",
                       "isDisabled": false,
                       "key": "cfrlyq3cq2",
                       "isRequired": false,
@@ -608,10 +593,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 26,
+                      "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "Zone_Topleft_Y",
                       "key": "i4twq29p48",
                       "rightColumn": 42,
                       "textAlign": "LEFT",
@@ -638,10 +625,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 26,
+                      "dynamicBindingPathList": [],
                       "labelStyle": "",
-                      "inputType": "TEXT",
+                      "inputType": "NUMBER",
                       "isDisabled": false,
                       "key": "cfrlyq3cq2",
                       "isRequired": false,
@@ -667,10 +656,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 2,
+                      "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "Zone_Botright_X",
                       "key": "i4twq29p48",
                       "rightColumn": 18,
                       "textAlign": "LEFT",
@@ -697,10 +688,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
+                      "dynamicBindingPathList": [],
                       "labelStyle": "",
-                      "inputType": "TEXT",
+                      "inputType": "NUMBER",
                       "isDisabled": false,
                       "key": "cfrlyq3cq2",
                       "isRequired": false,
@@ -727,10 +720,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 26,
+                      "dynamicBindingPathList": [],
                       "labelStyle": "",
-                      "inputType": "TEXT",
+                      "inputType": "NUMBER",
                       "isDisabled": false,
                       "key": "cfrlyq3cq2",
                       "isRequired": false,
@@ -756,10 +751,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 26,
+                      "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "Zone_Botright_Y",
                       "key": "i4twq29p48",
                       "rightColumn": 42,
                       "textAlign": "LEFT",
@@ -776,28 +773,30 @@
                     },
                     {
                       "widgetName": "Switch1",
-                      "rightColumn": 22,
                       "displayName": "Switch",
                       "iconSVG": "/static/media/icon.a3115bc1.svg",
-                      "widgetId": "o6ktsmri9n",
                       "topRow": 52,
                       "bottomRow": 56,
                       "parentRowSpace": 10,
-                      "isVisible": true,
-                      "label": "Label",
                       "type": "SWITCH_WIDGET",
-                      "defaultSwitchState": true,
-                      "version": 1,
                       "alignWidget": "LEFT",
                       "hideCard": false,
-                      "parentId": "t73gczga4g",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 10,
+                      "dynamicBindingPathList": [],
                       "isDisabled": false,
-                      "key": "3i94twncsk"
+                      "key": "3i94twncsk",
+                      "rightColumn": 22,
+                      "widgetId": "o6ktsmri9n",
+                      "isVisible": true,
+                      "label": "Active",
+                      "defaultSwitchState": true,
+                      "version": 1,
+                      "parentId": "t73gczga4g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false
                     },
                     {
                       "widgetName": "Text12",
@@ -810,10 +809,12 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 2,
+                      "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "Status",
                       "key": "i4twq29p48",
                       "rightColumn": 18,
                       "textAlign": "LEFT",
@@ -839,16 +840,18 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 1,
+                      "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "Inactive",
                       "key": "i4twq29p48",
                       "rightColumn": 10,
-                      "textAlign": "LEFT",
+                      "textAlign": "RIGHT",
                       "widgetId": "rfffakx217",
                       "isVisible": true,
-                      "fontStyle": "BOLD",
+                      "fontStyle": "",
                       "textColor": "#231F20",
                       "shouldScroll": false,
                       "version": 1,
@@ -859,34 +862,28 @@
                     },
                     {
                       "widgetName": "CheckboxGroup1",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "options"
+                        }
+                      ],
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb38479.svg",
-                      "topRow": 6,
-                      "bottomRow": 22,
+                      "topRow": 34,
+                      "bottomRow": 40,
                       "parentRowSpace": 10,
                       "type": "CHECKBOX_GROUP_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 8.2421875,
-                      "leftColumn": 47,
-                      "options": [
-                        {
-                          "label": "Blue",
-                          "value": "BLUE"
-                        },
-                        {
-                          "label": "Green",
-                          "value": "GREEN"
-                        },
-                        {
-                          "label": "Red",
-                          "value": "RED"
-                        }
-                      ],
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [],
+                      "options": "[]",
                       "isDisabled": false,
                       "key": "xxipg7ylsx",
                       "isRequired": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "defaultSelectedValues": "BLUE",
                       "widgetId": "g3tpsy1zn2",
                       "isVisible": true,
@@ -895,6 +892,41 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "isInline": true
+                    },
+                    {
+                      "widgetName": "MultiSelect1",
+                      "isFilterable": true,
+                      "displayName": "MultiSelect",
+                      "iconSVG": "/static/media/icon.a3495809.svg",
+                      "labelText": "Class Name",
+                      "topRow": 6,
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "type": "MULTI_SELECT_WIDGET_V2",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.40625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "options": "{{gettable.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
+                      "placeholderText": "Select option(s)",
+                      "isDisabled": false,
+                      "key": "vjoyqlkev9",
+                      "isRequired": false,
+                      "rightColumn": 63,
+                      "widgetId": "6o2hj54kw0",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "t73gczga4g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false
                     }
                   ],
                   "key": "lwhl8hfo69"
@@ -983,7 +1015,38 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "pipeline_add_camera",
+              "name": "camera",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "pipeline_add_model",
+              "name": "model",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "pipeline_add_gettable",
+              "name": "gettable",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select2.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "widgetNames": [
           "Button1",
           "Canvas2",
@@ -1001,6 +1064,7 @@
           "Input5",
           "Input6",
           "MainContainer",
+          "MultiSelect1",
           "Select1",
           "Select2",
           "Select3",
@@ -1026,7 +1090,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "policies": [],
