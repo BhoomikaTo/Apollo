@@ -276,7 +276,7 @@
                           "key": "options"
                         }
                       ],
-                      "options": "{{camera.data.map(c => ({label: c.camera_name, value: c.camera_id}))}}",
+                      "options": "{{camera_name.data.map(c => ({label: c.camera_name, value: c.camera_id}))}}",
                       "labelStyle": "BOLD",
                       "placeholderText": "Select option",
                       "isDisabled": false,
@@ -316,7 +316,7 @@
                           "key": "options"
                         }
                       ],
-                      "options": "{{model.data.map(c => ({label: c.model_name, value: c.model_id}))}}",
+                      "options": "{{model_name.data.map(c => ({label: c.model_name, value: c.model_id}))}}",
                       "labelStyle": "BOLD",
                       "placeholderText": "Select option",
                       "isDisabled": false,
@@ -329,7 +329,7 @@
                       "parentId": "t73gczga4g",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{gettable.run()}}"
+                      "onOptionChange": "{{class_names.run()}}"
                     },
                     {
                       "widgetName": "Select3",
@@ -865,12 +865,15 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "options"
+                        },
+                        {
+                          "key": "isVisible"
                         }
                       ],
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb38479.svg",
-                      "topRow": 34,
-                      "bottomRow": 40,
+                      "topRow": 16,
+                      "bottomRow": 54,
                       "parentRowSpace": 10,
                       "type": "CHECKBOX_GROUP_WIDGET",
                       "hideCard": false,
@@ -878,15 +881,22 @@
                       "parentColumnSpace": 8.2421875,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 48,
-                      "dynamicBindingPathList": [],
-                      "options": "[]",
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        },
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "options": "{{class_names.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
                       "isDisabled": false,
                       "key": "xxipg7ylsx",
                       "isRequired": false,
                       "rightColumn": 64,
-                      "defaultSelectedValues": "BLUE",
+                      "defaultSelectedValues": "",
                       "widgetId": "g3tpsy1zn2",
-                      "isVisible": true,
+                      "isVisible": "{{Select2.selectedOptionValue !=  Number()}}",
                       "version": 2,
                       "parentId": "t73gczga4g",
                       "renderMode": "CANVAS",
@@ -895,12 +905,17 @@
                     },
                     {
                       "widgetName": "MultiSelect1",
-                      "isFilterable": true,
+                      "isFilterable": false,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "MultiSelect",
                       "iconSVG": "/static/media/icon.a3495809.svg",
                       "labelText": "Class Name",
-                      "topRow": 6,
-                      "bottomRow": 13,
+                      "topRow": 5,
+                      "bottomRow": 12,
                       "parentRowSpace": 10,
                       "type": "MULTI_SELECT_WIDGET_V2",
                       "serverSideFiltering": false,
@@ -913,16 +928,20 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "options"
+                        },
+                        {
+                          "key": "isVisible"
                         }
                       ],
-                      "options": "{{gettable.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
+                      "options": "{{class_names.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
+                      "labelStyle": "BOLD",
                       "placeholderText": "Select option(s)",
                       "isDisabled": false,
                       "key": "vjoyqlkev9",
                       "isRequired": false,
                       "rightColumn": 63,
                       "widgetId": "6o2hj54kw0",
-                      "isVisible": true,
+                      "isVisible": "{{Select2.selectedOptionValue !=  Number()}} ",
                       "version": 1,
                       "parentId": "t73gczga4g",
                       "renderMode": "CANVAS",
@@ -1018,16 +1037,16 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "pipeline_add_camera",
-              "name": "camera",
+              "id": "pipeline_add_camera_name",
+              "name": "camera_name",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "pipeline_add_model",
-              "name": "model",
+              "id": "pipeline_add_model_name",
+              "name": "model_name",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -1036,8 +1055,8 @@
           ],
           [
             {
-              "id": "pipeline_add_gettable",
-              "name": "gettable",
+              "id": "pipeline_add_class_names",
+              "name": "class_names",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
