@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 910,
+          "bottomRow": 920,
           "containerStyle": "none",
           "snapRows": 53,
           "parentRowSpace": 1,
@@ -138,7 +138,7 @@
                   "widgetId": "t73gczga4g",
                   "containerStyle": "none",
                   "topRow": 0,
-                  "bottomRow": 680,
+                  "bottomRow": 730,
                   "parentRowSpace": 1,
                   "isVisible": true,
                   "type": "CANVAS_WIDGET",
@@ -153,6 +153,43 @@
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
                   "children": [
+                    {
+                      "widgetName": "Text8Copy",
+                      "borderColor": "#F6F7F8",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 67,
+                      "bottomRow": 71,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.8265625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "borderWidth": "1",
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{Table1.selectedRow.model_name}}",
+                      "key": "2e8zltfbxs",
+                      "rightColumn": 28,
+                      "textAlign": "LEFT",
+                      "widgetId": "o0ckgjemvj",
+                      "isVisible": true,
+                      "fontStyle": "",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "t73gczga4g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
                     {
                       "widgetName": "Text2",
                       "dynamicPropertyPathList": [
@@ -375,13 +412,13 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{\n    \"label\": \"0\",\n    \"value\": \"0\"\n  }",
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 26,
                       "dynamicBindingPathList": [],
-                      "options": "[\n  {\n    \"label\": \"1\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"2\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"3\",\n    \"value\": \"3\"\n  }\n]",
+                      "options": "[\n  {\n    \"label\": \"0\",\n    \"value\": \"0\"\n  },\n\t{\n    \"label\": \"1\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"2\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"3\",\n    \"value\": \"3\"\n  },\n\t{\n    \"label\": \"4\",\n    \"value\": \"4\"\n  },\n\t{\n    \"label\": \"5\",\n    \"value\": \"5\"\n  },\n  {\n    \"label\": \"6\",\n    \"value\": \"6\"\n  },\n  {\n    \"label\": \"7\",\n    \"value\": \"7\"\n  },\n\t{\n    \"label\": \"8\",\n    \"value\": \"8\"\n  },\n\t{\n    \"label\": \"9\",\n    \"value\": \"9\"\n  },\n  {\n    \"label\": \"10\",\n    \"value\": \"10\"\n  },\n  {\n    \"label\": \"11\",\n    \"value\": \"11\"\n  },\n\t{\n    \"label\": \"12\",\n    \"value\": \"12\"\n  },\n\t{\n    \"label\": \"13\",\n    \"value\": \"13\"\n  },\n  {\n    \"label\": \"14\",\n    \"value\": \"14\"\n  },\n  {\n    \"label\": \"15\",\n    \"value\": \"15\"\n  },\n\t{\n    \"label\": \"16\",\n    \"value\": \"16\"\n  },\n\t{\n    \"label\": \"17\",\n    \"value\": \"17\"\n  },\n  {\n    \"label\": \"18\",\n    \"value\": \"18\"\n  },\n  {\n    \"label\": \"19\",\n    \"value\": \"19\"\n  },\n\t{\n    \"label\": \"20\",\n    \"value\": \"20\"\n  }\n]",
                       "labelStyle": "BOLD",
                       "placeholderText": "Select option",
                       "isDisabled": false,
@@ -411,7 +448,7 @@
                       "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "DO_Tracking",
+                      "text": "Do Tracking",
                       "key": "i4twq29p48",
                       "rightColumn": 18,
                       "textAlign": "LEFT",
@@ -425,37 +462,6 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "fontSize": "PARAGRAPH"
-                    },
-                    {
-                      "widgetName": "Input1",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595.svg",
-                      "topRow": 25,
-                      "bottomRow": 29,
-                      "parentRowSpace": 10,
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 9.48974609375,
-                      "resetOnSubmit": true,
-                      "leftColumn": 2,
-                      "dynamicBindingPathList": [],
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "cfrlyq3cq2",
-                      "isRequired": false,
-                      "rightColumn": 22,
-                      "widgetId": "utz9chfmze",
-                      "isVisible": true,
-                      "label": "",
-                      "version": 2,
-                      "parentId": "t73gczga4g",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "iconAlign": "left",
-                      "defaultText": ""
                     },
                     {
                       "widgetName": "Text7",
@@ -473,7 +479,7 @@
                       "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "ZONE_FLAG",
+                      "text": "ZONE FLAG",
                       "key": "i4twq29p48",
                       "rightColumn": 42,
                       "textAlign": "LEFT",
@@ -489,38 +495,12 @@
                       "fontSize": "PARAGRAPH"
                     },
                     {
-                      "widgetName": "Input2",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595.svg",
-                      "topRow": 25,
-                      "bottomRow": 29,
-                      "parentRowSpace": 10,
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 9.48974609375,
-                      "resetOnSubmit": true,
-                      "leftColumn": 26,
-                      "dynamicBindingPathList": [],
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "cfrlyq3cq2",
-                      "isRequired": false,
-                      "rightColumn": 46,
-                      "widgetId": "qq1vel2omv",
-                      "isVisible": true,
-                      "label": "",
-                      "version": 2,
-                      "parentId": "t73gczga4g",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "iconAlign": "left",
-                      "defaultText": ""
-                    },
-                    {
                       "widgetName": "Text8",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 30,
@@ -532,7 +512,11 @@
                       "parentColumnSpace": 9.48974609375,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 2,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "Zone_Topleft_X",
@@ -540,7 +524,7 @@
                       "rightColumn": 18,
                       "textAlign": "LEFT",
                       "widgetId": "2oawjmktl3",
-                      "isVisible": true,
+                      "isVisible": "{{Checkbox1.isChecked}}",
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
                       "shouldScroll": false,
@@ -552,6 +536,11 @@
                     },
                     {
                       "widgetName": "Input3",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 34,
@@ -565,7 +554,11 @@
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "labelStyle": "",
                       "inputType": "NUMBER",
                       "isDisabled": false,
@@ -573,7 +566,7 @@
                       "isRequired": false,
                       "rightColumn": 22,
                       "widgetId": "iwjzbodlgk",
-                      "isVisible": true,
+                      "isVisible": "{{Checkbox1.isChecked}}",
                       "label": "",
                       "version": 2,
                       "parentId": "t73gczga4g",
@@ -584,6 +577,11 @@
                     },
                     {
                       "widgetName": "Text9",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 30,
@@ -595,7 +593,11 @@
                       "parentColumnSpace": 9.48974609375,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 26,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "Zone_Topleft_Y",
@@ -603,7 +605,7 @@
                       "rightColumn": 42,
                       "textAlign": "LEFT",
                       "widgetId": "aqx681dhe6",
-                      "isVisible": true,
+                      "isVisible": "{{Checkbox1.isChecked}}",
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
                       "shouldScroll": false,
@@ -615,6 +617,11 @@
                     },
                     {
                       "widgetName": "Input4",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 34,
@@ -628,7 +635,11 @@
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 26,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "labelStyle": "",
                       "inputType": "NUMBER",
                       "isDisabled": false,
@@ -636,7 +647,7 @@
                       "isRequired": false,
                       "rightColumn": 46,
                       "widgetId": "yq4bu7ckm2",
-                      "isVisible": true,
+                      "isVisible": "{{Checkbox1.isChecked}}",
                       "label": "",
                       "version": 2,
                       "parentId": "t73gczga4g",
@@ -647,6 +658,11 @@
                     },
                     {
                       "widgetName": "Text10",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 39,
@@ -658,7 +674,11 @@
                       "parentColumnSpace": 9.48974609375,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 2,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "Zone_Botright_X",
@@ -666,7 +686,7 @@
                       "rightColumn": 18,
                       "textAlign": "LEFT",
                       "widgetId": "vwageqvj7q",
-                      "isVisible": true,
+                      "isVisible": "{{Checkbox1.isChecked}}",
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
                       "shouldScroll": false,
@@ -678,6 +698,11 @@
                     },
                     {
                       "widgetName": "Input5",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 43,
@@ -691,7 +716,11 @@
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "labelStyle": "",
                       "inputType": "NUMBER",
                       "isDisabled": false,
@@ -699,7 +728,7 @@
                       "isRequired": false,
                       "rightColumn": 22,
                       "widgetId": "8p5aei9ub1",
-                      "isVisible": true,
+                      "isVisible": "{{Checkbox1.isChecked}}",
                       "label": "",
                       "version": 2,
                       "parentId": "t73gczga4g",
@@ -710,6 +739,11 @@
                     },
                     {
                       "widgetName": "Input6",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
                       "topRow": 43,
@@ -723,7 +757,11 @@
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 26,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "labelStyle": "",
                       "inputType": "NUMBER",
                       "isDisabled": false,
@@ -731,7 +769,7 @@
                       "isRequired": false,
                       "rightColumn": 46,
                       "widgetId": "2uq4rbvv33",
-                      "isVisible": true,
+                      "isVisible": "{{Checkbox1.isChecked}}",
                       "label": "",
                       "version": 2,
                       "parentId": "t73gczga4g",
@@ -742,6 +780,11 @@
                     },
                     {
                       "widgetName": "Text11",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 39,
@@ -753,7 +796,11 @@
                       "parentColumnSpace": 9.48974609375,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 26,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "Zone_Botright_Y",
@@ -761,7 +808,7 @@
                       "rightColumn": 42,
                       "textAlign": "LEFT",
                       "widgetId": "hm0uq5vhdp",
-                      "isVisible": true,
+                      "isVisible": "{{Checkbox1.isChecked}}",
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
                       "shouldScroll": false,
@@ -872,15 +919,15 @@
                       ],
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb38479.svg",
-                      "topRow": 16,
-                      "bottomRow": 54,
+                      "topRow": 9,
+                      "bottomRow": 45,
                       "parentRowSpace": 10,
                       "type": "CHECKBOX_GROUP_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 8.2421875,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 48,
+                      "leftColumn": 47,
                       "dynamicBindingPathList": [
                         {
                           "key": "options"
@@ -893,7 +940,7 @@
                       "isDisabled": false,
                       "key": "xxipg7ylsx",
                       "isRequired": false,
-                      "rightColumn": 64,
+                      "rightColumn": 63,
                       "defaultSelectedValues": "",
                       "widgetId": "g3tpsy1zn2",
                       "isVisible": "{{Select2.selectedOptionValue !=  Number()}}",
@@ -904,48 +951,149 @@
                       "isInline": true
                     },
                     {
-                      "widgetName": "MultiSelect1",
-                      "isFilterable": false,
+                      "widgetName": "Text14",
                       "dynamicPropertyPathList": [
                         {
                           "key": "isVisible"
                         }
                       ],
-                      "displayName": "MultiSelect",
-                      "iconSVG": "/static/media/icon.a3495809.svg",
-                      "labelText": "Class Name",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 5,
-                      "bottomRow": 12,
+                      "bottomRow": 9,
                       "parentRowSpace": 10,
-                      "type": "MULTI_SELECT_WIDGET_V2",
-                      "serverSideFiltering": false,
+                      "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "defaultOptionValue": "",
                       "animateLoading": true,
-                      "parentColumnSpace": 11.40625,
+                      "parentColumnSpace": 8.06396484375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 48,
+                      "leftColumn": 47,
                       "dynamicBindingPathList": [
-                        {
-                          "key": "options"
-                        },
                         {
                           "key": "isVisible"
                         }
                       ],
-                      "options": "{{class_names.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
-                      "labelStyle": "BOLD",
-                      "placeholderText": "Select option(s)",
-                      "isDisabled": false,
-                      "key": "vjoyqlkev9",
-                      "isRequired": false,
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Select Classes",
+                      "key": "rg6ibpsugx",
                       "rightColumn": 63,
-                      "widgetId": "6o2hj54kw0",
-                      "isVisible": "{{Select2.selectedOptionValue !=  Number()}} ",
+                      "textAlign": "LEFT",
+                      "widgetId": "d5yuw4dmzc",
+                      "isVisible": "{{Select2.selectedOptionValue !=  Number()}}",
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "t73gczga4g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "Select5",
+                      "isFilterable": false,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "",
+                      "topRow": 25,
+                      "bottomRow": 29,
+                      "parentRowSpace": 10,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.06396484375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [],
+                      "options": "[\n  {\n    \"label\": \"Yes\",\n    \"value\": \"Yes\"\n  },\n  {\n    \"label\": \"No\",\n    \"value\": \"No\"\n  }\n]",
+                      "placeholderText": "Yes/No",
+                      "isDisabled": false,
+                      "key": "nrw9vw79r0",
+                      "isRequired": false,
+                      "rightColumn": 22,
+                      "widgetId": "8vks2zt9lr",
+                      "isVisible": true,
                       "version": 1,
                       "parentId": "t73gczga4g",
                       "renderMode": "CANVAS",
                       "isLoading": false
+                    },
+                    {
+                      "widgetName": "Checkbox1",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
+                      "displayName": "Checkbox",
+                      "iconSVG": "/static/media/icon.aaab032b.svg",
+                      "topRow": 25,
+                      "bottomRow": 29,
+                      "parentRowSpace": 10,
+                      "type": "CHECKBOX_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.06396484375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 26,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
+                      "isDisabled": "{{Checkbox2.isChecked}}",
+                      "key": "gqnit9zo30",
+                      "isRequired": false,
+                      "rightColumn": 35,
+                      "widgetId": "s343iwcbfe",
+                      "isVisible": true,
+                      "label": "Yes",
+                      "version": 1,
+                      "parentId": "t73gczga4g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "defaultCheckedState": false
+                    },
+                    {
+                      "widgetName": "Checkbox2",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
+                      "displayName": "Checkbox",
+                      "iconSVG": "/static/media/icon.aaab032b.svg",
+                      "topRow": 25,
+                      "bottomRow": 29,
+                      "parentRowSpace": 10,
+                      "type": "CHECKBOX_WIDGET",
+                      "alignWidget": "RIGHT",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.06396484375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 36,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
+                      "isDisabled": "{{Checkbox1.isChecked}}",
+                      "key": "gqnit9zo30",
+                      "isRequired": false,
+                      "rightColumn": 46,
+                      "widgetId": "44hv8a94vi",
+                      "isVisible": true,
+                      "label": "No",
+                      "version": 1,
+                      "parentId": "t73gczga4g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "defaultCheckedState": false
                     }
                   ],
                   "key": "lwhl8hfo69"
@@ -1031,6 +1179,41 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "CheckboxGroup2",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "options"
+                }
+              ],
+              "displayName": "Checkbox Group",
+              "iconSVG": "/static/media/icon.ecb38479.svg",
+              "topRow": 86,
+              "bottomRow": 90,
+              "parentRowSpace": 10,
+              "type": "CHECKBOX_GROUP_WIDGET",
+              "hideCard": false,
+              "isSelectAll": false,
+              "animateLoading": true,
+              "parentColumnSpace": 8.06396484375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 30,
+              "dynamicBindingPathList": [],
+              "options": "[\n  {\n    \"label\": \"Yes\",\n    \"value\": \"Yes\"\n  },\n  {\n    \"label\": \"No\",\n    \"value\": \"No\"\n  }\n]",
+              "isDisabled": false,
+              "key": "z05n9g98mv",
+              "optionAlignment": "space-between",
+              "isRequired": false,
+              "rightColumn": 50,
+              "defaultSelectedValues": "",
+              "widgetId": "3g66awjdkd",
+              "isVisible": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isInline": true
             }
           ]
         },
@@ -1070,34 +1253,37 @@
           "Button1",
           "Canvas2",
           "Canvas3",
+          "Checkbox1",
+          "Checkbox2",
           "CheckboxGroup1",
+          "CheckboxGroup2",
           "Container2",
           "Form1",
           "FormButton1",
           "FormButton2",
           "Image2",
-          "Input1",
-          "Input2",
           "Input3",
           "Input4",
           "Input5",
           "Input6",
           "MainContainer",
-          "MultiSelect1",
           "Select1",
           "Select2",
           "Select3",
           "Select4",
+          "Select5",
           "Switch1",
           "Text10",
           "Text11",
           "Text12",
           "Text13",
+          "Text14",
           "Text2",
           "Text5",
           "Text6",
           "Text7",
           "Text8",
+          "Text8Copy",
           "Text9"
         ],
         "validOnPageLoadActions": true,
