@@ -120,7 +120,7 @@
               "displayName": "Form",
               "iconSVG": "/static/media/icon.ea3e08d1.svg",
               "topRow": 9,
-              "bottomRow": 80,
+              "bottomRow": 71,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -138,7 +138,7 @@
                   "widgetId": "t73gczga4g",
                   "containerStyle": "none",
                   "topRow": 0,
-                  "bottomRow": 680,
+                  "bottomRow": 600,
                   "parentRowSpace": 1,
                   "isVisible": true,
                   "type": "CANVAS_WIDGET",
@@ -190,13 +190,17 @@
                     {
                       "resetFormOnClick": true,
                       "widgetName": "FormButton1",
-                      "onClick": "{{Createdata.run(() => showAlert('Data Submitted successfully','success'), () => showAlert('Failed to submit data','error'))}}",
+                      "onClick": "{{Insert_pipeline.run(() =>\nInsert_pipeline_class.run(() => showAlert('Data Submitted successfully','success'), () => showAlert('Failed to submit data','error')))}}",
                       "buttonColor": "#93BC4D",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "FormButton",
                       "iconSVG": "/static/media/icon.c8f649ed.svg",
-                      "topRow": 62,
-                      "bottomRow": 66,
+                      "topRow": 54,
+                      "bottomRow": 58,
                       "type": "FORM_BUTTON_WIDGET",
                       "hideCard": true,
                       "animateLoading": true,
@@ -205,11 +209,11 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 42,
+                      "leftColumn": 40,
                       "dynamicBindingPathList": [],
                       "text": "Create",
                       "key": "i058ryxwxz",
-                      "rightColumn": 58,
+                      "rightColumn": 56,
                       "isDefaultClickDisabled": true,
                       "widgetId": "3yhf9g2obx",
                       "isVisible": true,
@@ -228,8 +232,8 @@
                       "buttonColor": "#93BC4D",
                       "displayName": "FormButton",
                       "iconSVG": "/static/media/icon.c8f649ed.svg",
-                      "topRow": 62,
-                      "bottomRow": 66,
+                      "topRow": 54,
+                      "bottomRow": 58,
                       "type": "FORM_BUTTON_WIDGET",
                       "hideCard": true,
                       "animateLoading": true,
@@ -238,11 +242,11 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 25,
+                      "leftColumn": 24,
                       "dynamicBindingPathList": [],
                       "text": "Cancel",
                       "key": "i058ryxwxz",
-                      "rightColumn": 41,
+                      "rightColumn": 40,
                       "isDefaultClickDisabled": true,
                       "widgetId": "8j5xkzgz3g",
                       "isVisible": true,
@@ -444,7 +448,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": "ZONE FLAG",
                       "key": "i4twq29p48",
-                      "rightColumn": 18,
+                      "rightColumn": 14,
                       "textAlign": "LEFT",
                       "widgetId": "hgbffhdcxc",
                       "isVisible": true,
@@ -511,6 +515,7 @@
                       "parentRowSpace": 10,
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
+                      "maxNum": "10000",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
@@ -592,6 +597,7 @@
                       "parentRowSpace": 10,
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
+                      "maxNum": "10000",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
@@ -673,6 +679,7 @@
                       "parentRowSpace": 10,
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
+                      "maxNum": "100000",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
@@ -714,6 +721,7 @@
                       "parentRowSpace": 10,
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
+                      "maxNum": "10000",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
@@ -889,7 +897,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 8.2421875,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSelectionChange"
+                        }
+                      ],
                       "leftColumn": 47,
                       "dynamicBindingPathList": [
                         {
@@ -899,6 +911,7 @@
                           "key": "isVisible"
                         }
                       ],
+                      "onSelectionChange": "{{storeValue('A',CheckboxGroup1.selectedValues)}}",
                       "options": "{{class_names.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
                       "isDisabled": false,
                       "key": "xxipg7ylsx",
@@ -1002,7 +1015,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 8.06396484375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 18,
+                      "leftColumn": 14,
                       "dynamicBindingPathList": [
                         {
                           "key": "isDisabled"
@@ -1011,7 +1024,7 @@
                       "isDisabled": "{{Checkbox2.isChecked}}",
                       "key": "gqnit9zo30",
                       "isRequired": false,
-                      "rightColumn": 27,
+                      "rightColumn": 23,
                       "widgetId": "s343iwcbfe",
                       "isVisible": true,
                       "label": "Yes",
@@ -1039,7 +1052,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 8.06396484375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 27,
+                      "leftColumn": 23,
                       "dynamicBindingPathList": [
                         {
                           "key": "isDisabled"
@@ -1048,7 +1061,7 @@
                       "isDisabled": "{{Checkbox1.isChecked}}",
                       "key": "gqnit9zo30",
                       "isRequired": false,
-                      "rightColumn": 37,
+                      "rightColumn": 31,
                       "widgetId": "44hv8a94vi",
                       "isVisible": true,
                       "label": "No",

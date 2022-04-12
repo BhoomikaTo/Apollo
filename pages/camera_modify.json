@@ -152,21 +152,20 @@
               "defaultPageSize": 0,
               "columnOrder": [
                 "camera_id",
-                "area_name",
+                "area_id",
+                "camera_type",
                 "manufacturer",
                 "model",
-                "status",
-                "created_date",
-                "created_by",
-                "camera_type",
                 "resolution",
-                "ir_enabled",
                 "fps",
+                "ir_enabled",
+                "description",
                 "process_type",
                 "rtsp_url",
-                "area_id",
-                "description",
-                "area_description",
+                "created_by",
+                "created_date",
+                "area_name",
+                "status",
                 "customColumn1"
               ],
               "isVisibleDownload": true,
@@ -244,9 +243,6 @@
                 },
                 {
                   "key": "primaryColumns.description.computedValue"
-                },
-                {
-                  "key": "primaryColumns.area_description.computedValue"
                 }
               ],
               "leftColumn": 5,
@@ -528,23 +524,6 @@
                   "isDerived": false,
                   "label": "description",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.description))}}"
-                },
-                "area_description": {
-                  "index": 15,
-                  "width": 150,
-                  "id": "area_description",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "PARAGRAPH",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": false,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "area_description",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.area_description))}}"
                 }
               },
               "delimiter": ",",

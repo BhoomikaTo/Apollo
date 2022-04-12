@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "Createdata",
+    "name": "Insert_pipeline_class",
     "datasource": {
       "pluginId": "mysql-plugin",
       "messages": [],
@@ -17,20 +17,26 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": ""
+      "body": "insert into pipeline_class_map( pipeline_id, model_id, class_id, created_by, created_date)\nselect pipeline_id, model_id, {{appsmith.store.A}}, created_by, created_date\nfrom pipeline_master\nwhere pipeline_id = last_insert_id();"
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "appsmith.store.A"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "pipeline_add_Createdata",
+  "id": "pipeline_add_Insert_pipeline_class",
   "deleted": false,
-  "gitSyncId": "6225932e52df83079ac94bc5_6253c10d9c18654bb5892f10"
+  "gitSyncId": "6225932e52df83079ac94bc5_625532079c18654bb5892f25"
 }
