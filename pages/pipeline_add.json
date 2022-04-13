@@ -994,11 +994,7 @@
                     },
                     {
                       "widgetName": "Checkbox2",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "isDisabled"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Checkbox",
                       "iconSVG": "/static/media/icon.aaab032b.svg",
                       "topRow": 26,
@@ -1011,12 +1007,8 @@
                       "parentColumnSpace": 8.06396484375,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 14,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "isDisabled"
-                        }
-                      ],
-                      "isDisabled": "{{Checkbox1.isChecked}}",
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
                       "key": "gqnit9zo30",
                       "isRequired": false,
                       "rightColumn": 23,
