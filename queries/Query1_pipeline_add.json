@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "Insert_pipeline_class",
+    "name": "Query1",
     "datasource": {
       "pluginId": "mysql-plugin",
       "messages": [],
@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into pipeline_class_map( pipeline_id, model_id, class_id, created_by, created_date)\nselect pipeline_id, model_id, \"{{appsmith.store.A}}\", created_by, created_date\nfrom pipeline_master\nwhere pipeline_id = last_insert_id();"
+      "body": "{\n\"camera_id\":{{Select1.selectedOptionValue}},\n\"model_id\":{{Select2.selectedOptionValue}},\n\"processing_type\":{{Select3.selectedOptionValue}}\n}"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -29,14 +29,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.A"
+      "Select1.selectedOptionValue",
+      "Select2.selectedOptionValue",
+      "Select3.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "pipeline_add_Insert_pipeline_class",
+  "id": "pipeline_add_Query1",
   "deleted": false,
-  "gitSyncId": "6225932e52df83079ac94bc5_625532079c18654bb5892f25"
+  "gitSyncId": "6225932e52df83079ac94bc5_62556faf9c18654bb5892f27"
 }
