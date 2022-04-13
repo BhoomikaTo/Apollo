@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into pipeline_class_map( pipeline_id, model_id, class_id, created_by, created_date)\nselect pipeline_id, model_id, {{appsmith.store.A}} , created_by, created_date\nfrom pipeline_master\nwhere pipeline_id = last_insert_id();"
+      "body": "insert into pipeline_class_map( pipeline_id, model_id, class_id, created_by, created_date)\nselect pipeline_id, model_id, {{appsmith.store.A[0]}} , created_by, created_date\nfrom pipeline_master\nwhere pipeline_id = last_insert_id();"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -29,7 +29,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.A"
+      "appsmith.store.A[0]"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

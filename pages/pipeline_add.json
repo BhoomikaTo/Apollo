@@ -190,9 +190,13 @@
                     {
                       "resetFormOnClick": true,
                       "widgetName": "FormButton1",
-                      "onClick": "{{Insert_pipeline.run(() => Insert_pipeline_class.run(), () => showAlert('error','error'))}}",
+                      "onClick": "{{Insert_pipeline.run(() =>    Insert_pipeline_class.run(() => showAlert(\"Data Submitted Successfully\",'success') )) }}",
                       "buttonColor": "#93BC4D",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "FormButton",
                       "iconSVG": "/static/media/icon.c8f649ed.svg",
                       "topRow": 54,
@@ -281,7 +285,7 @@
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "eedm4erdvo",
-                      "isRequired": false,
+                      "isRequired": true,
                       "rightColumn": 22,
                       "widgetId": "4n2xfjjnha",
                       "isVisible": true,
@@ -321,7 +325,7 @@
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "eedm4erdvo",
-                      "isRequired": false,
+                      "isRequired": true,
                       "rightColumn": 46,
                       "widgetId": "jkwmk9kzhr",
                       "isVisible": true,
@@ -354,7 +358,7 @@
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "eedm4erdvo",
-                      "isRequired": false,
+                      "isRequired": true,
                       "rightColumn": 22,
                       "widgetId": "394k9r272q",
                       "isVisible": true,
@@ -386,7 +390,7 @@
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "eedm4erdvo",
-                      "isRequired": false,
+                      "isRequired": true,
                       "rightColumn": 46,
                       "widgetId": "pgc5dizwg4",
                       "isVisible": true,
@@ -1105,6 +1109,41 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "Text15",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 83,
+              "bottomRow": 87,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 11.40625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 8,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{appsmith.store.A}}",
+              "key": "oy96dkzp1p",
+              "rightColumn": 24,
+              "textAlign": "LEFT",
+              "widgetId": "d2a1w5r9d2",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "shouldScroll": false,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
             }
           ]
         },
@@ -1167,6 +1206,7 @@
           "Text12",
           "Text13",
           "Text14",
+          "Text15",
           "Text2",
           "Text5",
           "Text6",
