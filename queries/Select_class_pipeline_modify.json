@@ -17,9 +17,9 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT p.class_id, c.class_name FROM pipeline_class_map as p join class_master as c\non p.class_id=c.class_id\nwhere p.pipeline_id={{Table1.selectedRow.pipeline_id}}\nand p.model_id={{Table1.selectedRow.model_id}};\n"
+      "body": "SELECT c.class_id, c.class_name FROM pipeline_class_map as p join class_master as c\non p.class_id=c.class_id\nwhere p.pipeline_id={{Table1.selectedRow.pipeline_id}}\nand p.model_id={{Table1.selectedRow.model_id}};\n"
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
