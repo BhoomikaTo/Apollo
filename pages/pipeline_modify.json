@@ -1115,6 +1115,11 @@
                             {
                               "widgetName": "Select2Copy",
                               "isFilterable": false,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
                               "displayName": "Select",
                               "iconSVG": "/static/media/icon.bd99caba.svg",
                               "labelText": "Model",
@@ -1154,7 +1159,7 @@
                               "parentId": "oyx1b0cs1x",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "onOptionChange": "{{class_names.run(() => Select_class.run(), () => {})}}"
+                              "onOptionChange": "{{\n  class_names.run();\n  Select_class.run();\n}}"
                             },
                             {
                               "widgetName": "Select3",
@@ -1717,7 +1722,7 @@
                               "displayName": "Checkbox Group",
                               "iconSVG": "/static/media/icon.ecb38479.svg",
                               "topRow": 4,
-                              "bottomRow": 25,
+                              "bottomRow": 38,
                               "parentRowSpace": 10,
                               "type": "CHECKBOX_GROUP_WIDGET",
                               "hideCard": false,
@@ -1745,7 +1750,7 @@
                               "optionAlignment": "flex-start",
                               "isRequired": false,
                               "rightColumn": 63,
-                              "defaultSelectedValues": "{{Select_class.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
+                              "defaultSelectedValues": "{{Select_class.data.map(c => (c.class_id))}}",
                               "widgetId": "edxpcdtry8",
                               "isVisible": true,
                               "version": 2,
@@ -2077,7 +2082,9 @@
                 "Table1.selectedRow.pipeline_id"
               ],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "pipeline_modify_class_names",
               "name": "class_names",
