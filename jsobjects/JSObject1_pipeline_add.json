@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "pipeline_add",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\n\tmyFun2: async () => {\n\t\tInsert_pipeline.run()\n    .then(() => appsmith.store.A.forEach(obj => {\n\t\t\tInsert_pipeline_class.run({org:obj})\n    .then((response) => showAlert(response) )\n    .catch((error) => showAlert(error, 'error')) \n\t\t}) )\n    .catch((error) => showAlert(error, 'error'))\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "pipeline_add_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6225932e52df83079ac94bc5_6256de989c18654bb5892f2f"
+}

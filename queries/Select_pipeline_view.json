@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT p.pipeline_id, c.model as camera, a.area_name, m.model_name, m.version, p.status, p.created_by, p.created_date\n FROM pipeline_master as p\n join camera_master as c on p.camera_id=c.camera_id\n join area_ref as a on c.area_id=a.area_id\n join model_master as m on p.model_id=m.model_id\nOrder By {{Select1.selectedOptionValue}} {{Select2.selectedOptionValue}}\n;",
+      "body": "SELECT p.pipeline_id, c.model as camera, a.area_name, m.model_name, m.version, p.status, p.created_by, p.created_date, p.processing_type, p.skip_frames, p.do_tracking, p.zone_flag, p.zone_topleft_x, p.zone_topleft_y, p.zone_botright_x, p.zone_botright_y, p.model_id\n FROM pipeline_master as p\n join camera_master as c on p.camera_id=c.camera_id\n join area_ref as a on c.area_id=a.area_id\n join model_master as m on p.model_id=m.model_id\nOrder By {{Select1.selectedOptionValue}} {{Select2.selectedOptionValue}}\n;",
       "pluginSpecifiedTemplates": [
         {
           "value": false

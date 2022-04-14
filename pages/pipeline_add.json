@@ -190,13 +190,9 @@
                     {
                       "resetFormOnClick": true,
                       "widgetName": "FormButton1",
-                      "onClick": "{{Insert_pipeline.run(() =>    Insert_pipeline_class.run(() => showAlert(\"Data Submitted Successfully\",'success') )) }}",
+                      "onClick": "{{JSObject1.myFun2()}}",
                       "buttonColor": "#93BC4D",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "FormButton",
                       "iconSVG": "/static/media/icon.c8f649ed.svg",
                       "topRow": 54,
@@ -1114,15 +1110,15 @@
               "widgetName": "Text15",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
-              "topRow": 83,
-              "bottomRow": 87,
+              "topRow": 82,
+              "bottomRow": 90,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 11.40625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 8,
+              "leftColumn": 18,
               "dynamicBindingPathList": [
                 {
                   "key": "text"
@@ -1131,10 +1127,10 @@
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
               "text": "{{appsmith.store.A}}",
-              "key": "oy96dkzp1p",
-              "rightColumn": 24,
+              "key": "px467dnwdg",
+              "rightColumn": 34,
               "textAlign": "LEFT",
-              "widgetId": "d2a1w5r9d2",
+              "widgetId": "5izh80ltch",
               "isVisible": true,
               "fontStyle": "BOLD",
               "textColor": "#231F20",
