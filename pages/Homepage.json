@@ -797,6 +797,7 @@
                     },
                     {
                       "widgetName": "Button3Copy8CopyCopy5",
+                      "onClick": "{{navigateTo('pipeline_modify', {})}}",
                       "buttonColor": "#FFFFFF",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
@@ -808,7 +809,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 4.49951171875,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 45,
                       "dynamicBindingPathList": [],
                       "text": "Modify",
