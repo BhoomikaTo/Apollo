@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 920,
+          "bottomRow": 700,
           "containerStyle": "none",
           "snapRows": 53,
           "parentRowSpace": 1,
@@ -190,7 +190,7 @@
                     {
                       "resetFormOnClick": true,
                       "widgetName": "FormButton1",
-                      "onClick": "{{JSObject1.myFun2()}}",
+                      "onClick": "{{Insert_pipeline.run(() => JSObject1.myFun2(), () => {})}}",
                       "buttonColor": "#93BC4D",
                       "dynamicPropertyPathList": [],
                       "displayName": "FormButton",
@@ -329,7 +329,7 @@
                       "parentId": "t73gczga4g",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{class_names.run()}}"
+                      "onOptionChange": "{{class_names.run(() => storeValue('model_id',Select2.selectedOptionValue), () => {})}}"
                     },
                     {
                       "widgetName": "Select3",
@@ -914,7 +914,7 @@
                           "key": "isSelectAll"
                         }
                       ],
-                      "onSelectionChange": "{{storeValue('A',CheckboxGroup1.selectedValues)}}",
+                      "onSelectionChange": "{{storeValue('class_id',CheckboxGroup1.selectedValues)}}",
                       "options": "{{class_names.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
                       "isDisabled": false,
                       "key": "xxipg7ylsx",
@@ -1112,41 +1112,6 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "fontSize": "PARAGRAPH"
-            },
-            {
-              "widgetName": "Text15",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b52.svg",
-              "topRow": 82,
-              "bottomRow": 90,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 11.40625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 18,
-              "dynamicBindingPathList": [
-                {
-                  "key": "text"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "#FFC13D",
-              "text": "{{appsmith.store.A}}",
-              "key": "px467dnwdg",
-              "rightColumn": 34,
-              "textAlign": "LEFT",
-              "widgetId": "5izh80ltch",
-              "isVisible": false,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "shouldScroll": false,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "fontSize": "PARAGRAPH"
             }
           ]
         },
@@ -1209,7 +1174,6 @@
           "Text12",
           "Text13",
           "Text14",
-          "Text15",
           "Text2",
           "Text5",
           "Text6",

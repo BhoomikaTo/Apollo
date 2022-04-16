@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "JSObject1.myFun2",
+    "name": "myFun1",
+    "fullyQualifiedName": "JSObject1.myFun1",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,15 +13,15 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "pipeline_add",
-    "collectionId": "pipeline_add_JSObject1",
+    "pageId": "pipeline_modify",
+    "collectionId": "pipeline_modify_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tfor (let i = 0;i<appsmith.store.class_id.length;i++){\n\t\t\tawait Insert_pipeline_class.run({org: appsmith.store.class_id[i]})\n\t\t}\n\t\n\t}",
+      "body": "() => {\n\t\t//write code here\n\t}",
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -33,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tfor (let i = 0;i<appsmith.store.class_id.length;i++){\n\t\t\tawait Insert_pipeline_class.run({org: appsmith.store.class_id[i]})\n\t\t}\n\t\n\t}"
+      "() => {\n\t\t//write code here\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "pipeline_add_myFun2",
+  "id": "pipeline_modify_myFun1",
   "deleted": false,
-  "gitSyncId": "6225932e52df83079ac94bc5_6256de989c18654bb5892f2b"
+  "gitSyncId": "6225932e52df83079ac94bc5_625a760e9c18654bb5892f4b"
 }
