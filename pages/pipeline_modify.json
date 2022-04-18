@@ -248,11 +248,7 @@
                 "customColumn1"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [
-                {
-                  "key": "onRowSelected"
-                }
-              ],
+              "dynamicPropertyPathList": [],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 20,
@@ -650,7 +646,7 @@
                 }
               },
               "delimiter": ",",
-              "onRowSelected": "{{class_names.run()}}",
+              "onRowSelected": "{{class_names.run(() => Select_class.run(), () => {})}}",
               "key": "ujy2cn5qkr",
               "derivedColumns": {
                 "customColumn1": {
@@ -1011,11 +1007,11 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 23,
+                              "leftColumn": 24,
                               "dynamicBindingPathList": [],
                               "text": "Cancel",
                               "key": "i058ryxwxz",
-                              "rightColumn": 33,
+                              "rightColumn": 34,
                               "isDefaultClickDisabled": true,
                               "widgetId": "gt95bw8xc7",
                               "isVisible": true,
