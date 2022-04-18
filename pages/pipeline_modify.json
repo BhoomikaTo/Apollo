@@ -248,7 +248,11 @@
                 "customColumn1"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onRowSelected"
+                }
+              ],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 20,
@@ -1065,11 +1069,7 @@
                             {
                               "widgetName": "Select2Copy",
                               "isFilterable": false,
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "onOptionChange"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Select",
                               "iconSVG": "/static/media/icon.bd99caba.svg",
                               "labelText": "Model",
@@ -1109,7 +1109,7 @@
                               "parentId": "oyx1b0cs1x",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "onOptionChange": "{{\n  class_names.run();\n  Select_class.run();\n}}"
+                              "onOptionChange": "{{class_names.run()}}"
                             },
                             {
                               "widgetName": "Select3",
@@ -1586,7 +1586,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 9.48974609375,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 34,
+                              "leftColumn": 29,
                               "dynamicBindingPathList": [],
                               "isDisabled": false,
                               "key": "3i94twncsk",
@@ -1649,8 +1649,8 @@
                               "truncateButtonColor": "#FFC13D",
                               "text": "Inactive",
                               "key": "i4twq29p48",
-                              "rightColumn": 34,
-                              "textAlign": "RIGHT",
+                              "rightColumn": 29,
+                              "textAlign": "LEFT",
                               "widgetId": "fpwznyn66u",
                               "isVisible": true,
                               "fontStyle": "",
