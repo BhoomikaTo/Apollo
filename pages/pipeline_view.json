@@ -571,7 +571,7 @@
                 }
               },
               "delimiter": ",",
-              "onRowSelected": "{{Select_class.run(() => showModal('Modal1'), () => {})}}",
+              "onRowSelected": "{{Select_class.run(() => (), () => {})}}",
               "key": "ujy2cn5qkr",
               "derivedColumns": {},
               "rightColumn": 63,
