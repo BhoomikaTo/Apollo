@@ -1539,11 +1539,15 @@
                               "parentColumnSpace": 9.48974609375,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 26,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "text"
+                                }
+                              ],
                               "shouldTruncate": false,
                               "borderWidth": "1",
                               "truncateButtonColor": "#FFC13D",
-                              "text": "Inactive",
+                              "text": "{{Table1.selectedRow.status}}",
                               "key": "i4twq29p48",
                               "rightColumn": 42,
                               "textAlign": "LEFT",
