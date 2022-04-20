@@ -1305,6 +1305,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "isVisible"
+                                },
+                                {
+                                  "key": "defaultText"
                                 }
                               ],
                               "labelStyle": "",
@@ -1312,7 +1315,7 @@
                               "isDisabled": false,
                               "key": "cfrlyq3cq2",
                               "isRequired": false,
-                              "rightColumn": 18,
+                              "rightColumn": 20,
                               "widgetId": "c5lbnaiqzl",
                               "isVisible": "{{Checkbox2.isChecked}}",
                               "label": "",
@@ -1321,7 +1324,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "iconAlign": "left",
-                              "defaultText": ""
+                              "defaultText": "{{Table1.selectedRow.zone_topleft_x}}"
                             },
                             {
                               "widgetName": "Text9",
@@ -1387,6 +1390,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "isVisible"
+                                },
+                                {
+                                  "key": "defaultText"
                                 }
                               ],
                               "labelStyle": "",
@@ -1394,7 +1400,7 @@
                               "isDisabled": false,
                               "key": "cfrlyq3cq2",
                               "isRequired": false,
-                              "rightColumn": 44,
+                              "rightColumn": 45,
                               "widgetId": "mn97ihz1c5",
                               "isVisible": "{{Checkbox2.isChecked}}",
                               "label": "",
@@ -1403,7 +1409,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "iconAlign": "left",
-                              "defaultText": ""
+                              "defaultText": "{{Table1.selectedRow.zone_topleft_y}}"
                             },
                             {
                               "widgetName": "Text10",
@@ -1454,8 +1460,8 @@
                               ],
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
-                              "topRow": 39,
-                              "bottomRow": 43,
+                              "topRow": 38,
+                              "bottomRow": 42,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "type": "INPUT_WIDGET_V2",
@@ -1469,6 +1475,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "isVisible"
+                                },
+                                {
+                                  "key": "defaultText"
                                 }
                               ],
                               "labelStyle": "",
@@ -1476,7 +1485,7 @@
                               "isDisabled": false,
                               "key": "cfrlyq3cq2",
                               "isRequired": false,
-                              "rightColumn": 18,
+                              "rightColumn": 20,
                               "widgetId": "bwjnt1ld5p",
                               "isVisible": "{{Checkbox2.isChecked}}",
                               "label": "",
@@ -1485,7 +1494,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "iconAlign": "left",
-                              "defaultText": ""
+                              "defaultText": "{{Table1.selectedRow.zone_botright_x}}"
                             },
                             {
                               "widgetName": "Input6",
@@ -1511,6 +1520,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "isVisible"
+                                },
+                                {
+                                  "key": "defaultText"
                                 }
                               ],
                               "labelStyle": "",
@@ -1518,7 +1530,7 @@
                               "isDisabled": false,
                               "key": "cfrlyq3cq2",
                               "isRequired": false,
-                              "rightColumn": 44,
+                              "rightColumn": 45,
                               "widgetId": "o257dny5eu",
                               "isVisible": "{{Checkbox2.isChecked}}",
                               "label": "",
@@ -1527,7 +1539,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "iconAlign": "left",
-                              "defaultText": ""
+                              "defaultText": "{{Table1.selectedRow.zone_botright_y}}"
                             },
                             {
                               "widgetName": "Text11",
@@ -1571,6 +1583,11 @@
                             },
                             {
                               "widgetName": "Switch1",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "defaultSwitchState"
+                                }
+                              ],
                               "displayName": "Switch",
                               "iconSVG": "/static/media/icon.a3115bc1.svg",
                               "topRow": 22,
@@ -1583,14 +1600,18 @@
                               "parentColumnSpace": 9.48974609375,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 31,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultSwitchState"
+                                }
+                              ],
                               "isDisabled": false,
                               "key": "3i94twncsk",
-                              "rightColumn": 46,
+                              "rightColumn": 45,
                               "widgetId": "crulvvsqmz",
                               "isVisible": true,
                               "label": "Active",
-                              "defaultSwitchState": true,
+                              "defaultSwitchState": "{{Table1.selectedRow.status ===\"Active\"}}",
                               "version": 1,
                               "parentId": "oyx1b0cs1x",
                               "renderMode": "CANVAS",
@@ -1672,7 +1693,7 @@
                               "parentRowSpace": 10,
                               "type": "CHECKBOX_GROUP_WIDGET",
                               "hideCard": false,
-                              "isSelectAll": false,
+                              "isSelectAll": true,
                               "animateLoading": true,
                               "parentColumnSpace": 8.2421875,
                               "dynamicTriggerPathList": [

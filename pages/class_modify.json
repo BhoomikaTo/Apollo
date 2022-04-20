@@ -1100,7 +1100,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{Table1.selectedRow.model_name}}",
                       "key": "2e8zltfbxs",
-                      "rightColumn": 28,
+                      "rightColumn": 26,
                       "textAlign": "LEFT",
                       "widgetId": "z1100cb7tv",
                       "isVisible": true,
