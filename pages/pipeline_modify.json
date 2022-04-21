@@ -26,6 +26,1130 @@
           "leftColumn": 0,
           "children": [
             {
+              "widgetName": "Modal2",
+              "isCanvas": true,
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e.svg",
+              "topRow": 64,
+              "bottomRow": 64,
+              "parentRowSpace": 1,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 1,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClose"
+                }
+              ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas1Copy",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 560,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 556,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Form1Copy",
+                      "borderColor": "",
+                      "isCanvas": true,
+                      "displayName": "Form",
+                      "iconSVG": "/static/media/icon.ea3e08d1.svg",
+                      "topRow": 4,
+                      "bottomRow": 54,
+                      "parentRowSpace": 10,
+                      "type": "FORM_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.40625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "children": [
+                        {
+                          "widgetName": "Canvas3Copy",
+                          "rightColumn": 273.75,
+                          "detachFromLayout": true,
+                          "displayName": "Canvas",
+                          "widgetId": "6bsgn04bej",
+                          "containerStyle": "none",
+                          "topRow": 0,
+                          "bottomRow": 500,
+                          "parentRowSpace": 1,
+                          "isVisible": true,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "version": 1,
+                          "hideCard": true,
+                          "parentId": "tspwu2zmgb",
+                          "minHeight": 400,
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "dynamicBindingPathList": [],
+                          "children": [
+                            {
+                              "resetFormOnClick": true,
+                              "widgetName": "FormButton1Copy",
+                              "onClick": "",
+                              "buttonColor": "#93BC4D",
+                              "dynamicPropertyPathList": [],
+                              "displayName": "FormButton",
+                              "iconSVG": "/static/media/icon.c8f649ed.svg",
+                              "topRow": 44,
+                              "bottomRow": 48,
+                              "type": "FORM_BUTTON_WIDGET",
+                              "hideCard": true,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 54,
+                              "dynamicBindingPathList": [],
+                              "text": "Re Deploy",
+                              "key": "i058ryxwxz",
+                              "rightColumn": 64,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "390du1k3cj",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "disabledWhenInvalid": true,
+                              "buttonVariant": "PRIMARY"
+                            },
+                            {
+                              "resetFormOnClick": true,
+                              "widgetName": "FormButton2Copy",
+                              "onClick": "{{resetWidget(\"Form1\")}}",
+                              "buttonColor": "#93BC4D",
+                              "displayName": "FormButton",
+                              "iconSVG": "/static/media/icon.c8f649ed.svg",
+                              "topRow": 44,
+                              "bottomRow": 48,
+                              "type": "FORM_BUTTON_WIDGET",
+                              "hideCard": true,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 24,
+                              "dynamicBindingPathList": [],
+                              "text": "Cancel",
+                              "key": "i058ryxwxz",
+                              "rightColumn": 34,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "x20ewdobzf",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "disabledWhenInvalid": false,
+                              "buttonVariant": "SECONDARY"
+                            },
+                            {
+                              "widgetName": "Select1CopyCopy",
+                              "isFilterable": false,
+                              "displayName": "Select",
+                              "iconSVG": "/static/media/icon.bd99caba.svg",
+                              "labelText": "Camera",
+                              "topRow": 0,
+                              "bottomRow": 7,
+                              "parentRowSpace": 10,
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{Table1.selectedRow.camera}}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
+                              "options": "{{camera_name.data.map(c => ({label: c.camera_name, value: c.camera_id}))}}",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "Select option",
+                              "isDisabled": false,
+                              "key": "eedm4erdvo",
+                              "isRequired": true,
+                              "rightColumn": 20,
+                              "widgetId": "mrqfnxypro",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false
+                            },
+                            {
+                              "widgetName": "Select2CopyCopy1",
+                              "isFilterable": false,
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Select",
+                              "iconSVG": "/static/media/icon.bd99caba.svg",
+                              "labelText": "Model",
+                              "topRow": 0,
+                              "bottomRow": 7,
+                              "parentRowSpace": 10,
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{Table1.selectedRow.model_name}}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
+                              "leftColumn": 25,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
+                              "options": "{{model_name.data.map(c => ({label: c.model_name, value: c.model_id}))}}",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "Select option",
+                              "isDisabled": false,
+                              "key": "eedm4erdvo",
+                              "isRequired": true,
+                              "rightColumn": 45,
+                              "widgetId": "in6sji9zcf",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "onOptionChange": "{{class_names.run()}}"
+                            },
+                            {
+                              "widgetName": "Select3Copy",
+                              "isFilterable": false,
+                              "displayName": "Select",
+                              "iconSVG": "/static/media/icon.bd99caba.svg",
+                              "labelText": "Processing Type",
+                              "topRow": 9,
+                              "bottomRow": 16,
+                              "parentRowSpace": 10,
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{Table1.selectedRow.processing_type}}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
+                              "options": "[\n  {\n    \"label\": \"RTSP\",\n    \"value\": \"RTSP\"\n  },\n  {\n    \"label\": \"FILE OR EDGE\",\n    \"value\": \"FILE OR EDGE\"\n  }\n]",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "Select option",
+                              "isDisabled": false,
+                              "key": "eedm4erdvo",
+                              "isRequired": true,
+                              "rightColumn": 20,
+                              "widgetId": "0tqrdmgi9x",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false
+                            },
+                            {
+                              "widgetName": "Select4Copy",
+                              "isFilterable": true,
+                              "displayName": "Select",
+                              "iconSVG": "/static/media/icon.bd99caba.svg",
+                              "labelText": "Skip Frames",
+                              "topRow": 9,
+                              "bottomRow": 16,
+                              "parentRowSpace": 10,
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{Table1.selectedRow.skip_frames}}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 25,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
+                              "options": "[\n  {\n    \"label\": \"0\",\n    \"value\": \"0\"\n  },\n\t{\n    \"label\": \"1\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"2\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"3\",\n    \"value\": \"3\"\n  },\n\t{\n    \"label\": \"4\",\n    \"value\": \"4\"\n  },\n\t{\n    \"label\": \"5\",\n    \"value\": \"5\"\n  },\n  {\n    \"label\": \"6\",\n    \"value\": \"6\"\n  },\n  {\n    \"label\": \"7\",\n    \"value\": \"7\"\n  },\n\t{\n    \"label\": \"8\",\n    \"value\": \"8\"\n  },\n\t{\n    \"label\": \"9\",\n    \"value\": \"9\"\n  },\n  {\n    \"label\": \"10\",\n    \"value\": \"10\"\n  },\n  {\n    \"label\": \"11\",\n    \"value\": \"11\"\n  },\n\t{\n    \"label\": \"12\",\n    \"value\": \"12\"\n  },\n\t{\n    \"label\": \"13\",\n    \"value\": \"13\"\n  },\n  {\n    \"label\": \"14\",\n    \"value\": \"14\"\n  },\n  {\n    \"label\": \"15\",\n    \"value\": \"15\"\n  },\n\t{\n    \"label\": \"16\",\n    \"value\": \"16\"\n  },\n\t{\n    \"label\": \"17\",\n    \"value\": \"17\"\n  },\n  {\n    \"label\": \"18\",\n    \"value\": \"18\"\n  },\n  {\n    \"label\": \"19\",\n    \"value\": \"19\"\n  },\n\t{\n    \"label\": \"20\",\n    \"value\": \"20\"\n  }\n]",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "Select option",
+                              "isDisabled": false,
+                              "key": "eedm4erdvo",
+                              "isRequired": true,
+                              "rightColumn": 45,
+                              "widgetId": "3yv0iseed0",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false
+                            },
+                            {
+                              "widgetName": "Text6Copy",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 18,
+                              "bottomRow": 22,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Do Tracking",
+                              "key": "i4twq29p48",
+                              "rightColumn": 12,
+                              "textAlign": "LEFT",
+                              "widgetId": "vweiu0l86u",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
+                            },
+                            {
+                              "widgetName": "Text7Copy",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 22,
+                              "bottomRow": 26,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Zone Flag",
+                              "key": "i4twq29p48",
+                              "rightColumn": 12,
+                              "textAlign": "LEFT",
+                              "widgetId": "xp0ys0x8dy",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
+                            },
+                            {
+                              "widgetName": "Text8Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 26,
+                              "bottomRow": 30,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Zone_Topleft_X",
+                              "key": "i4twq29p48",
+                              "rightColumn": 16,
+                              "textAlign": "LEFT",
+                              "widgetId": "op5ausdq3v",
+                              "isVisible": "{{Checkbox2.isChecked}}",
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
+                            },
+                            {
+                              "widgetName": "Input3Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 30,
+                              "bottomRow": 34,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "maxNum": "10000",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "isVisible"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "NUMBER",
+                              "isDisabled": false,
+                              "key": "cfrlyq3cq2",
+                              "isRequired": false,
+                              "rightColumn": 20,
+                              "widgetId": "ht7rbhblo8",
+                              "isVisible": "{{Checkbox2.isChecked}}",
+                              "label": "",
+                              "version": 2,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": "{{Table1.selectedRow.zone_topleft_x}}"
+                            },
+                            {
+                              "widgetName": "Text9Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 26,
+                              "bottomRow": 30,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 25,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Zone_Topleft_Y",
+                              "key": "i4twq29p48",
+                              "rightColumn": 41,
+                              "textAlign": "LEFT",
+                              "widgetId": "9p6k1a7ekl",
+                              "isVisible": "{{Checkbox2.isChecked}}",
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
+                            },
+                            {
+                              "widgetName": "Input4Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 30,
+                              "bottomRow": 34,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "maxNum": "10000",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 25,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "isVisible"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "NUMBER",
+                              "isDisabled": false,
+                              "key": "cfrlyq3cq2",
+                              "isRequired": false,
+                              "rightColumn": 45,
+                              "widgetId": "tkb6i998ae",
+                              "isVisible": "{{Checkbox2.isChecked}}",
+                              "label": "",
+                              "version": 2,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": "{{Table1.selectedRow.zone_topleft_y}}"
+                            },
+                            {
+                              "widgetName": "Text10Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 34,
+                              "bottomRow": 38,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Zone_Botright_X",
+                              "key": "i4twq29p48",
+                              "rightColumn": 16,
+                              "textAlign": "LEFT",
+                              "widgetId": "zjcjvrueqf",
+                              "isVisible": "{{Checkbox2.isChecked}}",
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
+                            },
+                            {
+                              "widgetName": "Input5Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 38,
+                              "bottomRow": 42,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "maxNum": "100000",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "isVisible"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "NUMBER",
+                              "isDisabled": false,
+                              "key": "cfrlyq3cq2",
+                              "isRequired": false,
+                              "rightColumn": 20,
+                              "widgetId": "xczmfc7swr",
+                              "isVisible": "{{Checkbox2.isChecked}}",
+                              "label": "",
+                              "version": 2,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": "{{Table1.selectedRow.zone_botright_x}}"
+                            },
+                            {
+                              "widgetName": "Input6Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 38,
+                              "bottomRow": 42,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "maxNum": "10000",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 25,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "isVisible"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "NUMBER",
+                              "isDisabled": false,
+                              "key": "cfrlyq3cq2",
+                              "isRequired": false,
+                              "rightColumn": 45,
+                              "widgetId": "b9r5v5av68",
+                              "isVisible": "{{Checkbox2.isChecked}}",
+                              "label": "",
+                              "version": 2,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": "{{Table1.selectedRow.zone_botright_y}}"
+                            },
+                            {
+                              "widgetName": "Text11Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 34,
+                              "bottomRow": 38,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 25,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Zone_Botright_Y",
+                              "key": "i4twq29p48",
+                              "rightColumn": 41,
+                              "textAlign": "LEFT",
+                              "widgetId": "1yrth100i0",
+                              "isVisible": "{{Checkbox2.isChecked}}",
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
+                            },
+                            {
+                              "widgetName": "Switch1Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "defaultSwitchState"
+                                }
+                              ],
+                              "displayName": "Switch",
+                              "iconSVG": "/static/media/icon.a3115bc1.svg",
+                              "topRow": 22,
+                              "bottomRow": 26,
+                              "parentRowSpace": 10,
+                              "type": "SWITCH_WIDGET",
+                              "alignWidget": "LEFT",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 31,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultSwitchState"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "key": "3i94twncsk",
+                              "rightColumn": 45,
+                              "widgetId": "8zaco3gzcc",
+                              "isVisible": true,
+                              "label": "Active",
+                              "defaultSwitchState": "{{Table1.selectedRow.status ===\"Active\"}}",
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false
+                            },
+                            {
+                              "widgetName": "Text12Copy",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 18,
+                              "bottomRow": 22,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 25,
+                              "dynamicBindingPathList": [],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Status",
+                              "key": "i4twq29p48",
+                              "rightColumn": 41,
+                              "textAlign": "LEFT",
+                              "widgetId": "ys9xibfdpl",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
+                            },
+                            {
+                              "widgetName": "Text13Copy",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 22,
+                              "bottomRow": 26,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.48974609375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 25,
+                              "dynamicBindingPathList": [],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Inactive",
+                              "key": "i4twq29p48",
+                              "rightColumn": 31,
+                              "textAlign": "LEFT",
+                              "widgetId": "ciue111rd8",
+                              "isVisible": true,
+                              "fontStyle": "",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
+                            },
+                            {
+                              "widgetName": "CheckboxGroup1Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "options"
+                                }
+                              ],
+                              "displayName": "Checkbox Group",
+                              "iconSVG": "/static/media/icon.ecb38479.svg",
+                              "topRow": 4,
+                              "bottomRow": 33,
+                              "parentRowSpace": 10,
+                              "type": "CHECKBOX_GROUP_WIDGET",
+                              "hideCard": false,
+                              "isSelectAll": true,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.2421875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onSelectionChange"
+                                }
+                              ],
+                              "leftColumn": 47,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "defaultSelectedValues"
+                                }
+                              ],
+                              "onSelectionChange": "{{storeValue('A',CheckboxGroup1.selectedValues)}}",
+                              "options": "{{class_names.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
+                              "isDisabled": false,
+                              "key": "xxipg7ylsx",
+                              "optionAlignment": "flex-start",
+                              "isRequired": false,
+                              "rightColumn": 63,
+                              "defaultSelectedValues": "{{Select_class.data.map(c => (c.class_id))}}",
+                              "widgetId": "x439gh3k15",
+                              "isVisible": true,
+                              "version": 2,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "isInline": true
+                            },
+                            {
+                              "widgetName": "Text14Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.06396484375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 47,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Select Classes",
+                              "key": "rg6ibpsugx",
+                              "rightColumn": 63,
+                              "textAlign": "LEFT",
+                              "widgetId": "i6c9minags",
+                              "isVisible": "{{Select2Copy.selectedOptionValue !=  Number()}}",
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
+                            },
+                            {
+                              "widgetName": "Checkbox1Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "defaultCheckedState"
+                                }
+                              ],
+                              "displayName": "Checkbox",
+                              "iconSVG": "/static/media/icon.aaab032b.svg",
+                              "topRow": 18,
+                              "bottomRow": 22,
+                              "parentRowSpace": 10,
+                              "type": "CHECKBOX_WIDGET",
+                              "alignWidget": "LEFT",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.06396484375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 12,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultCheckedState"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "key": "gqnit9zo30",
+                              "isRequired": false,
+                              "rightColumn": 21,
+                              "widgetId": "eoislm3rvc",
+                              "isVisible": true,
+                              "label": "",
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "defaultCheckedState": "{{Table1.selectedRow.do_tracking === \"Yes\"}}"
+                            },
+                            {
+                              "widgetName": "Checkbox2Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "defaultCheckedState"
+                                }
+                              ],
+                              "displayName": "Checkbox",
+                              "iconSVG": "/static/media/icon.aaab032b.svg",
+                              "topRow": 22,
+                              "bottomRow": 26,
+                              "parentRowSpace": 10,
+                              "type": "CHECKBOX_WIDGET",
+                              "alignWidget": "LEFT",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.06396484375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 12,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultCheckedState"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "key": "gqnit9zo30",
+                              "isRequired": false,
+                              "rightColumn": 21,
+                              "widgetId": "3myxidhfe5",
+                              "isVisible": true,
+                              "label": "",
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "defaultCheckedState": "{{Table1.selectedRow.zone_flag === \"Yes\"}}"
+                            },
+                            {
+                              "widgetName": "Button2Copy",
+                              "buttonColor": "#DD4B34",
+                              "displayName": "Button",
+                              "iconSVG": "/static/media/icon.cca02633.svg",
+                              "topRow": 44,
+                              "bottomRow": 48,
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 10.0065673828125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 34,
+                              "dynamicBindingPathList": [],
+                              "text": "Start",
+                              "isDisabled": false,
+                              "key": "m7gdhva5jk",
+                              "rightColumn": 44,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "uuhwgdtpaj",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "buttonVariant": "PRIMARY",
+                              "placement": "CENTER"
+                            },
+                            {
+                              "widgetName": "Button3Copy",
+                              "buttonColor": "#38AFF4",
+                              "displayName": "Button",
+                              "iconSVG": "/static/media/icon.cca02633.svg",
+                              "topRow": 44,
+                              "bottomRow": 48,
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 10.0065673828125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 44,
+                              "dynamicBindingPathList": [],
+                              "text": "Remove",
+                              "isDisabled": false,
+                              "key": "m7gdhva5jk",
+                              "rightColumn": 54,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "p17m6ru2lf",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "6bsgn04bej",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "buttonVariant": "PRIMARY",
+                              "placement": "CENTER"
+                            }
+                          ],
+                          "key": "lwhl8hfo69"
+                        }
+                      ],
+                      "borderWidth": "",
+                      "key": "39ibhsw5kq",
+                      "backgroundColor": "white",
+                      "rightColumn": 62,
+                      "widgetId": "tspwu2zmgb",
+                      "isVisible": true,
+                      "parentId": "kg5b4xpyyc",
+                      "renderMode": "CANVAS",
+                      "isLoading": false
+                    },
+                    {
+                      "widgetName": "Text1Copy1Copy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontStyle"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 13.765625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Pipeline - {{Table1.selectedRow.pipeline_id}}                                                  ",
+                      "key": "bpwt2bomsd",
+                      "rightColumn": 39,
+                      "textAlign": "LEFT",
+                      "widgetId": "hmwmn6yu7x",
+                      "isVisible": true,
+                      "fontStyle": "BOLD UNDERLINE",
+                      "textColor": "#231F20",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "kg5b4xpyyc",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Icon1Copy",
+                      "rightColumn": 64,
+                      "onClick": "{{closeModal('Modal2')}}",
+                      "color": "#040627",
+                      "iconName": "cross",
+                      "displayName": "Icon",
+                      "iconSVG": "/static/media/icon.31d6cfe0.svg",
+                      "widgetId": "v7ot7nqgu9",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "isVisible": true,
+                      "type": "ICON_WIDGET",
+                      "version": 1,
+                      "hideCard": true,
+                      "parentId": "kg5b4xpyyc",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "leftColumn": 57,
+                      "dynamicBindingPathList": [],
+                      "iconSize": 24,
+                      "key": "7joh0moubq"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "rh9ry207if",
+                  "rightColumn": 0,
+                  "detachFromLayout": true,
+                  "widgetId": "kg5b4xpyyc",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "ovwpz2zgri",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "key": "yzjl0jwxlu",
+              "height": 556,
+              "rightColumn": 0,
+              "detachFromLayout": true,
+              "widgetId": "ovwpz2zgri",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "onClose": "{{closeModal('Modal1')}}",
+              "width": 704.9
+            },
+            {
               "widgetName": "Select2CopyCopy",
               "isFilterable": false,
               "displayName": "Select",
@@ -248,7 +1372,11 @@
                 "customColumn1"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.customColumn1.onClick"
+                }
+              ],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 20,
@@ -642,7 +1770,7 @@
                   "menuColor": "#03B365",
                   "labelColor": "#FFFFFF",
                   "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Modify'))}}",
-                  "onClick": "{{showModal('Modal1')}}"
+                  "onClick": "{{Table1.selectedRow.status===\"Stopped\"?showModal('Modal2'):showModal('Modal1')}}"
                 }
               },
               "delimiter": ",",
@@ -697,7 +1825,7 @@
                 "area_id": 60,
                 "area_name": 112,
                 "area_description": 128,
-                "created_by": 102,
+                "created_by": 175,
                 "created_date": 159,
                 "edited_by": 86,
                 "camera_id": 130.00000000000006
@@ -2067,48 +3195,79 @@
         "widgetNames": [
           "Button1",
           "Button2",
+          "Button2Copy",
           "Button3",
+          "Button3Copy",
           "Canvas1",
+          "Canvas1Copy",
           "Canvas2Copy",
           "Canvas3",
+          "Canvas3Copy",
           "Checkbox1",
+          "Checkbox1Copy",
           "Checkbox2",
+          "Checkbox2Copy",
           "CheckboxGroup1",
+          "CheckboxGroup1Copy",
           "Container2",
           "Form1",
+          "Form1Copy",
           "FormButton1",
+          "FormButton1Copy",
           "FormButton2",
+          "FormButton2Copy",
           "Icon1",
+          "Icon1Copy",
           "IconButton1",
           "Image2",
           "Input3",
+          "Input3Copy",
           "Input4",
+          "Input4Copy",
           "Input5",
+          "Input5Copy",
           "Input6",
+          "Input6Copy",
           "MainContainer",
           "Modal1",
+          "Modal2",
           "Select1",
           "Select1Copy",
+          "Select1CopyCopy",
           "Select2",
           "Select2Copy",
           "Select2CopyCopy",
+          "Select2CopyCopy1",
           "Select3",
+          "Select3Copy",
           "Select4",
+          "Select4Copy",
           "Switch1",
+          "Switch1Copy",
           "Table1",
           "Text1",
           "Text10",
+          "Text10Copy",
           "Text11",
+          "Text11Copy",
           "Text12",
+          "Text12Copy",
           "Text13",
+          "Text13Copy",
           "Text14",
+          "Text14Copy",
           "Text1Copy",
           "Text1Copy1",
+          "Text1Copy1Copy",
           "Text2",
           "Text6",
+          "Text6Copy",
           "Text7",
+          "Text7Copy",
           "Text8",
-          "Text9"
+          "Text8Copy",
+          "Text9",
+          "Text9Copy"
         ],
         "validOnPageLoadActions": true,
         "id": "pipeline_modify",
