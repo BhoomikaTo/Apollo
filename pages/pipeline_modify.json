@@ -1770,7 +1770,7 @@
                   "menuColor": "#03B365",
                   "labelColor": "#FFFFFF",
                   "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Modify'))}}",
-                  "onClick": "{{Table1.selectedRow.status===\"Stopped\"?showModal('Modal2'):showModal('Modal1')}}"
+                  "onClick": "{{Table1.selectedRow.status===\"Inactive\"?showModal('Modal2'):showModal('Modal1')}}"
                 }
               },
               "delimiter": ",",
