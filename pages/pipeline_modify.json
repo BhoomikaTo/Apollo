@@ -2898,7 +2898,7 @@
                 }
               },
               "delimiter": ",",
-              "onRowSelected": "{{class_names.run(() => Select_class.run(), () => {})}}",
+              "onRowSelected": "{{class_namesCopy.run(() => storeValue('pipeline_id',Table1.selectedRow.pipeline_id), () => {})}}",
               "key": "ujy2cn5qkr",
               "derivedColumns": {
                 "customColumn1": {
@@ -3357,7 +3357,7 @@
                               "parentId": "oyx1b0cs1x",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "onOptionChange": "{{class_names.run(() => storeValue('model_id',model1.selectedOptionValue), () => {})}}"
+                              "onOptionChange": "{{class_namesCopy.run(() => storeValue('model_id',model1.selectedOptionValue), () => {})}}"
                             },
                             {
                               "widgetName": "processing1",
@@ -3940,12 +3940,12 @@
                               ],
                               "displayName": "Checkbox Group",
                               "iconSVG": "/static/media/icon.ecb38479.svg",
-                              "topRow": 4,
-                              "bottomRow": 33,
+                              "topRow": 35,
+                              "bottomRow": 43,
                               "parentRowSpace": 10,
                               "type": "CHECKBOX_GROUP_WIDGET",
                               "hideCard": false,
-                              "isSelectAll": true,
+                              "isSelectAll": false,
                               "animateLoading": true,
                               "parentColumnSpace": 8.2421875,
                               "dynamicTriggerPathList": [
@@ -3953,7 +3953,7 @@
                                   "key": "onSelectionChange"
                                 }
                               ],
-                              "leftColumn": 47,
+                              "leftColumn": 48,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "options"
@@ -3963,15 +3963,15 @@
                                 }
                               ],
                               "onSelectionChange": "{{storeValue('class_id',CheckboxGroup1.selectedValues)}}",
-                              "options": "{{class_names.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
+                              "options": "{{Select_class.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
                               "isDisabled": false,
                               "key": "xxipg7ylsx",
                               "optionAlignment": "flex-start",
                               "isRequired": false,
-                              "rightColumn": 63,
+                              "rightColumn": 64,
                               "defaultSelectedValues": "{{Select_class.data.map(c => (c.class_id))}}",
                               "widgetId": "edxpcdtry8",
-                              "isVisible": true,
+                              "isVisible": false,
                               "version": 2,
                               "parentId": "oyx1b0cs1x",
                               "renderMode": "CANVAS",
@@ -4151,6 +4151,49 @@
                               "isLoading": false,
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
+                            },
+                            {
+                              "widgetName": "CheckboxGroup2",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "options"
+                                }
+                              ],
+                              "displayName": "Checkbox Group",
+                              "iconSVG": "/static/media/icon.ecb38479.svg",
+                              "topRow": 4,
+                              "bottomRow": 26,
+                              "parentRowSpace": 10,
+                              "type": "CHECKBOX_GROUP_WIDGET",
+                              "hideCard": false,
+                              "isSelectAll": true,
+                              "animateLoading": true,
+                              "parentColumnSpace": 10.0065673828125,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onSelectionChange"
+                                }
+                              ],
+                              "leftColumn": 46,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "options"
+                                }
+                              ],
+                              "onSelectionChange": "{{storeValue('class_id',CheckboxGroup2.selectedValues)}}",
+                              "options": "{{class_namesCopy.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
+                              "isDisabled": false,
+                              "key": "45dpclkuv6",
+                              "isRequired": false,
+                              "rightColumn": 62,
+                              "defaultSelectedValues": "",
+                              "widgetId": "s7fhb8ul4a",
+                              "isVisible": true,
+                              "version": 2,
+                              "parentId": "oyx1b0cs1x",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "isInline": true
                             }
                           ],
                           "key": "lwhl8hfo69"
@@ -4348,6 +4391,17 @@
                 "model1.selectedOptionLabel"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "pipeline_modify_class_namesCopy",
+              "name": "class_namesCopy",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table1.selectedRow.pipeline_id",
+                "model1.selectedOptionLabel"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ]
         ],
@@ -4375,6 +4429,7 @@
           "CheckboxGroup1",
           "CheckboxGroup1Copy",
           "CheckboxGroup1Copy1",
+          "CheckboxGroup2",
           "Container2",
           "Form1",
           "Form1Copy",
