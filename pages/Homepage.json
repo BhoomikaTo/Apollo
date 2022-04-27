@@ -835,6 +835,7 @@
                       "widgetName": "Button1Copy8CopyCopy5",
                       "onClick": "{{navigateTo('pipeline_add', {})}}",
                       "buttonColor": "#FFFFFF",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
                       "topRow": 4,

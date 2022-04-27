@@ -25,18 +25,24 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\"image_name\": \"echoltech2020/apollo-gpu:v9\",\n\"container_name\": \"apollo_528\",\n\"envs\": {\n\"pipeline_id\": 528,\n\"video\": \"rtsp://76.79.132.90:8554/mystream\"\n}\n}",
+      "body": "{\n\"image_name\": \"echoltech2020/apollo-gpu:v9\",\n\"container_name\": \"apollo_610\",\n\"envs\": {\n\"Pipeline Id\": {{Query1.data[0]}},\n\"video\": \"rtsp://76.79.132.90:8554/mystream\"\n}\n}",
       "httpMethod": "POST",
       "formData": {
         "apiContentType": "application/json"
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Query1.data[0]"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tfor (let i = 0;i<appsmith.store.class_id.length;i++){\n\t\t\tawait Insert_pipeline_class.run({org: appsmith.store.class_id[i]})\t\t\n    }\n\t  await CreateAPI.run()\n\t\t  CreateAPI.responseMeta.statusCode === \"200 OK\" ?update_status.run():showAlert(\"error\")}",
+      "body": "async () => {\n\t\tfor (let i = 0;i<appsmith.store.class_id.length;i++){\n\t\t\tawait Insert_pipeline_class.run({org: appsmith.store.class_id[i]})\t\t\n    }\n\t\tawait CreateAPI.run()\n    .then(() =>  update_status.run() )\n    .catch(() => showAlert(\"error\"))\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tfor (let i = 0;i<appsmith.store.class_id.length;i++){\n\t\t\tawait Insert_pipeline_class.run({org: appsmith.store.class_id[i]})\t\t\n    }\n\t  await CreateAPI.run()\n\t\t  CreateAPI.responseMeta.statusCode === \"200 OK\" ?update_status.run():showAlert(\"error\")}"
+      "async () => {\n\t\tfor (let i = 0;i<appsmith.store.class_id.length;i++){\n\t\t\tawait Insert_pipeline_class.run({org: appsmith.store.class_id[i]})\t\t\n    }\n\t\tawait CreateAPI.run()\n    .then(() =>  update_status.run() )\n    .catch(() => showAlert(\"error\"))\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

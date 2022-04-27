@@ -269,7 +269,11 @@
                       "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 9.48974609375,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
@@ -288,7 +292,8 @@
                       "version": 1,
                       "parentId": "t73gczga4g",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "onOptionChange": "{{Query1.run()}}"
                     },
                     {
                       "widgetName": "Select2",

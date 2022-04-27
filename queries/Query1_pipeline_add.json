@@ -17,22 +17,14 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "{\n\"camera_id\":{{Select1.selectedOptionValue}},\n\"model_id\":{{Select2.selectedOptionValue}},\n\"processing_type\":{{Select3.selectedOptionValue}}\n}"
+      "body": "SELECT AUTO_INCREMENT \nFROM information_schema.tables\nWHERE table_name = 'pipeline_master'\n     and table_schema = 'apollo-dev';"
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "Select1.selectedOptionValue",
-      "Select2.selectedOptionValue",
-      "Select3.selectedOptionValue"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
