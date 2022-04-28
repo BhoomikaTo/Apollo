@@ -25,8 +25,13 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\"image_name\": \"echoltech2020/apollo-gpu:v9\",\n\"container_name\": \"apollo_610\",\n\"envs\": {\n\"Pipeline Id\": {{Query1.data[0]}},\n\"video\": \"rtsp://76.79.132.90:8554/mystream\"\n}\n}",
+      "body": "{\n\"pipeline_id\": {{Insert_pipeline.data[0].last_insert_id}}\n}",
       "httpMethod": "POST",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ],
       "formData": {
         "apiContentType": "application/json"
       }
@@ -41,7 +46,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Query1.data[0]"
+      "Insert_pipeline.data[0].last_insert_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

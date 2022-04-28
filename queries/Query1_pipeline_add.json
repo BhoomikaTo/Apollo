@@ -17,7 +17,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT AUTO_INCREMENT \nFROM information_schema.tables\nWHERE table_name = 'pipeline_master'\n     and table_schema = 'apollo-dev';"
+      "body": "SELECT AUTO_INCREMENT \nFROM information_schema.tables\nWHERE table_name = 'pipeline_master'\n     and table_schema = 'apollo-dev';",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": false
+        }
+      ]
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [],
