@@ -293,7 +293,7 @@
                       "parentId": "t73gczga4g",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "onOptionChange": "{{Query1.run()}}"
+                      "onOptionChange": ""
                     },
                     {
                       "widgetName": "Select2",

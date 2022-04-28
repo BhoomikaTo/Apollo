@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO pipeline_master \nSET\ncamera_id ={{Select1.selectedOptionValue}},\nmodel_id ={{Select2.selectedOptionValue}},\nprocessing_type ={{Select3.selectedOptionValue}},\nskip_frames ={{Select4.selectedOptionValue}},\ndo_tracking ={{Checkbox1.isChecked?\"Yes\":\"No\"}},\nzone_flag ={{Checkbox2.isChecked?\"Yes\":\"No\"}},\nzone_topleft_x ={{Input3.text}},\nzone_topleft_y ={{Input4.text}},\nzone_botright_x ={{Input5.text}},\nzone_botright_y ={{Input6.text}},\nstatus = 'Inactive',\ncreated_by = {{Text5.text}};\nselect last_insert_id() as last_insert_id ;"
+      "body": "INSERT INTO pipeline_master \nSET\ncamera_id ={{Select1.selectedOptionValue}},\nmodel_id ={{Select2.selectedOptionValue}},\nprocessing_type ={{Select3.selectedOptionValue}},\nskip_frames ={{Select4.selectedOptionValue}},\ndo_tracking ={{Checkbox1.isChecked?\"Yes\":\"No\"}},\nzone_flag ={{Checkbox2.isChecked?\"Yes\":\"No\"}},\nzone_topleft_x ={{Input3.text}},\nzone_topleft_y ={{Input4.text}},\nzone_botright_x ={{Input5.text}},\nzone_botright_y ={{Input6.text}},\nstatus = 'Inactive',\ncreated_by = {{Text5.text}};\nselect last_insert_id() as last_insert_id;"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
