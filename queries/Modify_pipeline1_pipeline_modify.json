@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE pipeline_master\nSET\ncamera_id ={{camera1.selectedOptionValue}},\nmodel_id ={{model1.selectedOptionValue}},\nprocessing_type ={{processing1.selectedOptionValue}},\nskip_frames ={{skipframes1.selectedOptionValue}},\ndo_tracking ={{Checkbox1.isChecked?\"Yes\":\"No\"}},\nzone_flag ={{Checkbox2.isChecked?\"Yes\":\"No\"}},\nzone_topleft_x ={{Input3.text}},\nzone_topleft_y ={{Input4.text}},\nzone_botright_x ={{Input5.text}},\nzone_botright_y ={{Input6.text}},\nstatus = {{Switch1.isSwitchedOn?\"Active\":\"Inactive\"}},\nedited_by = {{Text15.text}},\nedited_date = current_timestamp()\nWHERE pipeline_id = {{Table1.selectedRow.pipeline_id }};"
+      "body": "UPDATE pipeline_master\nSET\ncamera_id ={{camera1.selectedOptionValue}},\nmodel_id ={{model1.selectedOptionValue}},\nprocessing_type ={{processing1.selectedOptionValue}},\nskip_frames ={{skipframes1.selectedOptionValue}},\ndo_tracking ={{Checkbox1.isChecked?1:0}},\nzone_flag ={{Checkbox2.isChecked?1:0}},\nzone_topleft_x ={{Input3.text}},\nzone_topleft_y ={{Input4.text}},\nzone_botright_x ={{Input5.text}},\nzone_botright_y ={{Input6.text}},\nstatus = {{Switch1.isSwitchedOn?\"Active\":\"Inactive\"}},\nedited_by = {{Text15.text}},\nedited_date = current_timestamp()\nWHERE pipeline_id = {{Table1.selectedRow.pipeline_id }};"
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -29,8 +29,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Checkbox1.isChecked?\"Yes\":\"No\"",
-      "Checkbox2.isChecked?\"Yes\":\"No\"",
+      "Checkbox1.isChecked?1:0",
+      "Checkbox2.isChecked?1:0",
       "Input3.text",
       "Input4.text",
       "Input5.text",

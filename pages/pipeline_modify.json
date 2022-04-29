@@ -2441,6 +2441,11 @@
               "widgetName": "Button1",
               "onClick": "{{navigateTo('Homepage', {},'SAME_WINDOW')}}",
               "buttonColor": "",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca02633.svg",
               "topRow": 10,
@@ -3135,6 +3140,11 @@
             {
               "widgetName": "Modal1",
               "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClose"
+                }
+              ],
               "displayName": "Modal",
               "iconSVG": "/static/media/icon.4975978e.svg",
               "topRow": 0,
@@ -3211,9 +3221,13 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1",
-                              "onClick": "{{Modify_pipeline1.run(() => JSObject1.myFun2(), () => {})}}",
+                              "onClick": "{{JSObject1.myFun2()}};\n{{closeModal(Modal1)}};",
                               "buttonColor": "#93BC4D",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
                               "topRow": 44,
@@ -3327,7 +3341,7 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "{{Table1.selectedRow.model_name}}",
+                              "defaultOptionValue": "{{Table1.selectedRow.model_id}}",
                               "animateLoading": true,
                               "parentColumnSpace": 9.48974609375,
                               "dynamicTriggerPathList": [
@@ -3962,7 +3976,7 @@
                                   "key": "defaultSelectedValues"
                                 }
                               ],
-                              "onSelectionChange": "{{storeValue('class_id',CheckboxGroup1.selectedValues)}}",
+                              "onSelectionChange": "",
                               "options": "{{Select_class.data.map(c => ({label: c.class_name, value: c.class_id}))}}",
                               "isDisabled": false,
                               "key": "xxipg7ylsx",
