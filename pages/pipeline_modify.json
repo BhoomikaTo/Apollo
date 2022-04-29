@@ -3940,7 +3940,7 @@
                               ],
                               "displayName": "Checkbox Group",
                               "iconSVG": "/static/media/icon.ecb38479.svg",
-                              "topRow": 35,
+                              "topRow": 34,
                               "bottomRow": 43,
                               "parentRowSpace": 10,
                               "type": "CHECKBOX_GROUP_WIDGET",
@@ -4053,7 +4053,7 @@
                               "parentId": "oyx1b0cs1x",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "defaultCheckedState": "{{Table1.selectedRow.do_tracking === \"Yes\"}}"
+                              "defaultCheckedState": "{{Table1.selectedRow.do_tracking === 1}}"
                             },
                             {
                               "widgetName": "Checkbox2",
@@ -4090,7 +4090,7 @@
                               "parentId": "oyx1b0cs1x",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "defaultCheckedState": "{{Table1.selectedRow.zone_flag === \"Yes\"}}"
+                              "defaultCheckedState": "{{Table1.selectedRow.zone_flag === 1}}"
                             },
                             {
                               "widgetName": "Button2",
