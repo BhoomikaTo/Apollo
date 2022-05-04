@@ -3341,7 +3341,7 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "{{Table1.selectedRow.model_id}}",
+                              "defaultOptionValue": "{{Table1.selectedRow.model_name}}",
                               "animateLoading": true,
                               "parentColumnSpace": 9.48974609375,
                               "dynamicTriggerPathList": [
@@ -3954,7 +3954,7 @@
                               ],
                               "displayName": "Checkbox Group",
                               "iconSVG": "/static/media/icon.ecb38479.svg",
-                              "topRow": 34,
+                              "topRow": 39,
                               "bottomRow": 43,
                               "parentRowSpace": 10,
                               "type": "CHECKBOX_GROUP_WIDGET",
