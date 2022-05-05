@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into pipeline_class_map\nset pipeline_id = {{appsmith.store.pipeline_id}},\n    model_id = {{appsmith.store.model_id}},\n    class_id = {{this.params.org}},\n    edited_by = {{appsmith.user.email}},\n\t\tedited_date = current_timestamp();\n    "
+      "body": "insert into pipeline_class_map\nset pipeline_id = {{appsmith.store.pipeline_id}},\n    model_id = {{appsmith.store.model_id}},\n    class_id = {{this.params.org}},\n    created_by = {{appsmith.user.email}};\n    "
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

@@ -203,7 +203,11 @@
                 "model_id"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onRowSelected"
+                }
+              ],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 20,
@@ -571,7 +575,7 @@
                 }
               },
               "delimiter": ",",
-              "onRowSelected": "{{Select_class.run(() => showModal('Modal1'), () => {})}}",
+              "onRowSelected": "{{ListAPI.run(()=> Select_class.run(() => showModal('Modal1'), () => {}))}}",
               "key": "ujy2cn5qkr",
               "derivedColumns": {},
               "rightColumn": 63,
@@ -1422,7 +1426,7 @@
                               "widgetId": "5xdvrwhkbx",
                               "isVisible": true,
                               "fontStyle": "BOLD",
-                              "textColor": "#231F20",
+                              "textColor": "#2E3D49",
                               "shouldScroll": false,
                               "version": 1,
                               "parentId": "z8995y5hue",
@@ -2096,6 +2100,49 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "fontSize": "PARAGRAPH"
+                            },
+                            {
+                              "widgetName": "Text32",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "textColor"
+                                }
+                              ],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 28,
+                              "bottomRow": 32,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.83740234375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 47,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "text"
+                                },
+                                {
+                                  "key": "textColor"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "The container is {{ListAPI.data.filter(item=>item.short_id===\"3f04fd3756\")[0].status}}.",
+                              "key": "rsnmzi2p93",
+                              "rightColumn": 64,
+                              "textAlign": "LEFT",
+                              "widgetId": "d7bonb5dd1",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "{{Text32.text===\"The container is running.\"?\"#93BC4D\":\"#DD4B34\"}}",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "z8995y5hue",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH"
                             }
                           ],
                           "key": "lwhl8hfo69"
@@ -2227,6 +2274,16 @@
               ],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "pipeline_view_ListAPI",
+              "name": "ListAPI",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 20000
+            }
           ]
         ],
         "widgetNames": [
@@ -2273,6 +2330,7 @@
           "Text29",
           "Text30",
           "Text31",
+          "Text32",
           "Text32Copy",
           "Text6",
           "Text7",

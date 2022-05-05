@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\n\tmyFun2: async () => {\n\t\tfor (let i = 0;i<appsmith.store.class_id.length;i++){\n\t\t\tawait Insert_pipeline_class.run({org: appsmith.store.class_id[i]})\t\t\n    }\n\t\tawait CreateAPI.run()\n    .then(() =>  update_status.run().then(() =>  showAlert(\"Pipeline ID \"+Insert_pipeline.data[0].last_insert_id+\" created successfully\") ) )\n    .catch(() => showAlert(\"Error occurred\"))\n\t}\n}",
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\n\tmyFun2: async () => {\n\t\tfor (let i = 0;i<appsmith.store.class_id.length;i++){\n\t\t\tawait Insert_pipeline_class.run({org: appsmith.store.class_id[i]})\t\t\n    }\n\t\tawait CreateAPI.run()\n\t\t\n    .then(() =>  update_status.run().then(() =>  showAlert(\"Pipeline ID \"+Insert_pipeline.data[0].last_insert_id+\" created successfully\") ) )\n    .catch(() => showAlert(\"Error occurred\"))\n\t}\n}",
     "variables": [
       {
         "name": "myVar1",
